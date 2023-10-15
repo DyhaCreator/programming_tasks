@@ -9,7 +9,7 @@ int main() {
     vector<vector<ll >> vec = vector<vector<ll >> (n);
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            int x;
+            ll x;
             cin >> x;
             vec[i].push_back(x);
         }
@@ -19,14 +19,15 @@ int main() {
     for (int i = 1; i < n + 1; i++) {
         for (int j = 1; j < m + 1; j++) {
             pref[i][j] = pref[i][j - 1] + pref[i - 1][j] + vec[i - 1][j - 1] - pref[i - 1][j - 1];
-            cout << pref[i][j] << " ";
         }
-        cout << endl;
     }
     int q;
     cin >> q;
     for (int i = 0; i < q; i++) {
-        
+        int lx, ly, rx, ry;
+        cin >> lx >> ly >> rx >> ry;
+        ll sum = pref[rx][ry] - pref[rx][ly - 1] - pref[lx - 1][ry] + pref[lx - 1][ly - 1];
+        cout << sum << " ";
     }
     return 0;
 }
