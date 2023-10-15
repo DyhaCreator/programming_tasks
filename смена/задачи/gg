@@ -1,0 +1,20 @@
+#include <map>
+
+struct Node{
+    std::map<int, int>to;
+    bool term = false;
+    Node(){}
+};
+
+std::vector<Node>trie = std::vector<Node>(1);
+
+void insert(std::string S){
+    int v = 0;
+    for(auto c : S){
+        if(!trie[v].to.count(c - 'a')){
+            trie[v].to[c - 'a'] = trie.size();
+            trie.push_back(Node());
+        }
+        v = trie[v].to[c - 'a'];
+    }
+}
