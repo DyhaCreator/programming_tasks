@@ -20,10 +20,16 @@ int main() {
             j++;
         }
     }
-    /*for (auto i : lng) {
+    for (auto i : lng) {
         cout << i << " ";
     }
-    cout << endl;*/
+    cout << endl;
+    int last = 0;
+    for (auto i : lng) {
+        cout << i - last << " ";
+        last = i;
+    }
+    cout << endl;
     set<ll>::iterator it = lng.begin();
     advance(it, n);
     ll x = *it;
