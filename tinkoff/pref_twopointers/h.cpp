@@ -7,32 +7,27 @@
 using namespace std;
 
 int main() {
-    set<ll>lng;
     int n;
     cin >> n;
-    int j = 0;
-    for (int i = 0; lng.size() < n + 1; i++) {
-        ll a = i * i * i;
-        lng.insert(a);
+    ll size = 0;
+    ll j = 0;
+    ll a = 0;
+    for (ll i = 0; size < n + 1; i++) {
+        a = i * i * i;
+        ll b = 0;
         while (j * j < a) {
-            ll b = j * j;
-            lng.insert(b);
+            b = j * j;
+            if (b != (i - 1) * (i - 1) * (i - 1)) {
+                size++;
+                if (size >= n + 1) {
+                    cout << b << endl;
+                    return 0;
+                }
+            }
             j++;
         }
+        size++;
     }
-    for (auto i : lng) {
-        cout << i << " ";
-    }
-    cout << endl;
-    int last = 0;
-    for (auto i : lng) {
-        cout << i - last << " ";
-        last = i;
-    }
-    cout << endl;
-    set<ll>::iterator it = lng.begin();
-    advance(it, n);
-    ll x = *it;
-    cout << x << endl;
+    cout << a << endl;
     return 0;
 }

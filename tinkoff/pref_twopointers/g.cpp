@@ -15,14 +15,14 @@ int main() {
         //cout << vec[i] << " ";
     }
     //cout << endl;
-    int max_index = 0;
-    for (int i = 0; i < n + 1; i++) {
+    ll max_index = 0;
+    ll min_index = 0;
+    for (ll i = 0; i < n + 1; i++) {
         if (vec[i] > vec[max_index]) {
             max_index = i;
         }
     }
-    int min_index = max_index;
-    for (int i = 0; i < n + 1; i++) {
+    for (ll i = 0; i < max_index; i++) {
         if (vec[i] <= vec[min_index]) {
             min_index = i;
         }
