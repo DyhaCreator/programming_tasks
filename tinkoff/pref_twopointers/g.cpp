@@ -5,30 +5,33 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    int n;
+    ll n;
     cin >> n;
-    vector<ll>vec = vector<ll>(n + 1);
-    for (int i = 1; i < n + 1; i++) {
-        int x;
+    vector<ll>a(n);
+    for (ll &x : a)
         cin >> x;
-        vec[i] = vec[i - 1] + x;
-        //cout << vec[i] << " ";
-    }
-    //cout << endl;
-    ll max_index = 0;
-    ll min_index = 0;
-    for (ll i = 0; i < n + 1; i++) {
-        if (vec[i] > vec[max_index]) {
-            max_index = i;
-        }
-    }
-    for (ll i = 0; i < max_index; i++) {
-        if (vec[i] <= vec[min_index]) {
-            min_index = i;
-        }
-    }
-    
-    cout << min_index + 1 << " " << max_index << " " << vec[max_index] - vec[min_index] << endl;
+    // как дела?
 
+
+    ll ans = a[0];
+	ll ans_l = 0;
+    ll ans_r = 0;
+	ll sum = 0;
+    ll min_sum = 0;
+	ll min_pos = -1;
+    for (ll r = 0; r < n; ++r) {
+	    sum += a[r];
+	    ll cur = sum - min_sum;
+	    if (cur > ans) {
+		    ans = cur;
+		    ans_l = min_pos + 1;
+		    ans_r = r;
+	    }
+	    if (sum <= min_sum) {
+		    min_sum = sum;
+		    min_pos = r;
+	    }
+    }
+    cout << ans_l + 1 << endl << ans_r + 1 << endl;
     return 0;
 }
