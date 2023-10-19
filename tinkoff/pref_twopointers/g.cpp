@@ -15,24 +15,20 @@ int main() {
         //cout << vec[i] << " ";
     }
     //cout << endl;
-    int l = 1;
-    int r = 1;
-    ll max_sum = vec[r] - vec[l - 1];
-    for (int i = 1; i < n + 1; i++) {
-        for (int j = i; j < n + 1; j++) {
-            ll sum = vec[j] - vec[i - 1];
-            if (sum > max_sum) {
-                max_sum = sum;
-                l = i;
-                r = j;
-            } else if (sum == max_sum && (j < r || i > l)) {
-                max_sum = sum;
-                l = i;
-                r = j;
-            }
-            //cout << sum << " " << i << ' ' << j << ' ' << max_sum << " " << l << " " << r << endl;
+    int max_index = 0;
+    for (int i = 0; i < n + 1; i++) {
+        if (vec[i] > vec[max_index]) {
+            max_index = i;
         }
     }
-    cout << l << ' ' << r << ' ' << max_sum << endl;
+    int min_index = max_index;
+    for (int i = 0; i < n + 1; i++) {
+        if (vec[i] <= vec[min_index]) {
+            min_index = i;
+        }
+    }
+    
+    cout << min_index + 1 << " " << max_index << " " << vec[max_index] - vec[min_index] << endl;
+
     return 0;
 }
