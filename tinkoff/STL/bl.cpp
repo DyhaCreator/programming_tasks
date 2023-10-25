@@ -27,6 +27,10 @@ int main() {
                 }
             }
         }
+        for (int j = i; j < i + k; j++) {
+            cout << a[j] << " ";
+        }
+        cout << endl;
         cout << a[min_ind] << endl;
     }
     return 0;
