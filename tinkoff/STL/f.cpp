@@ -24,7 +24,6 @@ inline bool operator<(const part& lhs, const part& rhs)
     }
     a = abs(lhs.w - 75);
     b = abs(rhs.w - 75);
-
     if (a != b) {
         return a < b;
     }
