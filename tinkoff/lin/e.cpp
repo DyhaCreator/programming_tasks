@@ -1,46 +1,44 @@
-#include <algorithm>
 #include <iostream>
-#include <vector>
+#include <cmath>
 #define ll long long
-using namespace std;
 
-int main() {
-    int n, k;
-    cin >> n >> k;
-    vector<ll>a = vector<ll>();
-    for (int i = 0; i < n; i++) {
-        ll x;
-        cin >> x;
-        a.push_back(x);
+ll min(ll a1, ll a2){
+    if(a1 < a2){
+        return a1;
     }
-    vector<ll>sum = vector<ll>(n + 1, 0);
-    for (int i = 1; i < n + 1; i++) {
-        sum[i] = sum[i - 1] + a[i - 1];
+    return a2;
+}
+ll max(ll a1, ll a2){
+    if(a1 > a2){
+        return a1;
     }
-    ll max = 0;
-    for (int i = 0; i + k <= n; i++) {
-        if (sum[i + k] - sum[i] > sum[max + k] - sum[max]) {
-            max = i;
-        }
+    return a2;
+}
+
+int main(){
+    ll a[100000];
+    ll s[100000];
+    ll pref[100000];
+    ll suff[100000];
+    ll n, k;
+    std::cin >> n >> k;
+
+    for (int i = 1; i <= n; i++) {
+        scanf("%d", &a[i]);
+        s[i] = s[i - 1] + a[i];
     }
-    //cout << max << endl;
-    a.erase(a.begin() + max, a.begin() + max + k);
-    /*for (auto x : a)
-        cout << x << " ";
-    cout << endl;*/
-    sum = vector<ll>(n - k + 1, 0);
-    for (int i = 1; i < sum.size(); i++) {
-        sum[i] = sum[i - 1] + a[i - 1];
-        //cout << sum[i] << " ";
+    for (int i = k; i <= n; i++) {
+        pref[i] = max(pref[i - 1], s[i] - s[i - k]);
     }
-    //cout << endl;
-    max = 0;
-    for (int i = 0; i + k < sum.size(); i++) {
-        if (sum[i + k] - sum[i] > sum[max + k] - sum[max]) {
-            max = i;
-        }
+    for (int i = n - k + 1; i >= 1; i--) {
+        suff[i] = max(suff[i + 1], s[i + k - 1] - s[i - 1]);
     }
-    cout << sum[max + k] - sum[max] << endl;
+    ll best = 2e18;
+    for (int i = 1; i <= n - k + 1; i++) {
+        best = min(best, max(pref[i - 1], suff[i + k]));
+    }
+    std::cout << best << std::endl;
+
     return 0;
 }
 /*
