@@ -17,7 +17,7 @@ int main(){
     }
     //cout << endl;
     ll min = 1e18 + 10;
-    for(int i = k; i < n; i++) {
+    for(int i = k; i <= n; i++) {
         ll max = -1;
         for (int j = k; j <= n; j++) {
             if (j - k + 1 > i || j < i - k + 1) {
