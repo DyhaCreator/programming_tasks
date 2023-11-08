@@ -3,6 +3,8 @@
 #define ll long long
 using namespace std;
 
+int n;
+
 ll min(ll a, ll b) {
     if (a < b) {
         return a;
@@ -10,8 +12,17 @@ ll min(ll a, ll b) {
     return b;
 }
 
+int max_ind(vector<int>a) {
+    int maxi = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] > a[maxi]) {
+            maxi = i;
+        }
+    }
+    return maxi;
+}
+
 int main() {
-    int n;
     cin >> n;
     vector<int>a = vector<int>();
     for (int i = 0; i < n; i++) {
@@ -19,13 +30,6 @@ int main() {
         cin >> x;
         a.push_back(x);
     }
-    for (int i = 0; i < n; i++) {
-        ll sum = 0;
-        for (int j = i; j < n; j++) {
-            cout << min(a[j - 1], a[j]) << " ";
-            sum += min(a[j - 1], a[j]);
-        }
-        cout << sum << endl;
-    }
+    
     return 0;
 }

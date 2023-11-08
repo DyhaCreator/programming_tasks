@@ -12,5 +12,6 @@ int main() {
             cin >> a[i][j];
         }
     }
+    
     return 0;
 }
