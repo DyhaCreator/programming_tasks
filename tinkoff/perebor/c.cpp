@@ -1,35 +1,35 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 #define ll long long
 using namespace std;
 
-int n, k;
+int nut, k;
 
-ll sum(vector<int>a) {
-    ll ans = 0;
-    for (int i = 0; i < n; i++) {
-        ans += a[i];
-    }
-    return ans;
-}
+int a[100] = {0};
 
-void rec(int n, vector<int>a) {
+void rec(int n, int pos, ll sum) {
     if (n == 0) {
-        if (sum(a) == k) {
-            for (auto x : a)
-                cout << x;
+        if (sum == k) {
+            for (int i = 0; i < nut; i++) {
+                cout << a[i];
+            }
             cout << endl;
         }
         return;
     }
-    a.push_back(0);
-    rec(n - 1, a);
-    a[a.size() - 1]++;
-    rec(n - 1, a);
+    if (k - sum <= n - 1) {
+        a[pos] = 0;
+        rec(n - 1, pos + 1, sum);
+    }
+    if (sum < k) {
+        a[pos] = 1;
+        rec(n - 1, pos + 1, sum + 1);
+    }
 }
 
 int main() {
-    cin >> n >> k;
-    rec(n, vector<int>());
+    cin >> nut >> k;
+    rec(nut, 0, 0);
     return 0;
 }
