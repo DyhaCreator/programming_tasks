@@ -6,64 +6,55 @@
 #define ll long long
 using namespace std;
 
-vector<int> right(vector<int>a) {
-    reverse(a.begin(), a.end());
-    stack<int>st;
-    stack<int>index;
-    st.push(-1);
-    index.push(-1);
-    vector<int>ans = vector<int>();
-    for (int i = 0; i < n; i++) {
-        while (st.top() >= a[i]) {
-            st.pop();
-            index.pop();
-        }
-        ans.push_back(index.top());
-        st.push(a[i]);
-        index.push(n - i - 1);
-    }
-    reverse(ans.begin(), ans.end());
-    return ans;
-}
-
-vector<int> left(vector<int>a) {
-    stack<int>st;
-    stack<int>index;
-    st.push(-1);
-    index.push(-1);
-    vector<int>ans = vector<int>();
-    for (int i = 0; i < n; i++) {
-        while (st.top() >= a[i]) {
-            st.pop();
-            index.pop();
-        }
-        ans.push_back(index.top());
-        st.push(a[i]);
-        index.push(i);
-    }
-    return ans;
-}
+int n, k;
 
 int main() {
-    int n, k;
     cin >> n >> k;
-    vector<ll>a = vector<ll>(n);
+    vector<int>a = vector<int>(n);
     for (auto &x : a)
         cin >> x;
-    vector<ll>b = vector<ll>(n);
+    vector<int>b = vector<int>(n);
     for (int i = 0; i < n; i++) {
         if (a[i] < a[n - i - 1]) {
             b[i] = a[n - i - 1] - a[i];
         }
     }
-    for (auto x : b)
-        cout << x << " ";
-    cout << endl;
-    while (true) {
-        ll sum = 0;
+    int ans = 0;
+    ll sum = 1;
+    while (sum != 0) {
+        sum = 0;
         for (int i = 0; i < n; i++) {
-            
+            if (b[i] >= k) {
+                b[i] -= k;
+                sum += k;
+            } else if (b[i] == 0 && sum > 0) {
+                ans++;
+                sum = 0;
+            }
         }
+        for (int i = 0; i < n; i++) {
+            if (b[i] == 2) {
+                b[i] -= 2;
+                sum += 2;
+            } else if (b[i] == 0 && sum > 0) {
+                ans++;
+                sum = 0;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (b[i] == 1) {
+                b[i] -= 1;
+                sum += 1;
+            } else if (b[i] == 0 && sum > 0) {
+                ans++;
+                sum = 0;
+            }
+        }
+        //cout << sum << endl;
+        for (auto x : b)
+            cout << x << " ";
+        cout << endl;
     }
+    cout << ans - 1 << endl;
     return 0;
 }
