@@ -30,7 +30,7 @@ int main() {
     for (auto &x : w)
         for (auto &y : x)
             cin >> y;
-    clock_t start = clock();
+    //clock_t start = clock();
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if (i != j) {
@@ -45,6 +45,6 @@ int main() {
         }
         cout << "\n";
     }
-    cout << (double)(clock() - start)/CLOCKS_PER_SEC << endl;
+    //cout << (double)(clock() - start)/CLOCKS_PER_SEC << endl;
     return 0;
 }
