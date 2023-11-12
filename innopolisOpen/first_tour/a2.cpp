@@ -9,9 +9,12 @@ using namespace std;
 int main() {
     ll a, b, x, y;
     cin >> a >> b >> x >> y;
+    ll l = 0;
+    ll r = a + b;
     ll min_k = 0;
     ll min_r = 1e18 + 10;
-    for (int i = 0; i <= a + b; i++) {
+    while (l < r) {
+        ll i = (l + r) / 2;
         ll suma;
         if (i <= a) {
             suma = x * i;
@@ -28,8 +31,12 @@ int main() {
             min_r = abs(suma - sumb);
             min_k = i;
         }
-        //cout << suma << " " << sumb << endl;
+        if (suma - sumb < 0) {
+            l = i + 1;
+        } else {
+            r = i;
+        }
     }
-    cout << min_k << "\n";
+    cout << min_k << endl;
     return 0;
 }
