@@ -8,7 +8,9 @@ vector<vector<int>>w;
 
 ll min_sum = 1e18 + 10;
 
-void rec(vector<int>l, int index, int cindex, ll sum) {
+vector<int>l;
+
+void rec(int index, int cindex, ll sum) {
     if (index == cindex) {
         min_sum = min(sum, min_sum);
         return;
@@ -16,7 +18,7 @@ void rec(vector<int>l, int index, int cindex, ll sum) {
     for (int i = 0; i < n; i++) {
         if (l[i] == 0) {
             l[i] = 1;
-            rec(l, i, cindex, sum + w[index][i]);
+            rec(i, cindex, sum + w[index][i]);
             l[i] = 0;
         }
     }
@@ -28,13 +30,14 @@ int main() {
     for (auto &x : w)
         for (auto &y : x)
             cin >> y;
+    clock_t start = clock();
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if (i != j) {
                 min_sum = 1e18 + 10;
-                vector<int>a = vector<int>(n, 0);
-                a[i] = 1;
-                rec(a, i, j, 0);
+                l = vector<int>(n, 0);
+                l[i] = 1;
+                rec(i, j, 0);
                 cout << min_sum << " ";
             } else {
                 cout << 0 << " ";
@@ -42,5 +45,6 @@ int main() {
         }
         cout << "\n";
     }
+    cout << (double)(clock() - start)/CLOCKS_PER_SEC << endl;
     return 0;
 }
