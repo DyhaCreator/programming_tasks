@@ -3,15 +3,16 @@
 #include <vector>
 #include <stack>
 #include <deque>
+#include <set>
+#include <unordered_set>
 #define ll long long
 using namespace std;
 
-ll n, x, y;
+int n, x, y;
 vector<ll>days;
 
 bool f(ll day) {
     for (int i = 0; i < n; i++) {
-        //cout << days[i] << " " << fase(days[i], day) << endl;
         if ((days[i] - day + 1) % (x + y) > x || (days[i] - day + 1) % (x + y) == 0) {
             return false;
         }
@@ -24,21 +25,19 @@ int main() {
     days = vector<ll>(n);
     for (auto &x : days)
         cin >> x;
-    for (int i = 1; i <= x + y; i++) {
-        //bool ans = f(i);
-        //cout << i << " " << ans << endl << endl;
-        if (f(i) == 1) {
-            cout << i << endl;
+    vector<ll>a = vector<ll>(n);
+    for (int i = 0; i < n; i++) {
+        a[i] = (days[i] - 1) % (x + y);
+    }
+    unordered_set<ll>st;
+    for (auto z : a)
+        st.insert(z);
+    for (auto i : st) {
+        if (f(i + 1) == 1) {
+            cout << i + 1 << endl;
             return 0;
         }
     }
     cout << -1 << endl;
     return 0;
 }
-
-/*
-
-3 3 1
-5 8 11
-
-*/
