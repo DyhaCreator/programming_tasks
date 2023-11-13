@@ -11,6 +11,7 @@ int main() {
     vector<int>a = vector<int>(n);
     for (auto &x : a) 
         cin >> x;
+    vector<int>b = vector<int>();
     
     return 0;
 }

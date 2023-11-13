@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 #include <deque>
@@ -11,6 +12,7 @@ int main() {
     for (auto &x : a) 
         cin >> x;
     for (int k = 1; k <= n; k++) {
+        vector<int>b = vector<int>();
         deque<int>d;
         int ans = 1e9 + 10;
         for (int j = 0; j < n; j++) {
@@ -22,13 +24,17 @@ int main() {
                 d.pop_front();
             }
             if (j >= k - 1) {
-                //cout << a[d.front()] << endl;
+                b.push_back(a[d.front()]);
                 if (a[d.front()] < ans) {
                     ans = a[d.front()];
                 }
             }
         }
-        cout << ans << " ";
+        //sort(b.begin(), b.end());
+        for (auto x : b)
+            cout << x << " ";
+        cout << endl;
+        //cout << ans << " ";
     }
     cout << endl;
     return 0;
