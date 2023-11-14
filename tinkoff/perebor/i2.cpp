@@ -16,16 +16,18 @@ bool in(int a, int b, vector<int>c, vector<int>d) {
 
 bool f(vector<int>posx, vector<int>posy, int x, int y) {
     for (int i = 0; i < posx.size() - 1; i++) {
-        if (y == posy[i] || abs(x - posx[i]) == abs(y - posy[i])) {
+        if (abs(x - posx[i]) == abs(y - posy[i])) {
             return false;
         }
     }
     return true;
 }
 
-void rec(int n, vector<int>posx, vector<int>posy) {
-    /*if (n == 0) {
-    cout << "--" << endl;
+void rec(int n, vector<int>posx, vector<int>posy, vector<int>used) {
+    /*for (auto x : used)
+        cout << x << " ";
+    cout << endl;
+    if (n == 0) {cout << "--" << endl;
     for (int y = 0; y < nut; y++) {
         for (int x = 0; x < nut; x++) {
             if (in(x, y, posx, posy)) {
@@ -44,11 +46,12 @@ void rec(int n, vector<int>posx, vector<int>posy) {
     posy.push_back(0);
     for (int y = 0; y < nut; y++) {
         for (int x = posx[posx.size() - 2] + 1; x < nut; x++) {
-            if (f(posx, posy, x, y)) {
+            if (used[y] == 0 && f(posx, posy, x, y)) {
                 posx[posx.size() - 1] = x;
                 posy[posy.size() - 1] = y;
-                
-                rec(n - 1, posx, posy);
+                used[y] = y + 1;
+                rec(n - 1, posx, posy, used);
+                used[y] = 0;
             }
         }
     }
@@ -59,14 +62,16 @@ int main() {
     clock_t tStart = clock();
     vector<int>posx = vector<int>();
     vector<int>posy = vector<int>();
+    vector<int>used = vector<int>(nut, 0);
     posx.push_back(0);
     posy.push_back(0);
     for (int y = 0; y < nut; y++) {
-        for (int x = 0; x < nut; x++) {
-            posx[posx.size() - 1] = x;
-            posy[posy.size() - 1] = y;
-            rec(nut - 1, posx, posy);
-        }
+        int x = 0;
+        posx[posx.size() - 1] = x;
+        posy[posy.size() - 1] = y;
+        used[y] = y + 1;
+        rec(nut - 1, posx, posy, used);
+        used[y] = 0;
     }
     cout << ans << endl;
 
