@@ -2,7 +2,7 @@ import random
 
 f = open('testc', 'w')
 
-n, m = 500, 500
+n, m = 5000, 5000
 
 f.write(str(n) + ' ' + str(m) + '\n')
 
