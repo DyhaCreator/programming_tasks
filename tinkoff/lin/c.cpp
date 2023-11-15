@@ -53,6 +53,7 @@ int main() {
             cin >> a[i][j];
         }
     }
+    clock_t tStart = clock();
     ll max_ans = 0;
     vector<int>b = vector<int>(m);
     vector<int>ansR = vector<int>(m, -1);
@@ -87,10 +88,13 @@ int main() {
             if (L * b[i] > max) {
                 max = L * b[i];
             }
+            //cout << L * b[i] << " ";
         }
+        //cout << endl;
         max_ans = std::max(max, max_ans);
     }
     cout << max_ans << endl;
+    printf("Time taken: %.6fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
     return 0;
 }
 /*
@@ -106,4 +110,6 @@ int main() {
 0 0 0 0 1 0
 0 0 1 0 0 0
 0 0 0 0 0 0
-0 0 1 0 0 0*/
+0 0 1 0 0 0
+
+*/
