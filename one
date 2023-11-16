@@ -1,0 +1,4479 @@
+n = int(input())
+A = map(int, input().split())
+B = {}
+
+for i in A:
+    if (B.get(i) == None):
+        B[i] = 0
+    B[i] += 1
+
+for i in list(B):
+    print(i, B[i])
+
+import random
+import os
+import time
+
+name = 'a.py'
+
+f = open('testa', 'w')
+
+n = 4
+m = 3
+s = '\n'
+for i in range(n):
+    s += str(random.randint(0, m)) + ' '
+s += '\n'
+f.write(str(n))
+f.write(s)
+f.close()
+
+start_time = time.time()
+
+cmd = f'python {name} < testa'
+os.system(cmd)
+
+print("%s sec" % (time.time() - start_time))
+
+N = int(input())
+
+import telebot;
+bot = telebot.TeleBot('6683182808:AAFSo2EEeVtj6eBlRuuGg9cZZCAkapy6EO8')
+
+n = int(input())
+
+@bot.message_handler(content_types=['text'])
+def g():
+    bot.send_message(1621068777, n)
+g()
+
+'''
+
+6683182808:AAFSo2EEeVtj6eBlRuuGg9cZZCAkapy6EO8
+
+'''
+N, M, P = map(int, input().split())
+A = []
+B = []
+C = []
+D = []
+
+for i in range(N):
+    a, b, c, d = map(int, input().split())
+    A.append(a)
+    B.append(b)
+    C.append(c)
+    D.append(d)
+
+for ost in range(1, P):
+    pas = []
+    for i in range(len(C)):
+        if(ost >= C[i] and ost < D[i]):
+            pas.append(i)
+    a = [0] * (M + 1)
+    for i in range(M + 1):
+        a[i] = [0] * (len(pas) + 1)
+    for j in range(1, M + 1):
+        for i in range(1, len(pas) + 1):
+            if(j - 1 >= 0):
+                a[j][i] = max(a[j][i - 1] + B[pas[i - 1]], a[j - 1][i - 1] + A[pas[i - 1]])
+            else:
+                a[j][i] = a[j][i - 1] + B[pas[i - 1]]
+            print(a)
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+int main(){
+    std::vector<int>pic1 = std::vector<int>();
+    std::vector<int>pic2 = std::vector<int>();
+    int m, h;
+    std::cin >> m >> h;
+    for(int i = 0; i < h; i++){
+        std::string a;
+        std::cin >> a;
+        for(int j = 0; j < a.size(); j++){
+            int b = a[j] - '0';
+            pic1.push_back(b);
+        }
+    }
+    for(int i = 0; i < h; i++){
+        std::string a;
+        std::cin >> a;
+        for(int j = 0; j < a.size(); j++){
+            int b = a[j] - '0';
+            pic2.push_back(b);
+        }
+    }
+    int a, b, c, d;
+    std::string s;
+    std::cin >> s;
+    a = s[0] - '0';
+    b = s[1] - '0';
+    c = s[2] - '0';
+    d = s[3] - '0';
+    for(int i = 0; i < pic1.size(); i++){
+        if(pic1[i] == 0 && pic2[i] == 0)std::cout << a;
+        else if(pic1[i] == 0 && pic2[i] == 1)std::cout << b;
+        else if(pic1[i] == 1 && pic2[i] == 0)std::cout << c;
+        else if(pic1[i] == 1 && pic2[i] == 1)std::cout << d;
+        if(i % m == m - 1)std::cout << std::endl;
+    }
+    return 0;
+}
+
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() {
+    ll n, t;
+    cin >> n >> t;
+    vector<ll>a(n - 1);
+    for (auto &x : a)
+        cin >> x;
+    ll max_r = 0;
+    ll max_l = 0;
+    ll max_curSum = 0;
+    ll curSum = 0;
+    ll l = 0;
+    for (ll r = 0; r < n - 1; r++) {
+        curSum += a[r];
+        while (curSum * 2 > t) {
+            curSum -= a[l];
+            l++;
+        }
+        if (max_curSum < curSum) {
+            max_curSum = curSum;
+            max_l = l;
+            max_r = r;
+        }
+    }
+    if (max_curSum == 0) {
+        cout << 1 << " " << 1 << endl;
+        return 0;
+    }
+    cout << max_l + 1 << " " << max_r + 2 << endl; 
+    return 0;
+}
+
+print((10 ** 12) ** 0.5)
+
+n = int(input())
+a = int(input())
+b = int(input())
+print(min(b + 1, n - a))
+
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() {
+    ll n, m, s;
+    cin >> n >> m >> s;
+    ll max_ans = 0;
+    for (ll i = 1; i <= 100; i++) {
+        ll j = s / i;
+        if (s == i * j) {
+            ll ans = (n / i) * (m / j);
+            if (ans > max_ans) {
+                max_ans = ans;
+            }
+        }
+    }
+    cout << max_ans << endl;
+    return 0;
+}
+n = int(input())
+r = int(input())
+c = int(input())
+
+print(min(r - 1, c - 1) + min(n - r, c - 1) + min(r - 1, n - c) + min(n - r, n - c))
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() {
+    int a2;
+    cin >> a2;
+    ll r1, g1, t1;
+    ll r2, g2, t2;
+    ll r3, g3, t3;
+    ll r4, g4, t4;
+    cin >> r1 >> g1 >> t1;
+    cin >> r2 >> g2 >> t2;
+    cin >> r3 >> g3 >> t3;
+    cin >> r4 >> g4 >> t4;
+    ll min_time = 1e18;
+    if (a2 == 34) {
+            if (t1 <= g1 && t4 <= g4) {
+        ll time = r1;
+        time += t1;
+        ll a = (g4 + r4) - (time - (g4 + r4) * (time / (g4 + r4)));
+        //cout << (g4 + r4) - (time - (g4 + r4) * (time / (g4 + r4))) << endl;
+        if (a > g4) {
+            time += r4 - ((g4 + r4) - a);
+        }
+        if (a >= t4) {
+            time += t4;
+            min_time = min(time, min_time);
+        } else {
+            time += a + r4;
+        }
+        //cout << time << endl;
+    }
+    ll time = r2;
+    time += t2;
+    ll a = (g3 + r3) - (time - (g3 + r3) * (time / (g3 + r3)));
+    //cout << (g4 + r4) - (time - (g4 + r4) * (time / (g4 + r4))) << endl;
+    if (a > g3) {
+        time += r3 - ((g3 + r3) - a);
+    }
+    if (a >= t3) {
+        time += t3;
+        min_time = min(time, min_time);
+    } else {
+        time += a + r3;
+    }
+    //cout << time << endl;
+    cout << min_time << endl;
+    } else if (a2 == 23) {
+        cout << r2 + t2 << endl;
+    } else {
+        cout << r1 + t1 << endl;
+    }
+    return 0;
+}
+n = int(input())
+m = int(input())
+s = int(input())
+#include <iostream>
+#include <string>
+#include <vector>
+#define ll long long
+
+using namespace std;
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+    string name;
+    cin >> name;
+    vector<vector<int>>per = vector<vector<int>>();
+    vector<vector<char>>sym = vector<vector<int>>();
+    for (int i = 0; i < n; i++) {
+        int k;
+        vector<int>p1 = vector<int>();
+        vector<char>s1 = vector<int>();
+        for (int j = 0; j < k; j++) {
+            int x;
+            char s;
+            cin >> x >> s;
+            p1.push_back(x);
+            s1.push_back(s);
+        }
+        per.push_back(p1);
+        sym.push_back(s1);
+    }
+    return 0;
+}
+import random
+
+a = int(input())
+b = int(input())
+
+ans = random.randint(-abs(a * b), abs(a * b))
+while not((ans == a and ans <= b) or (ans == b and ans < a)):
+    ans = random.randint(-abs(a * b), abs(a * b))
+    #print(ans)
+print(ans)
+#include <iostream>
+#include <vector>
+
+int main(){
+    int n, x;
+    std::cin >> n >> x;
+    std::vector<int>a = std::vector<int>();
+    for(int i = 0; i < n; i++){
+        int c;
+        std::cin >> c;
+        a.push_back(c);
+    }
+    std::vector<int>b = std::vector<int>();
+    for(int i = 0; i < n; i++){
+        int c;
+        std::cin >> c;
+        b.push_back(c);
+    }
+
+    int oa = -2, ob = -2, ox = 1000;
+    int q;
+    for(int i = 0; i < a.size() - 1; i++){
+        q = (x / a[i]);
+        for(int j = i + 1; j < b.size(); j++){
+            int z = x - a[i] * q + b[j] * q;
+            if(z >= ox){
+                oa = i;
+                ob = j;
+                ox = z;
+            }
+        }
+    }
+    std::cout << ox << std::endl << oa + 1 << " " << ob + 1 << std::endl;
+    return 0;
+}
+n, x = map(int, input().split())
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+ma = -2
+for i in range(len(a)):
+    if(a[i] < a[ma]):
+        ma = i
+
+mb = -2
+for i in range(ma + 1, len(b)):
+    if(b[i] > b[mb]):
+        mb = i
+
+ox = round(x - a[ma] * (x / a[ma]) + b[mb] * (x / a[ma]))
+print(ox)
+if(mb != -2):
+    print(ma + 1, mb + 1)
+else:
+    print(-1, -1)
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+
+std::vector<std::string>strs = std::vector<std::string>();
+std::vector<int>sum = std::vector<int>();
+
+std::map<std::string, int>mp = std::map<std::string, int>();
+
+int f(std::string str){
+    //std::cout << str << std::endl;
+    int m = mp[str];
+    if(m > 0)return m;
+    int max = 0;
+    for(int i = 0; i < strs.size(); i++){
+        int a = str.find(strs[i]);
+        if(a != std::string::npos){
+            std::string fstr = str;
+            fstr.erase(a, strs[i].size());
+            int b = f(fstr) + sum[i];
+            if(b > max){
+                max = b;
+            }
+        }
+    }
+    mp[str] = max;
+    return max;
+}
+
+int main(){
+    int n;
+    std::cin >> n;
+    std::map<char, int>st = std::map<char, int>();
+    for(int i = 0; i < n; i++){
+        char col;
+        int s;
+        std::cin >> col >> s;
+        st[col] = s;
+    }
+    std::string str;
+    std::cin >> str;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        std::string s;
+        std::cin >> s;
+        int a = 0;
+        for(int j = 0; j < s.size(); j++){
+            a += st[s[j]];
+        }
+        strs.push_back(s);
+        sum.push_back(a);
+    }
+    std::cout << f(str) << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+int main(){
+    int n, m;
+    std::cin >> n >> m;
+    std::vector<std::vector<int>>mem = std::vector<std::vector<int>>();
+    mem.push_back({0, 0, 0});
+    for(int i = 0; i < m; i++){
+        int a;
+        std::cin >> a;
+        if(a >= 0){
+            int index = -1;
+            for(int j = 0; j < mem.size() - 1; j++){
+                int endIndex = mem[j][0] + mem[j][1];
+                int startIndex = mem[j + 1][0];
+                if(startIndex - endIndex >= a){
+                    index = endIndex;
+                }
+            }
+            if(index == -1){
+                index = mem[mem.size() - 1][0] + mem[mem.size() - 1][1];
+            }
+            if(index + a > n){
+                std::cout << -1 << std::endl;
+            }
+            else{
+                std::cout << index + 1 << std::endl;
+                mem.push_back({index, a, i + 1});
+                std::sort(mem.begin(), mem.end());
+            }
+        }
+        else{
+            int index = -1;
+            for(int j = 0; j < mem.size(); j++){
+                if(mem[j][2] == -a){
+                    index = j;
+                    break;
+                }
+            }
+            if(index != -1){
+                mem.erase(mem.begin() + index);
+            }
+        }
+        /*for(int j = 0; j < mem.size(); j++){
+            std::cout << mem[j][0] << " " << mem[j][1] << " " << mem[j][2] << std::endl;
+        }*/
+    }
+    return 0;
+}
+n, m = map(int, input().split())
+
+mem = [(0, 0, 0)]
+#print(mem)
+
+for i in range(m):
+    a = int(input())
+    if(a >= 0):
+        index = -1
+        for j in range(len(mem) - 1):
+            endIndex = mem[j][0] + mem[j][1]
+            startIndex = mem[j + 1][0]
+            #print(startIndex - endIndex)
+            if(startIndex - endIndex >= a):
+                index = endIndex
+                break
+        if(index == -1):
+            index = mem[len(mem) - 1][0] + mem[len(mem) - 1][1]
+
+        if(index + a > n):
+            print(-1)
+        else:
+            print(index + 1)
+            mem.append((index, a, i + 1))
+            mem.sort(key = lambda x: x[0])
+    else:
+        index = -1
+        for j in range(len(mem)):
+            if(mem[j][2] == -a):
+                index = j
+                break
+        if(index != -1):mem.pop(index)
+    #print(mem)
+#include <iostream>
+#include <vector>
+#include <map>
+
+bool sorted(std::vector<int>a){
+    for(int i = 0; i < a.size(); i++){
+        bool c = true;
+        for(int j = 0; j < a.size() - 1; j++){
+            int b = j + i;
+            int b2 = j + i + 1;
+            if(b > a.size() - 1){
+                b -= a.size();
+            }
+            if(b2 > a.size() - 1){
+                b2 -= a.size();
+            }
+            if(a[b] > a[b2]){
+                c = false;
+            }
+            //std::cout << a[b] << " ";
+        }
+        //std::cout << c << std::endl;
+        if(c == true){
+            return true;
+        }
+    }
+    return false;
+}
+
+std::map<std::vector<int>, std::vector<int>>mp = std::map<std::vector<int>, std::vector<int>>();
+std::vector<int>min = std::vector<int>();
+
+void sort(std::vector<int>a, std::vector<int>ab){
+    for(int i = 0; i < a.size(); i++){
+        std::cout << a[i] << " ";
+    }
+    std::cout << std::endl;
+    for(int i = 0; i < ab.size(); i++){
+        std::cout << ab[i] << " ";
+    }
+    std::cout << std::endl;
+
+    mp[a] = ab;
+    if(sorted(a)){
+        if(ab.size() < min.size()){
+            min = ab;
+        }
+        else if(min.size() == 0){
+            min = ab;
+        }
+        return;
+    }
+
+    for(int i = 0; i < a.size() - 1; i++){
+        if(abs(a[i] - a[i + 1]) >= 2){
+            std::vector<int>b = a;
+            int temp = b[i];
+            b[i] = b[i + 1];
+            b[i + 1] = temp;
+            std::vector<int>ab2 = ab;
+            ab2[0]++;
+            ab2.push_back(a[i + 1]);
+            ab2.push_back(a[i]);
+            if(mp[b].size() == 0){
+                sort(b, ab2);
+            }
+            else if(mp[b][0] > ab2[0]){
+                sort(b, ab2);
+            }
+        }
+    }
+    if(abs(a[0] - a[a.size() - 1]) >= 2){
+        std::vector<int>b = a;
+        int temp = b[0];
+        b[0] = b[a.size() - 1];
+        b[a.size() - 1] = b[0];
+        std::vector<int>ab2 = ab;
+        ab2[0]++;
+        ab2.push_back(a[0]);
+        ab2.push_back(a[a.size() - 1]);
+        if(mp[b].size() == 0){
+            sort(b, ab2);
+        }
+        else if(mp[b][0] > ab2[0]){
+            sort(b, ab2);
+        }
+    }
+}
+
+int main(){
+    int n = 0;
+    std::cin >> n;
+    std::vector<int>a = std::vector<int>();
+    for(int  i = 0; i < n; i++){
+        int b;
+        std::cin >> b;
+        a.push_back(b);
+    }
+    mp[a] = {0};
+    sort(a, {0});
+    for(int i = 1; i < min.size(); i++){
+        std::cout << min[i] << " ";
+        if(i % 2 == 0){
+            std::cout << std::endl;
+        }
+    }
+    std::cout << 0 << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <map>
+
+bool sorted(std::vector<int>a){
+    for(int i = 0; i < a.size(); i++){
+        bool c = true;
+        for(int j = 0; j < a.size() - 1; j++){
+            int b = j + i;
+            int b2 = j + i + 1;
+            if(b > a.size() - 1){
+                b -= a.size();
+            }
+            if(b2 > a.size() - 1){
+                b2 -= a.size();
+            }
+            if(a[b] > a[b2]){
+                c = false;
+            }
+            //std::cout << a[b] << " ";
+        }
+        //std::cout << c << std::endl;
+        if(c == true){
+            return true;
+        }
+    }
+    return false;
+}
+
+std::map<std::vector<int>, std::vector<int>>mp = std::map<std::vector<int>, std::vector<int>>();
+std::vector<int>min = std::vector<int>();
+
+void sort(std::vector<int>a, std::vector<int>ab){
+    for(int i = 0; i < a.size(); i++){
+        std::cout << a[i] << " ";
+    }
+    std::cout << std::endl;
+    for(int i = 0; i < ab.size(); i++){
+        std::cout << ab[i] << " ";
+    }
+    std::cout << std::endl;
+
+    mp[a] = ab;
+    if(sorted(a)){
+        if(ab.size() < min.size()){
+            min = ab;
+        }
+        else if(min.size() == 0){
+            min = ab;
+        }
+        return;
+    }
+
+    for(int i = 0; i < a.size() - 1; i++){
+        if(abs(a[i] - a[i + 1]) >= 2){
+            std::vector<int>b = a;
+            int temp = b[i];
+            b[i] = b[i + 1];
+            b[i + 1] = temp;
+            std::vector<int>ab2 = ab;
+            ab2[0]++;
+            ab2.push_back(a[i + 1]);
+            ab2.push_back(a[i]);
+            if(mp[b].size() == 0){
+                sort(b, ab2);
+            }
+            else if(mp[b][0] > ab2[0]){
+                sort(b, ab2);
+            }
+        }
+    }
+    if(abs(a[0] - a[a.size() - 1]) >= 2){
+        std::vector<int>b = a;
+        int temp = b[0];
+        b[0] = b[a.size() - 1];
+        b[a.size() - 1] = b[0];
+        std::vector<int>ab2 = ab;
+        ab2[0]++;
+        ab2.push_back(a[0]);
+        ab2.push_back(a[a.size() - 1]);
+        if(mp[b].size() == 0){
+            sort(b, ab2);
+        }
+        else if(mp[b][0] > ab2[0]){
+            sort(b, ab2);
+        }
+    }
+}
+
+int main(){
+    int n = 0;
+    std::cin >> n;
+    std::vector<int>a = std::vector<int>();
+    for(int  i = 0; i < n; i++){
+        int b;
+        std::cin >> b;
+        a.push_back(b);
+    }
+    mp[a] = {0};
+    sort(a, {0});
+    for(int i = 1; i < min.size(); i++){
+        std::cout << min[i] << " ";
+        if(i % 2 == 0){
+            std::cout << std::endl;
+        }
+    }
+    std::cout << 0 << std::endl;
+    return 0;
+}
+n = int(input())
+
+a = list(map(int, input().split()))
+
+def sorted(a):
+    for i in range(len(a)):
+        c = True
+        for j in range(len(a) - 1):
+            b = i + j
+            b2 = i + j + 1
+            if(b > len(a) - 1):
+                b -= len(a)
+            if(b2 > len(a) - 1):
+                b2 -= len(a)
+            if(a[b] > a[b2]):
+                c = False
+            #print(a[b], end=' ')
+        #print(c)
+        if(c == True):
+            return True
+    return False
+
+print(sorted(a))
+ans = 0
+for i in range(1, 8192):
+    sd = 0
+    d = i + 1
+    while(d > 0):
+        sd += d % 2
+        d = d // 2
+    sb = 0
+    b = i
+    while(b > 0):
+        sb += b % 2
+        b = b // 2
+    if(sb / sd == 3):
+        #print(i)
+        ans += 1
+print(ans)
+from copy import deepcopy
+
+n = int(input())
+
+def s(a):
+    sf = 0
+    ss = 0
+    for i in range(len(a)):
+        if(a[i][1] == 1):
+            sf += a[i][0]
+        else:
+            ss += a[i][0]
+    return abs(sf - ss)
+
+a = []
+for i in range(n):
+    a.append(list(map(int, input().split())))
+a.append([0, 1])
+#print(a)
+#print(s(a))
+
+m = s(a)
+
+for i in range(0, len(a)):
+    for j in range(i + 1, len(a)):
+        b = deepcopy(a)
+        if(b[i][1] == 1):
+            b[i][1] = 2
+        else:
+            b[i][1] = 1
+        if(b[j][1] == 1):
+            b[j][1] = 2
+        else:
+            b[j][1] = 1
+        m = min(s(b), m)
+        #print(s(b))
+        #print(b)
+
+print(m)
+n = int(input())
+
+a = []
+for i in range(n):
+    a.append(int(input()))
+ml = -1
+mr = n + 2
+
+for i in range(1, n - 1):
+    l = i - 1
+    r = i + 1
+    if(a[l] < a[i] and a[r] < a[i]):
+        print(l + 1)
+        print(r + 1)
+        exit(0)
+    elif(a[l] < a[i] and a[r] == a[i]):
+        while(r < n and a[r] == a[i]):
+            r += 1
+        if(a[r] < a[i] and r - l < mr - ml):
+            ml = l
+            mr = r
+        i = r + 1
+if(ml == -1 and mr == n + 2):
+    print(0)
+else:
+    print(ml + 1)
+    print(mr + 1)
+a = int(input())
+b = int(input())
+
+c = a + b
+
+if(c <= 0 and a > 0):
+    c -= 1
+elif(c >= 0 and a < 0):
+    c += 1
+
+print(c)
+a = int(input())
+b = int(input())
+c = int(input())
+
+ans = float('inf')
+if(a * 4 < ans):
+    ans = a * 4
+if(b * 2 + 1 < ans):
+    ans = b * 2 + 1
+if(c * 4 + 2 < ans):
+    ans = c * 4 + 2
+print(ans)
+l = int(input())
+n = int(input())
+
+a = []
+for i in range(n):
+    a.append(int(input()))
+
+ans = 0
+i = 0
+while(i < len(a)):
+    if(a[i] == 1):
+        ans += 1
+        i += l - 1
+    i += 1
+#print(a)
+print(ans)
+#include <iostream>
+
+int f(int a){
+    int ans = 0;
+    for(int i = 0; i < a + 1; i++){
+        int s = 0;
+        int b = i;
+        while(b > 0){
+            s += b % 10;
+            b = b / 10;
+        }
+        if(s % 2 == 1){
+            ans += 1;
+        }
+    }
+    return ans;
+}
+
+int main(){
+    int a, b;
+    std::cin >> a >> b;
+    std::cout << f(b) - f(a - 1) << std::endl;
+    return 0;
+}
+a = int(input())
+b = int(input())
+
+def f(a):
+    ans = 0
+    for i in range(0, a + 1):
+        s = 0
+        b = i
+        while(b > 0):
+            s += b % 10
+            b = b // 10
+        if(s % 2 == 1):
+            ans += 1
+    return ans
+
+print(f(b) - f(a - 1))
+#include <iostream>
+#include <algorithm>
+#include <vector>
+ 
+int main() {
+    std::vector<int> vec = std::vector<int>();
+
+    int num;
+    while(true){
+        std::cin >> num;
+        if(num == 0){
+            break;
+        }
+        vec.push_back(num);
+    }
+
+    std::sort(vec.begin(), vec.end());
+
+    int col = 1;
+
+    for(int i = 0; i < vec.size(); i++){
+        if(vec[i] != vec[i + 1]){
+            std::cout << vec[i] << " " << col << std::endl;
+            col = 1;
+        }
+        else{
+            col++;
+        }
+    }
+
+    std::sort(vec.begin(), vec.end());
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    std::vector<int>left = std::vector<int>();
+    std::vector<int>right = std::vector<int>();
+    int L, W;
+    std::cin >> L >> W;
+    int N, M;
+    std::cin >> N;
+    for(int i = 0; i < N; i++){
+        int a;
+        std::cin >> a;
+        left.push_back(a);
+    }
+    std::cin >> M;
+    for(int i = 0; i < M; i++){
+        int a;
+        std::cin >> a;
+        right.push_back(a);
+    }
+    for(int i = 0; i < N; i++){
+        for(int j = 0; j < M; j++){
+            std::vector<int>size = std::vector<int>();
+            int n0 = 
+        }
+    }
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    std::vector<int>a = std::vector<int>();
+    std::vector<int>b = std::vector<int>();
+    int n, m;
+    std::cin >> n >> m;
+    for(int i = 0; i < m; i++){
+        int c;
+        std::cin >> c;
+        a.push_back(c);
+    }
+    for(int i = 0; i < n; i++){
+        int c;
+        std::cin >> c;
+        b.push_back(c);
+    }
+    int key;
+    key = b[0];
+    b.erase(b.begin());
+    a.erase(a.begin());
+    int new_index_key = b.size();
+    for(int j = 0; j < a.size(); j++){
+        if(a[j] == key){
+            new_index_key = j;
+            break;
+        }
+    }
+    b.emplace(b.begin() + new_index_key, key);
+
+    for(int i = 0; i < a.size(); i++){
+        std::cout << a[i] << " ";
+    }
+    std::cout << std::endl;
+
+    for(int i = 0; i < b.size(); i++){
+        std::cout << b[i] << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+struct Struct{
+    std::vector<int>all = std::vector<int>();
+
+    Struct(){}
+    Struct(std::vector<int>a, int m){
+        int sz = 1;
+        while(sz < a.size())
+            sz*=2;
+        all.resize(sz * 2 - 1, 0);
+        for(int i = 0; i < a.size(); i++){
+            all[sz + i - 1] = a[i];
+        }
+        update(0, m);
+    }
+
+    void update(int v, int mode){
+        if(v >= all.size() / 2)
+            return;
+        update(v * 2 + 1, mode);
+        update(v * 2 + 2, mode);
+        if(mode == 0){
+            all[v] = all[v * 2 + 1] + all[v * 2 + 2];
+        }
+        if(mode == 1){
+            all[v] = std::max(all[v * 2 + 1], all[v * 2 + 2]);
+        }
+    }
+
+    void set(int i, int v){
+        all[i + all.size() / 2] = v;
+        update(0, 0);
+    }
+
+    int sum(int L, int R){
+        L += all.size() / 2;
+        R += all.size() / 2;
+        int ans = 0;
+        while(L <= R){
+            if(L % 2 != 0)ans += all[L - 1];
+            if(R % 2 == 0)ans += all[R - 1];
+            L = (L + 1) / 2;
+            R = (R - 1) / 2;
+        }
+        return ans;
+    }
+
+    int max_(int L, int R){
+        L += all.size() / 2;
+        R += all.size() / 2;
+        int ans = 0;
+        while(L <= R){
+            if(L % 2 != 0)ans = std::max(all[L - 1], ans);
+            if(R % 2 == 0)ans = std::max(all[R - 1], ans);
+            L = (L + 1) / 2;
+            R = (R - 1) / 2;
+        }
+        return ans;
+    }
+};
+
+int main(){
+    std::vector<int>down = std::vector<int>();
+    int n;
+    std::cin >> n;
+
+    for(int i = 0; i < n; i++){
+        int num;
+        std::cin >> num;
+        down.push_back(num);
+    }
+
+    Struct *stru = new Struct(down, 1);
+
+    //std::cout << stru -> sum(2,3) << std::endl;
+    std::cout << stru -> max_(2, 3) << std::endl;
+
+    for(int i = 0; i < stru -> all.size(); i++){
+        std::cout << stru -> all[i] << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+#include<algorithm>
+#include<iostream>
+#include<vector>
+
+struct node{
+    int x;
+
+    node* right;
+    node* left;
+
+    node(){}
+    node(int val): x(val), right(nullptr){}
+
+    void print(node *root){
+        if(root != nullptr){
+            std::cout << root -> x << std::endl;
+            if(root -> left != nullptr){
+                print(root -> left);
+            }
+            if(root -> right != nullptr){
+                print(root -> right);
+            }
+        }
+    }
+};
+
+int SecondMax(node* root){
+    node *lastNode = nullptr;
+    while(root -> right != nullptr){
+        lastNode = root;
+        root = root -> right;
+    }
+    if(root -> left != nullptr){
+        return root -> left -> x;
+    }
+    return lastNode -> x;
+}
+
+int height(node* root)
+{
+    if (root == nullptr) {
+        return 0;
+    }
+
+    return 1 + std::max(height(root->left), height(root->right));
+}
+
+node* add(node *root, node *obj){
+    if(root == nullptr){
+        return obj;
+    }
+    if(root -> x < obj -> x){
+        if(root -> right == nullptr){
+            root -> right = obj;
+            return root;
+        }
+        else{
+            add(root -> right, obj);
+        }
+    }
+    else if(root -> x > obj -> x){
+        if(root -> left == nullptr){
+            root -> left = obj;
+            return root;
+        }
+        else{
+            add(root -> left, obj);
+        }
+    }
+    return root;
+}
+
+void printLists(node *root){
+    if(root -> left == nullptr && root -> right == nullptr){
+        std::cout << root -> x << std::endl;
+    }
+    else{
+        if(root -> left != nullptr){
+            printLists(root -> left);
+        }
+        if(root -> right != nullptr){
+            printLists(root -> right);
+        }
+    }
+}
+std::vector<int>r = std::vector<int>();
+void printR(node *root){
+    if(root -> left != nullptr && root -> right != nullptr){
+        r.push_back(root -> x);
+    }
+    if(root -> left != nullptr){
+        printR(root -> left);
+    }
+    if(root -> right != nullptr){
+        printR(root -> right);
+    }
+}
+
+void printV(node *root){
+    if((root -> left != nullptr && root -> right == nullptr) || (root -> left == nullptr && root -> right != nullptr)){
+        r.push_back(root -> x);
+    }
+    if(root -> left != nullptr){
+        printV(root -> left);
+    }
+    if(root -> right != nullptr){
+        printV(root -> right);
+    }
+}
+
+bool balansed(node *root){
+    if((height(root -> left) == 0 || height(root -> right) == 0) && abs(height(root -> left) - height(root -> right)) <= 1){
+        return true;
+    }
+    if(abs(height(root -> left) - height(root -> right)) <= 1){
+        return balansed(root -> left) && balansed(root -> right);
+    }
+    return false;
+}
+
+int main(){
+    node *root = nullptr; 
+    int num = 1;
+    while(num != 0){
+        std::cin >> num;
+        if(num == 0){
+            break;
+        }
+        root = add(root, new node(num));
+    }
+
+    //std::cout << abs(height(root -> left) - height(root -> right)) << std::endl;
+
+    if(balansed(root)){
+        std::cout << "YES" << std::endl;
+    }
+    else{
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <set>
+
+int main(){
+    std::vector<int>v = std::vector<int>();
+    int n;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        v.push_back(a);
+    }
+    
+    int b[20000];
+    for(int i = 0; i < n; i++){
+        std::set<int>st;
+        for(int j = i; j < n; j++){
+            st.insert(v[j]);
+            b[j - i] += st.size();
+        }
+    }
+    for(int i = 0; i < n; i++){
+        std::cout << b[i] << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <set>
+
+int main(){
+    std::vector<int>v = std::vector<int>();
+    int n;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        v.push_back(a);
+    }
+    std::cout << n << " ";
+
+    for(int i = 2; i <= n; i++){
+        long col = 0;
+        for(int j = 0; j <= n - i; j++){
+            std::set<int>st;
+            for(int k = j; k < j + i; k++){
+                st.insert(v[k]);
+            }
+            col += st.size();
+        }
+        printf("%d ", col);
+    }
+    std::cout << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <stack>
+
+int64_t fib(int n){
+    int64_t a = 1, b = 1;
+    while(n - 2 > 0){
+        a += b;
+        b = a - b;
+        n--;
+    }
+    return a;
+}
+
+int main(){
+    int n;
+    std::cin >> n;
+    clock_t start = clock();
+    for(int i = 0; i < n; i++){
+        fib(i);
+    }
+    std::cout << clock() - start << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <string>
+#include <set>
+
+int main(){
+    std::set<unsigned long long>st;
+    char d;
+    while(true){
+        std::string str;
+        std::cin >> d;
+        if(d == '#'){
+            break;
+        }
+        std::cin >> str;
+        unsigned long long ans = 0;
+        for(int i = 0; i < str.size(); i++){
+            ans = (ans * 27) + (str[i] - 'a' + 1);
+        }
+        if(d == '+'){
+            st.insert(ans);
+        }
+        else if(d == '-'){
+            st.erase(ans);
+        }
+        else if(d == '?'){
+            if(st.find(ans) != st.end()){
+                std::cout << "YES" << std::endl;
+            }
+            else{
+                std::cout << "NO" << std::endl;
+            }
+        }
+    }
+    return 0;
+}
+#include <iostream>
+#include <algorithm>
+#include <vector>
+ 
+int main() {
+    std::vector<int> vec = std::vector<int>();
+
+    int num;
+    while(true){
+        std::cin >> num;
+        if(num == 0){
+            break;
+        }
+        vec.push_back(num);
+    }
+
+    std::sort(vec.begin(), vec.end());
+
+    for(int i = vec.size() - 2; i > 0; i--){
+        if(vec[i] == vec[i + 1]){
+            vec[i + 1] = 0;
+        }
+    }
+
+    std::sort(vec.begin(), vec.end());
+
+    std::cout << vec[vec.size() - 2] << std::endl;
+    return 0;
+}
+#include<iostream>
+#include<vector>
+#include<cmath>
+
+std::vector<int> tree = {0};
+
+void Shift_Up(int index){
+    while(tree[index] > tree[ceil((float)(index - 1) / 2.0)] && index > 1){
+        int buffer = tree[index];
+        tree[index] = tree[ceil((float)(index - 1) / 2.0)];
+        tree[ceil((float)(index - 1) / 2.0)] = buffer;
+        index = ceil((float)(index - 1) / 2.0);
+    }
+    //std::cout << index << std::endl;
+}
+
+void Shift_Down(int index){
+    while(index * 2 < tree.size()){
+        int right = index * 2 + 1;
+        int left = index * 2;
+
+        int j = left;
+        if (right < tree.size() && tree[right] > tree[left]){
+            j = right;
+        }
+        if(tree[index] >= tree[j]){
+            break;
+        }
+        int buffer = tree[index];
+        tree[index] = tree[j];
+        tree[j] = buffer;
+        index = j;
+    }
+    std::cout << index;
+}
+
+void ex(){
+    int i = tree[1];
+    tree[1] = tree[tree.size()-1];
+    tree.pop_back();
+    Shift_Down(1);
+    std::cout << " " << i << std::endl;
+}
+
+int main(){
+    int n;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        tree.push_back(a);
+    }
+    for(int i = 0; i < n - 1; i++){
+        ex();
+    }
+
+    /*for(int i = 1; i < tree.size(); i++){
+        std::cout << tree[i] << " ";
+    }
+    std::cout << std::endl;*/
+    return 0;
+}
+#include <iostream>
+
+struct vec{
+    int x, y;
+    vec(){}
+    vec(int x, int y){
+        this -> x = x;
+        this -> y = y;
+    }
+    vec(int x1, int y1, int x2, int y2){
+        x = x2 - x1;
+        y = y2 - y1;
+    }
+    int operator*(vec const &a){
+        return a.x * a.y + x * y;
+    }
+    int operator/(vec const &a){
+        return x*a.y - a.x*y;
+    }
+};
+
+int main(){
+    vec a(39, 21), b(-1, 4);
+
+    return 0;
+}
+#include <cstdio>
+#include <algorithm>
+#include <cmath>
+
+int main(){
+    long long a1, a2, a3, a4;
+    scanf("%lld %lld %lld %lld", &a1, &a2, &a3, &a4);
+    printf("%lld", (long long)std::sqrt((long double)std::min(a1,a2) + (long double)std::min(a3,a4)));
+    return 0;
+}
+#include <iostream>
+#include <string>
+
+int main(){
+    std::string str1, str2;
+    std::cin >> str1 >> str2;
+    if(str2.find(str1) != std::string::npos){
+        std::cout << "yes" << std::endl;
+    }
+    else{
+        std::cout << "no" << std::endl;
+    }
+    return 0;
+}
+a, k, b, m, x = map(int, input().split())
+L, R = 0, x * max(a, b)
+
+while R - L > 1:
+  M = (L + R) // 2
+  if (M - M // k) * a + (M - M // m) * b >= x:
+    R = M
+  else:
+    L = M
+
+print(R)
+#include <iostream>
+
+int main(){
+    //я не думаю что это правильное решение просто интересно
+    int n;
+    std::cin >> n;
+    if(n < 3){
+        std::cout << n << std::endl;
+        return 0;
+    }
+    std::cout << n * ((n - 1) / 2) * 2 << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main()
+{
+    unsigned long long a, k, b, m, x, l = 0, r, n;
+    std::cin >> a >> k >> b >> m >> x;
+    r = x;
+    while(r - l > 1){
+        n = (l + r) / 2;
+        if(a * (n - n / k) + b * (n - n / m) >= x){
+            r = n;
+        }
+        else {
+            l = n;
+        }
+    }
+    std::cout << r << std::endl;
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    //10 4
+    //1 2 3 9 1 7 3 2 1 6
+    std::vector<int>pref = std::vector<int>(1);
+    std::vector<int>all = std::vector<int>();
+    int n, k;
+    std::cin >> n >> k;
+    for(int i = 0; i < n; i++){
+        int num;
+        std::cin >> num;
+        pref.push_back(pref[pref.size()-1] + num);
+        all.push_back(num);
+    }
+    pref.erase(pref.begin());
+    int max = 0, maxId = 0;
+    for(int i = 0; i <= n - k; i++){
+        //std::cout << pref[i + k - 1] - pref[i - 1] << std::endl;
+        if(pref[i + k - 1] - pref[i - 1] > max){
+            max = pref[i + k - 1] - pref[i - 1];
+            maxId = i;
+        }
+    }
+    for(int i = 0; i < k; i++){
+        all.erase(all.begin() + maxId);
+    }
+    pref.resize(all.size());
+    for(int i = 0; i < pref.size(); i++){
+
+        pref[i] = 0;
+        pref[i] = pref[i - 1] + all[i];
+    }
+    
+    max = 0;
+    for(int i = 0; i <= n - (k * 2); i++){
+        if(!((i >= maxId && i < maxId + k) || i + k < maxId)){
+            //std::cout << pref[i + k - 1] - pref[i - 1] << std::endl;
+            if(pref[i + k - 1] - pref[i - 1] > max){
+                max = pref[i + k - 1] - pref[i - 1];
+            }
+        }
+    }
+    std::cout << max << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+int main(){
+    int a, b, c, d;
+    long long ans = 0;
+    std::cin >> a >> b >> c >> d;
+
+    for(int x = 1; x * x <= b; x++){
+        int miny = std::max(x, std::max((a - 1) / x + 1, (c + 1) / 2 - x));
+        int maxy = std::min(b / x, d / 2 - x);
+        if(miny <= maxy){
+            ans += (maxy - miny + 1);
+        }
+    }
+
+    std::cout << ans << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+int min(long long a1, long long a2){
+    if(a1 < a2){
+        return a1;
+    }
+    return a2;
+}
+
+int main(){
+    int a[100000];
+    int s[100000];
+    int pref[100000];
+    int suff[100000];
+    int n, k;
+    std::cin >> n >> k;
+
+    for (int i = 1; i <= n; i++) {
+        scanf("%d", &a[i]);
+        s[i] = s[i - 1] + a[i];
+    }
+    
+
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int n;
+    std::cin >> n;
+    int max = 0, lastMax = 0;
+    for(int i = 0; i < n; i++){
+        int num;
+        std::cin >> num;
+        if(num >= max){
+            lastMax = max;
+            max = num;
+        }
+        if(num < max && num > lastMax){
+            lastMax = num;
+        }
+        if(i > 0){
+            std::cout << lastMax << " ";
+        }
+    }
+    std::cout << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    std::vector<int>v = std::vector<int>();
+    std::vector<int>s = std::vector<int>();
+    int n;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        v.push_back(a);
+    }
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        s.push_back(a);
+    }
+    
+    return 0;
+}
+#include <cstdio>
+#include <vector>
+
+int main(){
+    std::vector<int>vec = std::vector<int>();
+    int n;
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++){
+        char name[100];
+        scanf("%s" &name);
+        int a = 0;
+        for(int j = 0; j < 110; j++){
+            if(name[j] > 47 && name[j] < 58){
+                a = (a * 10) + name[j] - 48;
+            }
+        }
+        vec.push_back(a);
+    }
+    for(int i = 0; i < vec.size(); i++){
+        printf("%d\n", vec[i]);
+    }
+    return 0;
+}
+#include <iostream>
+#include <string>
+
+int main(){
+    std::string str1, str2;
+    std::cin >> str1 >> str2;
+    
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+struct SMnoj{
+    std::vector<int>S = std::vector<int>();
+
+    SMnoj(){}
+
+    void add(int num){
+        for(int i = 0; i < S.size(); i++){
+            if(S[i] == num){
+                return;
+            }
+        }
+        S.push_back(num);
+    }
+    int next(int num){
+        int min = 1e9 + 1;
+        for(int i = 0; i < S.size(); i++){
+            if(min > S[i] && S[i] >= num){
+                min = S[i];
+            }
+        }
+        if(min == 1000000001){
+            return -1;
+        }
+        return min;
+    }
+};
+
+int main(){
+    SMnoj *mnoj = new SMnoj();
+    int n;
+    std::cin >> n;
+    char d, lastD;
+    int num;
+    int y = 0;
+
+    for(int i = 0; i < n; i++){
+        std::cin >> d >> num;
+        if(d == '+' && (i == 0 || lastD == '+')){
+            mnoj -> add(num);
+        }
+        else if(d == '?'){
+            y = mnoj -> next(num);
+            std::cout << y << std::endl;
+        }
+        else if(d == '+' && lastD == '?'){
+            mnoj -> add((num + y) % 1000000000);
+        }
+        lastD = d;
+    }
+    return 0;
+}
+#include <iostream>
+#include <set>
+
+int main(){
+    std::set<int>st;
+
+    int n;
+    std::cin >> n;
+    char d, lastD;
+    int num, y = 0;
+
+    for(int i = 0; i < n; i++){
+        std::cin >> d >> num;
+        if(d == '+' && (i == 0 || lastD == '+')){
+            st.insert(num);
+        }
+        else if(d == '+' && lastD == '?'){
+            st.insert((num + y) % 1000000000);
+        }
+        else if(d == '?'){
+            y = *st.lower_bound(num);
+            std::cout << y << std::endl;
+        }
+        lastD = d;
+    }
+}
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+struct vec{
+    int x, y;
+    vec(){}
+    vec(int x, int y){
+        this->x = x;
+        this->y = y;
+    }
+    vec(int x1, int y1, int x2, int y2){
+        x = x2 - x1;
+        y = y2 - y1;
+    }
+    vec(vec a, vec b){
+        x = a.x - b.x;
+        y = a.y - b.y;
+    }
+    int operator*(vec const &a){
+        return a.x * x + a.y * y;
+    }
+    int operator/(vec const &a){
+        return x*a.y - a.x*y;
+    }
+};
+
+int cp(vec a, vec b){
+    return a.x * b.y - a.y * b.x;
+}
+
+double len(vec a){
+    return a.x * a.x + a.y * a.y;
+}
+
+double S(int x1, int y1, int x2, int y2, int x3, int y3){
+    return cp(vec(x1,y1,x2,y2),vec(x1,y1,x3,y3));
+}
+
+int main(){
+    vec points[2000];
+    int n;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        int x, y;
+        scanf("%d %d", &x, &y);
+        points[i] = vec(x,y);
+
+    }
+    int col = 0;
+    for(int i = 0; i < n - 2; i++){
+        for(int j = i + 1; j < n - 1; j++){
+            double ij = len(vec(points[i], points[j]));
+            for(int k = j + 1; k < n; k++){
+                double jk = len(vec(points[j], points[k]));
+                double ik = len(vec(points[k], points[i]));
+                if((ij == ik || ij == jk || ik == jk) &&
+                    S(points[i].x, points[i].y, points[j].x, points[j].y, points[k].x, points[k].y)){
+                    col++;
+                }
+            }
+        }
+    }
+    std::cout << col << std::endl;
+
+    return 0;
+}
+import random
+
+print(random.randint(0, 2000))
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <map>
+
+struct Node{
+    std::map<int, int>to;
+    bool term = false;
+    Node(){}
+};
+
+int alphabet = 26;
+std::vector<Node>trie = std::vector<Node>(1);
+
+void insert(std::string S){
+    int v = 0;
+    for(auto c : S){
+        if(!trie[v].to.count(c - 'a')){
+            trie[v].to[c - 'a'] = trie.size();
+            trie.push_back(Node());
+        }
+        v = trie[v].to[c - 'a'];
+    }
+    trie[v].term = true;
+}
+
+std::vector<int> TZ_FUNC(std::string s){
+	int n = (int) s.length();
+	std::vector<int> z (n);
+	for (int i=1; i<n; ++i)
+		while (i + z[i] < n && s[z[i]] == s[i+z[i]])
+			++z[i];
+	return z;
+}
+
+std::vector<int> z_function (std::string s) {
+	int n = (int) s.length();
+	std::vector<int> z (n);
+	for (int i=1, l=0, r=0; i<n; ++i) {
+		if (i <= r)
+			z[i] = std::min (r-i+1, z[i-l]);
+		while (i+z[i] < n && s[z[i]] == s[i+z[i]])
+			++z[i];
+		if (i+z[i]-1 > r)
+			l = i,  r = i+z[i]-1;
+	}
+	return z;
+}
+
+int test_max(int v){
+    int max = 0;
+    int term = 0;
+    if(trie[v].term){
+        term = 1;
+    }
+    for(int i = 0; i < alphabet; i++){
+        if(trie[v].to[i] != 0){
+            int m = test_max(trie[v].to[i]);
+            max = std::max(m, max);
+        }
+    }
+
+    term += max;
+    
+    return term;
+}
+
+int main(){
+    std::vector<std::vector<char>>num_pad = {{' '},            {'a', 'b', 'c'}, {'d', 'e', 'f'},
+                                             {'g', 'h', 'i'},  {'j', 'k', 'l'}, {'m', 'n', 'o'},
+                                             {'p','a','r','s'},{'t', 'u', 'v'}, {'w','x','y','z'}};
+    std::vector<std::string>dict = std::vector<std::string>();
+    std::vector<std::string>pod_dict;
+    int n, m;
+
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        std::string str;
+        std::cin >> str;
+        dict.push_back(str);
+    }
+
+    std::cin >> m;
+
+    pod_dict = dict;
+
+    for(int i = 0; i < m; i++){
+        int num;
+        std::cin >> num;
+        for(int j = 0; j < ){
+
+        }
+    }
+
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+struct vec{
+    double x, y;
+    vec(){}
+    vec(double x, double y){
+        this -> x = x;
+        this -> y = y;
+    }
+    vec(double x1, double y1, double x2, double y2){
+        x = x2 - x1;
+        y = y2 - y1;
+    }
+    int operator*(vec const &a){
+        return a.x * x + a.y * y;
+    }
+    int operator/(vec const &a){
+        return x*a.y - a.x*y;
+    }
+};
+
+int cp(vec a, vec b){
+    return a.x * b.y - a.y * b.x;
+}
+
+double len(vec a){
+    return sqrt(a.x * a.x + a.y * a.y);
+}
+
+double angl(vec a, vec b){
+    return acos((a*b)/(len(a)*len(b)));
+}
+
+bool point_in_ray(double x, double y, double x1, double y1, double x2, double y2){
+    vec a(x1, y1, x2, y2), b(x1, y1, x, y);
+    return (a/b == 0 && a*b >= 0);
+}
+
+double S(double x1, double y1, double x2, double y2, double x3, double y3){
+    return cp(vec(x1,y1,x2,y2),vec(x1,y1,x3,y3)) / 2.0;
+}
+
+int main(){
+    double x, y, A, B, C;
+    std::cin >> x >> y >> A >> B >> C;
+    vec a(0, (A * 0 - C) / B), b(1, (A * 1 - C) / B);
+
+    printf("%.5f\n",(2 * S(a.x, a.y, b.x, b.y, x, y)) / len(vec(x, y, b.x, b.y)));
+
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <iterator>
+#include <algorithm>
+
+int main() {
+    double mx, my, ax, ay, bx, by;
+    std::cin >> mx >> my >> ax >> ay >> bx >> by;
+    if ((mx - ax) * (by - ay) == (bx - ax) * (my - ay)) {
+        if (std::min(ay, by) <= my && (std::max(ay, by) >= my) && std::min(ax, bx) <= mx && std::max(ax, bx) >= mx){
+            std::cout << "YES";
+            return 0;
+        }
+    }
+    std::cout << "NO";
+}
+#include <iostream>
+#include <vector>
+
+int ans = 0;
+
+void m(std::vector<int>bin, int index){
+    if(index == bin.size()){
+        for(int i = 0; i < bin.size() - 1; i++){
+            if(bin[i] == bin[i + 1] && bin[i] == 1){
+                return;
+            }
+        }
+        ans++;
+    }else{
+        if(bin[index - 1] == 0){
+            m(bin, index + 1);
+            bin[index] = 1;
+            m(bin, index + 1);
+        }
+        else{
+            m(bin, index + 1);
+        }
+    }
+}
+
+int main(){
+    int n;
+    std::cin >> n;
+    std::vector<int>bin = std::vector<int>(n);
+
+    m(bin, 1);
+    bin[0] = 1;
+    m(bin, 1);
+
+    std::cout << ans << std::endl;
+
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+int ans = 0;
+
+void m(std::vector<int>bin, int index){
+    if(index == bin.size()){
+        for(int i = 0; i < bin.size() - 1; i++){
+            if(bin[i] == bin[i + 1] && bin[i] == 1){
+                return;
+            }
+        }
+        /*for(int i = 0; i < bin.size(); i++){
+            std::cout << bin[i] << " ";
+        }
+        std::cout << std::endl;*/
+        ans++;
+    }else{
+        m(bin, index + 1);
+        bin[index] = 1;
+        m(bin, index + 1);
+    }
+}
+
+int main(){
+    int n;
+    std::cin >> n;
+    std::vector<int>bin = std::vector<int>(n);
+
+    m(bin, 0);
+
+    std::cout << ans << std::endl;
+
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+int main(){
+    float h, a;
+    std::cin >> h >> a;
+    std::cout << ceil(h / a) << std::endl;
+    return 0;
+}
+#include <iostream>
+
+using namespace std;
+
+typedef long long ll;
+
+int main() {
+    int n, a, b;
+    cin >> n >> a >> b;
+    if (a + b > 2 * n) {
+        cout << "NO";
+        return 0;
+    }
+    cout << "YES" << "\n";
+    if (a > b) {
+        int i = 1;
+        while (a != 0) {
+            if (i % 2 != 0) {
+                for (int j = 0;  j < min(3, a); j++) {
+                    cout << i << " ";
+                }
+            }
+            i += 2;
+        }
+        cout << "\n";
+        i = 2;
+        while (b != 0) {
+            if (i % 2 != 0) {
+                for (int j = 0;  j < min(2, b); j++) {
+                    cout << i << " ";
+                }
+            }
+            i += 2;
+        }
+        cout << "\n";
+    } else {
+        int i = 2;
+        while (a != 0) {
+            if (i % 2 != 0) {
+                for (int j = 0;  j < min(2, a); j++) {
+                    cout << i << " ";
+                }
+            }
+            i += 2;
+        }
+        cout << "\n";
+        i = 1;
+        while (b != 0) {
+            if (i % 2 != 0) {
+                for (int j = 0;  j < min(3, b); j++) {
+                    cout << i << " ";
+                }
+            }
+            i += 2;
+        }
+        cout << "\n";
+    }
+}
+#include <iostream>
+
+int main(){
+    int n1, n2;
+    std::cin >> n1 >> n2;
+    if(n1 == 6)n1 = 9;
+    if(n2 == 6)n2 = 9;
+    if(n1 > n2)std::cout << n1 << n2 << std::endl;
+    else{std::cout << n2 << n1 << std::endl;}   
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+
+int main() {
+    
+    int n;
+    cin >> n;
+    vector<vector<long long>> a(2, vector<long long> (n));
+    for ( int i = 0; i < 2; i++) {
+        for ( int j = 0; j < n; j++) {
+            cin >> a[i][j];
+        }
+    }
+    vector<vector<long long>> dp(2, vector<long long> (n));
+    int c = 1;
+    dp[0][0] = a[0][0];
+    for (int i = 0; i < 2; i++) {
+        for (int j = c; j < n; j++) {
+            dp[i][j] += a[i][j];
+            if (i != 0 && j != 0) {
+                dp[i][j] = dp[i][j] + max(dp[i - 1][j], dp[i][j - 1]);    
+            } else {
+                if (i != 0) {
+                    dp[i][j] += dp[i - 1][j];
+                } else {
+                    dp[i][j] += dp[i][j - 1];
+                }
+            }
+        }
+        c = 0;
+    }
+    cout  << dp[1][n - 1];
+}
+#include <iostream>
+#include <string>
+
+int main(){
+    int n;
+    int a = 0, b = 0, sca = 0, scb = 0;
+    std::cin >> n;
+    std::string str;
+    std::cin >> str;
+    for(int i = 0; i < str.size(); i++){
+        if(str[i] == 'A'){
+            a++;
+        }
+        if(str[i] == 'B'){
+            b++;
+        }
+        if(sca + scb >= 2){
+            if(a >= 15 && (a - b) >= 2){
+                sca++;
+                break;
+            }
+            if(b >= 15 && ((b - a) >= 2)){
+                scb++;
+                break;
+            }
+        }
+        if(a >= 25 && ((a - b) >= 2)){
+            sca++;
+            a = 0;
+            b = 0;
+        }
+        if(b >= 25 && ((b - a) >= 2)){
+            scb++;
+            a = 0;
+            b = 0;
+        }
+        //std::cout << a << " " << b << " " << b - a <<std::endl;
+    }
+    std::cout <<sca << " " << scb << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+typedef long long ll;
+
+ll gsd (ll a, ll b) {
+    while (a != 0 && b != 0) {
+        if (a > b) {
+            a %= b;
+        } else {
+            b %= a;
+        }
+    }
+    return max(a, b);
+}
+
+int main() {
+    ll n;
+    vector<ll> 
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    int time = 0;
+    int n, x, myx = 0;
+    std::cin >> n >> x;
+    int lastX = 0;
+    for(int i = 0; i < n; i++){
+        int x, r, g;
+        std::cin >> x >> r >> g;
+        myx += x - lastX;
+        time += x - lastX;
+        if(time % (r + g) < r){
+            time += r - time % (r + g);
+        }
+        lastX = x;
+    }
+    std::cout << time + (x - lastX) << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+typedef long long ll;
+
+int main(){
+    
+    ll n;
+    cin >> n;
+    cout << 1 << " " << 2;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+typedef long long ll;
+
+vector<bool> used;
+vector<int> d;
+int s, f;
+
+void dfs(int v, vector<vector<int>> gr) {
+    used[v] = true;
+    //cout << v + 1 << " ";
+    for (auto u : gr[v]) {
+        cout << v + 1 << ":" << u + 1 << " ";
+        if (!used[u] && d[u] < d[v] + 1 && u != f - 1) {
+            // cout << "p" << d[u];
+            // cout << " " << d[u] << " " << d[v] << " " << u + 1 << " " << v + 1 << "\n";
+            dfs(u, gr);
+            d[u] = d[v] + 1;
+            cout << d[u] << " " << u << "\n";
+        }
+    }
+}
+
+int main(){
+    
+    int n, m;
+    cin >> n >> m >> s >> f;
+    vector<vector<int>> gr(n);
+    for ( int i = 0; i < m; i++) {
+        int x, y;
+        cin >> x >> y;
+        x--;
+        y--;
+        gr[x].push_back(y);
+        gr[y].push_back(x);
+    }
+    used.resize(n, false);
+    d.resize(n, 0);
+    dfs(s - 1, gr);
+    cout << "\n";
+    for (int i = 0; i < n; i++) {
+        cout << d[i] << " ";
+    }
+    cout << d[f - 1];
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    int sx, n;
+    std::cin >> sx >> n;
+    std::vector<int>pol = std::vector<int>();
+    pol.resize(sx * sx, 0);
+    for(int i = 0; i < n; i++){
+        int x, y;
+        std::cin >> x >> y;
+        x -= 1;
+        y -= 1;
+        pol[x + y * sx] = 1;
+        if(x + 1 < sx && y - 2 >= 0)
+            pol[(x + 1) + (y - 2) * sx] = 1;
+        if(x + 2 < sx && y - 1 >= 0)
+            pol[(x + 2) + (y - 1) * sx] = 1;
+        if(x + 2 < sx && y + 1 < sx)
+            pol[(x + 2) + (y + 1) * sx] = 1;
+        if(x + 1 < sx && y + 2 < sx)
+            pol[(x + 1) + (y + 2) * sx] = 1;
+        if(x - 1 >= 0 && y + 2 < sx)
+            pol[(x - 1) + (y + 2) * sx] = 1;
+        if(x - 2 >= 0 && y + 1 < sx)
+            pol[(x - 2) + (y + 1) * sx] = 1;
+        if(x - 2 >= 0 && y - 1 >= 0)
+            pol[(x - 2) + (y - 1) * sx] = 1;
+        if(x - 1 >= 0 && y - 2 >= 0)
+            pol[(x - 1) + (y - 2) * sx] = 1;
+    }
+    int ans = 0;
+    for(int i = 0; i < pol.size(); i++){
+        if(pol[i] == 0){
+            ans ++;
+        }
+    }
+    std::cout << ans << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+long long NOD(long long n1, long long n2)
+{
+    long long div;
+    if (n1 == n2)  return n1;
+    long long d = n1 - n2;
+    if (d < 0) {
+        d = -d;  
+        div = NOD(n1, d);
+    } else
+        div = NOD(n2, d); 
+    return div;
+}
+
+long long NOK(long long n1, long long n2) 
+{ 
+    return n1 * n2 / NOD(n1, n2); 
+}
+
+int main(){
+    long long a, b, c, t, d;
+    std::cin >> a >> b >> c >> t >> d;
+    long long A = NOK(a, NOK(b, c));
+    //std::cout << A << std::endl;
+    
+    long long l = ceil((double)(t * (d - 1)) / (double)A);
+    long long f = ceil((double)(t * d) / (double)A);
+    std::cout << f - l << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+int main(){
+    unsigned long long w, h;
+    std::cin >> w >> h;
+    if(w == h){
+        std::cout << w * h << std::endl;
+        return 0;
+    }
+    unsigned long long rx = std::min(w, h);
+    unsigned long long S = rx * rx;
+    if(w >= h){
+        w -= rx;
+    }
+    else{
+        h -= rx;
+    }
+    if(w == h){
+        std::cout << S + w * h << std::endl;
+        return 0;
+    }
+    rx = std::min(w, h);
+    S += rx * rx;
+    std::cout << S <<std::endl;
+    return 0;
+    //как найти нод 3 - х чисел в с++
+}
+#include <iostream>
+#include <vector>
+
+int n, w;
+std::vector<int>fir = std::vector<int>();
+std::vector<int>sec = std::vector<int>();
+std::vector<int>flow = std::vector<int>();
+
+int sssr(int th){
+    
+}
+
+int main(){
+    std::cin >> n >> w;
+    for(int i = 0; i < w; i++){
+        int f, s;
+        std::cin >> f >> s;
+        fir.push_back(f);
+        sec.push_back(s);
+    }
+    std::cout << sssr(0) << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <string>
+
+
+int main(){
+    int n;
+    std::cin >> n;
+    std::string str1, str2;
+    std::cin >> str1;
+    for(int i = 0; i < n - 1; i++){
+        std::cin >> str2;
+        std::string str = "";
+        for(int i = 0; i < str1.size(); i++){
+            str += str2 + str1[i];
+        }
+        str1 = str + str2;
+    }
+    //std::cout << str1 << std::endl;
+    int kras = 0;
+    int max_kras = 0;
+    for(int i = 0; i < str1.size(); i++){
+        kras++;
+        if(kras > max_kras){
+            max_kras = kras;
+        }
+        if(str1[i] != str1[i + 1]){
+            kras = 0;
+        }
+    }
+    std::cout << max_kras << std::endl;
+    return 0;
+}
+def gcd(a, b):
+    while(b > 0):
+        a %= b
+        c = a
+        a = b
+        b = c
+    return a
+
+a = int(input())
+b = int(input())
+
+print(gcd(a, b))
+a = int(input())
+
+p = [2]
+i = 3
+while(i * i < a):
+    b = True
+    for j in range(len(p)):
+        if(i % p[j] == 0):
+            b = False
+            break
+    if(b):
+        p.append(i)
+    i+=1
+while(a > 1):
+    for i in range(len(p)):
+        if(a % p[i] == 0):
+            a = a // p[i]
+            print(p[i])
+            break
+import math
+
+a, b, c, d = map(int, input().split())
+
+n = math.lcm(b, d)
+
+a *= n // b
+c *= n // d
+a += c
+
+k = math.gcd(a, n)
+print(a // k, n // k)
+code = '''
+память1 = ввести(число)
+память2 = ввести(число)
+
+если память1 < память2 то 
+    вывести(память1)
+    конец
+кон
+если память1 > память2 то
+    вывести(память2)
+    конец
+кон
+вывести(память1)
+'''
+
+def interpreter(tokens):
+    mem1 = 0
+    mem2 = 0
+    mem3 = 0
+    index = 1
+    block = True
+    i = 0
+    while(i < len(tokens)):
+        #print(tokens[i])
+        if(tokens[i] == 'память1'):
+            index = 1
+        elif(tokens[i] == 'память2'):
+            index = 2
+        elif(tokens[i] == 'память3'):
+            index = 3
+        elif(tokens[i] == '='):
+            block = False
+        elif(tokens[i] == 'ввести'):
+            if(tokens[i + 1] == 'число'):
+                if(index == 1):
+                    mem1 = int(input())
+                elif(index == 2):
+                    mem2 = int(input())
+                elif(index == 3):
+                    mem3 = int(input())
+                i += 1
+        elif(tokens[i] == 'если'):
+            index1 = 1
+            index2 = 1
+            if(tokens[i + 1] == 'память1'):
+                index1 = mem1
+            elif(tokens[i + 1] == 'память2'):
+                index1 = mem2
+            elif(tokens[i + 1] == 'память3'):
+                index1 = mem3
+            if(tokens[i + 3] == 'память1'):
+                index2 = mem1
+            elif(tokens[i + 3] == 'память2'):
+                index2 = mem2
+            elif(tokens[i + 3] == 'память3'):
+                index2 = mem3
+            if(tokens[i + 2] == '='):
+                if(index1 != index2):
+                    while(tokens[i] != 'кон'):
+                        i += 1
+            elif(tokens[i + 2] == '>'):
+                if(not(index1 > index2)):
+                    while(tokens[i] != 'кон'):
+                        i += 1
+            elif(tokens[i + 2] == '<'):
+                if(not(index1 < index2)):
+                    while(tokens[i] != 'кон'):
+                        i += 1
+        elif(tokens[i] == 'вывести'):
+            if(tokens[i + 1] == 'память1'):
+                print(mem1)
+            elif(tokens[i + 1] == 'память2'):
+                print(mem2)
+            elif(tokens[i + 1] == 'память3'):
+                print(mem3)
+            i += 1
+        elif(tokens[i] == 'конец'):
+            break
+        i += 1
+    
+def lexer(code):
+    tokens = []
+    comand = ''
+    for i in range(len(code)):
+        if(code[i] == ' ' or code[i] == '(' or code[i] == ')' or code[i] == '\n'):
+           tokens.append(comand)
+           comand = ''
+        else:
+           #print(comand)
+           comand = comand + code[i]
+    tok = []
+    for i in range(len(tokens)):
+        if(tokens[i] != ''):
+            tok.append(tokens[i])
+    return tok
+
+tokens = lexer(code)
+#print(tokens)
+interpreter(tokens)
+import random
+
+a = int(input())
+b = int(input())
+
+inputs = [0] * 2
+w = [0] * 3
+w[0] = [0] * 2
+w[1] = [0] * 3
+w[2] = [0] * 3
+w[1][]
+n = int(input())
+a = list(map(int, input().split()))
+n = int(input())
+
+def F(n):
+    if(n == 0):
+        return []
+    if(n < 0):
+        return [float('inf')]
+    ret = [float('inf')]
+    ans = 0
+    for i in range(len(a)):
+        r = F(n - a[i])
+        if(len(r) < len(ret) and r[0] > 0 and r[0] != float('inf')):
+            ret = r.copy()
+            ans = a[i]
+    ret.append(ans)
+    return ret
+
+print(F(n))
+n = int(input())
+
+a = [0] * (n + 1)
+b = [0] * (n + 1)
+for i in range(2, n + 1):
+    a[i] = a[i - 1] + 1
+    b[i] = 0
+    if(i % 2 == 0 and a[i // 2] + 1 < a[i]):
+        a[i] = a[i // 2] + 1
+        b[i] = 1
+    if(i % 3 == 0 and a[i // 3] + 1 < a[i]):
+        a[i] = a[i // 3] + 1
+        b[i] = 2
+i = n
+s = ''
+while(i > 1):
+    s += str(b[i] + 1)
+    if(b[i] == 0):
+        i -= 1
+    elif(b[i] == 1):
+        i = i // 2
+    elif(b[i] == 2):
+        i = i // 3
+print(s[::-1])
+x, y = map(int, input().split())
+
+a = [0] * 8
+for i in range(8):
+    a[i] = [0] * 8
+for i in range(8):
+    for j in range(8):
+        if(i == y - 1 and j == x - 1):
+            a[i][j] = 1
+        if(i > 0 and j > 0):
+            a[i][j] += a[i - 1][j - 1]
+        if(i > 0 and j < 7):
+            a[i][j] += a[i - 1][j + 1]
+print(sum(a[7]))
+n = int(input())
+
+def fib(n):
+    if(n == 1 or n == 2):
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+print(fib(n))
+n = int(input())
+
+fib = [0] * (n + 3)
+
+fib[1] = 1
+
+for i in range(2, n + 3):
+    fib[i] = fib[i - 1] + fib[i - 2]
+
+print(fib[n + 2])
+n = int(input())
+
+a = list(map(int, input().split()))
+
+a.sort()
+
+b = [0] * (n - 1)
+b[0] = 1
+b[n - 2] = 1
+
+for i in range(2, n - 2):
+    #print(a[i - 1], a[i], a[i + 1])
+    if(a[i] - a[i - 1] < a[i + 1] - a[i]):
+        b[i - 1] = 1
+    else:
+        b[i] = 1
+
+#print(b)
+ans = 0
+for i in range(n - 1):
+    if(b[i] == 1):
+        ans += a[i + 1] - a[i]
+print(ans)
+n = int(input())
+
+a = [0] * (n + 1)
+a[0] = 1
+a[1] = 1
+
+for i in range(2, n + 1):
+    if(i % 2 == 0):
+        if(i % 4 == 2):
+            a[i] = a[i // 2] + 1
+        else:
+            a[i] = a[i - 1] - a[(i - 2) // 2]
+print(a)
+n = int(input())
+
+def hp(n):
+    if(n == 0 or n == 1):
+        return 1
+    if(n % 2 == 0):
+        return hp(n // 2) + 1
+    else:
+        return hp(n + 1) + hp((n - 1) // 2)
+#for i in range(n):print(hp(i), end=' ')
+print(hp(n))
+n = int(input())
+
+k = [0] * (n + 2)
+k[n] = 1
+
+for i in reversed(range(n)):
+    k[i] = k[i + 1] + k[i + 2]
+print(k[0])
+n, k = map(int, input().split())
+
+def kus(m):
+    if(m >= n):
+        return 1
+    else:
+        #print(m)
+        ans = 0
+        for i in range(1, min(n - m + 1, k + 1)):
+            ans += kus(m + i)
+        return ans
+
+print(kus(0))
+n, k = map(int, input().split())
+
+a = [0] * (n + 1)
+a[0] = 1
+
+for i in range(1, n + 1):
+    ans = 0
+    for j in range(max(0, i - k), i):
+        ans += a[j]
+        #print(a[j], end=' ')
+    a[i] = ans
+print(a[n])
+n, k = map(int, input().split())
+
+frog = list(map(int, input().split()))
+
+a = [0] * (n + 1)
+a[0] = 1
+
+for i in range(1, n + 1):
+    ans = 0
+    if(not(i in frog)):
+        for j in range(max(0, i - k), i):
+            ans += a[j]
+            #print(a[j], end=' ')
+    a[i] = ans
+print(a[n])
+n, k = map(int, input().split())
+
+money = list(map(int, input().split()))
+
+a = [0] * (n + 1)
+a[0] = 0
+
+for i in range(1, n + 1):
+    ans = 0
+    for j in range(max(0, i - k), i):
+        ans = max(a[j], ans)
+        #print(a[j], end=' ')
+    a[i] = ans + money[i]
+    #print(ans)
+print(a[n])
+n = int(input())
+
+def kus(m):
+    if(m == n or n - m == 1):
+        return 1
+    return kus(m + 1) + kus(m + 2)
+
+print(kus(0))
+n = int(input())
+a = list(map(int, input().split()))
+m = int(input())
+b = list(map(int, input().split()))
+
+ans = 0
+for s in range(len(b)):
+    start = -1
+    lans = 0
+    for i in range(s, len(b)):
+        for j in range(start + 1, len(a)):
+            #print(b[i], a[j])
+            if(b[i] == a[j]):
+                start = j
+                lans += 1
+                break
+    ans = max(ans, lans)
+print(ans)
+n = int(input())
+a = list(map(int, input().split()))
+m = int(input())
+b = list(map(int, input().split()))
+
+c = [0] * (len(b) + 1)
+for i in range(len(b) + 1):
+    c[i] = [[]] * (len(a) + 1)
+
+for j in range(1, len(a) + 1):
+    for i in range(1, len(b) + 1):
+        if(a[j - 1] == b[i - 1]):
+            c[i][j] = c[i - 1][j - 1].copy()
+            c[i][j].append(a[j - 1])
+        else:
+            if(len(c[i - 1][j]) > len(c[i][j - 1])):
+                c[i][j] = c[i - 1][j].copy()
+            else:
+                c[i][j] = c[i][j - 1].copy()
+for i in range(len(c[len(b)][len(a)])):
+    print(c[len(b)][len(a)][i], end=' ')
+print()
+import sys
+
+n = int(input())
+sys.set_int_max_str_digits(1000000000)
+
+a = [0] * (n + 1)
+for i in range(n + 1):
+    a[i] = [0, 0, 0]
+a[1][0] = 1
+a[1][1] = 1
+a[1][2] = 1
+for i in range(2, n + 1):
+    a[i][0] = a[i - 1][1] + a[i - 1][2]
+    a[i][1] = a[i - 1][0] + a[i - 1][1] + a[i - 1][2]
+    a[i][2] = a[i - 1][0] + a[i - 1][1] + a[i - 1][2]
+print(a[n][0] + a[n][1] + a[n][2])
+n = int(input())
+if(n == 0):
+    exit(0)
+a = [0] * (n + 1)
+a[0] = 1
+print(1)
+for i in range(1, n):
+    b = [0] * n
+    for j in range(1, n):
+        b[j] = a[j - 1]
+    for j in range(len(b)):
+        a[j] += b[j]
+    for j in range(i + 1):
+        print(a[j], end=' ')
+    print()
+w = list(map(int, input().split()))
+v = list(map(int, input().split()))
+A = int(input())
+
+a = [0] * (A + 1)
+for i in range(A + 1): 
+    a[i] = [0] * (len(w) + 1)
+
+for j in range(1, len(a)):
+    for i in range(1, len(a[0])):
+        if(j - w[i - 1] >= 0):
+            a[j][i] = max(a[j][i - 1], a[j - w[i - 1]][i - 1] + v[i - 1])
+        else:
+            a[j][i] = a[j][i - 1]
+print(a[A][len(w)])
+#include <iostream>
+#include <cmath>
+
+int sq(int a){
+    int i = 0;
+    while(i * i * i <= a){
+        i++;
+    }
+    return i - 1;
+}
+
+int main(){
+    int n;
+    std::cin >> n;
+    int a[n + 1] = {0};
+    a[1] = 1;
+    for(int i = 1; i < n + 1; i++){
+        a[i] = n + 2;
+        int k = sq(i);
+        for(int j = 1; j <= k; j++){
+            //std::cout << a[i] << " " << a[i - int(pow(j, 3))] << std::endl;
+            int g = j * j * j;
+            if(a[i] > a[i - g] + 1){
+                a[i] = a[i - g] + 1;
+            }
+        }
+    }
+    std::cout << a[n] << std::endl;
+    return 0;
+}
+n = int(input())
+
+a = [0] * (n + 1)
+for i in range(n + 1):
+    a[i] = [0] * (int(n ** (1. / 3.)) + 1)
+
+def F(n):
+    print(n)
+    if(n == 0):
+        return 0
+    if(n < 0):
+        return float('inf')
+    ret = float('inf')
+    for i in range(1, int(n ** (1. / 3.)) + 1):
+        a = F(n - i ** 3)
+        if(ret > a):
+            ret = a
+    return ret + 1
+
+
+print(F(n))
+n = int(input())
+
+a = [0] * (n + 1)
+a[1] = 1
+
+for i in range(2, n + 1):
+    a[i] = float('inf')
+    for j in range(1, int(i ** (1. / 3.)) + 1):
+        if(a[i] > a[i - j ** 3] + 1):
+            a[i] = a[i - j ** 3] + 1
+print(a[n])
+n = int(input())
+
+a = [0] * (n + 3)
+
+a[0] = 0
+a[1] = 1
+a[2] = 1
+
+for i in range(3, n + 3):
+    a[i] = a[i - 1] + a[i - 2] + a[i - 3]
+print(a[n + 2])
+n = int(input())
+ans = 0
+
+def zoo(k):
+    if(len(k) == n):
+        #print(k)
+        global ans
+        ans += 1
+    else:
+        k.append(0)
+        zoo(k.copy())
+        if(k[len(k) - 2] == 0):
+            k[len(k) - 1] = 1
+            zoo(k.copy())
+
+k = []
+zoo(k.copy())
+print(ans)
+#include <iostream>
+#include <cmath>
+
+int main(){
+    int n, t;
+    std::cin >> n;
+    if(n == 2 || n == 3){
+        std::cout << "-1" << std::endl;
+        return 0;
+    }
+    while(n > 8){
+        n -= 5;
+        t ++;
+    }
+    if(n < 7){
+        std::cout << t + 1 << std::endl;
+    }
+    else if(n < 9){
+        std::cout << t + 2 << std::endl;
+    }
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    long long A, B, X = 0;
+    std::cin >> A >> B;
+
+    while(A != B){
+        
+        X++;
+    }
+
+    std::cout << X << std::endl;
+
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+int main(){
+    int N;
+    std::cin >> N;
+    std::cout << ceil(log2(N)) << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a[100001], b[100001];
+    int N, K;
+    std::cin >> N >> K;
+    for (int i = 0; i < N; i++) {
+        std::cin >> a[i];
+    }
+    for (int i = 0; i < K; i++) {
+        std::cin >> b[i];
+    }
+    for (int i = 0; i < K; i++) {
+        int l = 0;
+        int r = N;
+        while (l < r - 1) {
+            int m = (l + r) / 2;
+            if (a[m] >= b[i]) {
+                r = m;
+            } else {
+                l = m;
+            }
+        }
+        if (abs(a[l] - b[i]) <= abs(a[r] - b[i])) {
+            std::cout << a[l] << std::endl;
+        } else {
+            std::cout << a[r] << std::endl;
+        }
+    }
+}
+#include <iostream>
+
+int main(){
+    int a[100000];
+    int N, K;
+    std::cin >> N >> K;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+    }
+    int l = 0, r = N;
+    for(int i = 0; i < K; i++){
+        int x = 0;
+        std::cin >> x;
+        if(x >= a[0] && x <= a[N - 1]){
+            l = 0;
+            r = N;
+            while(l < r){
+                int m = (l + r) / 2;
+                if(x > a[m])l=m+1;
+                else r=m;
+            }
+            //std::cout << a[l] << std::endl;
+            if(a[r] == x){
+                std::cout << "YES" << std::endl;
+            }
+            else{
+                std::cout << "NO" << std::endl;
+            }
+        }
+        else{
+            std::cout << "NO" << std::endl;
+        }
+    }
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a[100][100];
+    int X, N;
+    std::cin >> X >> N;
+    for(int i = 0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            std::cin >> a[i][j];
+        }
+    }
+    for(int i = 0; i < N; i++){
+        bool ans = false;
+        for(int j = 0; j < N; j++){
+            if(a[j][i] == X){
+                ans = true;
+                break;
+            }
+        }
+        std::cout << (ans?"YES":"NO") << std::endl;
+    }
+    return 0;
+}
+N, K = map(int, input().split())
+st = list(map(int, input().split()))
+l = 0
+r = st[len(st) - 1] - st[0]
+
+while(l < r - 1):
+    m = (l + r) // 2
+    cows = 1
+    i = 0
+    while(i < len(st) - 1):
+        for j in range(i + 1, len(st)):
+            #print(st[i], st[j])
+            if(st[j] - st[i] >= m):
+                i = j - 1
+                cows += 1
+                break
+        i += 1
+    print(cows, l, r, m)
+    if(cows < K):
+        r = m
+    else:
+        l = m
+print(r)
+
+
+#include <iostream>
+
+int main(){
+    int n, w, h, x, y;
+    std::cin >> w >> h >> n;
+    int l = std::max(w, h);
+    int r = std::max(w, h) * n;
+    while(r - l > 1){
+        int m = (l + r) / 2;
+        if((m / w) * (m / h) >= n){
+            r = m;
+        }
+        else{
+            l = m;
+        }
+    }
+    std::cout << r << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a[1000];
+    int N;
+    std::cin >> N;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+    }
+    int min = 0, lastMin = 0;
+    for(int i = 0; i < N; i++){
+        if(a[i] <= a[min]){
+            min = i;
+        }
+    }
+    for(int i = 0; i < N; i++){
+        if(a[i] < a[lastMin] && i != min){
+            lastMin = i;
+        }
+    }
+    std::cout << a[min] << " " << a[lastMin] << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <string>
+#include <vector>
+
+int in(std::string str, std::vector<std::string>v){
+    for(int i = 0; i < v.size(); i++){
+        if(str == v[i]){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main(){
+    long long ans = 0;
+    int N, M, D;
+    std::cin >> N >> M;
+    std::vector<std::string>n = std::vector<std::string>();
+    std::vector<std::string>m = std::vector<std::string>();
+    std::vector<int>d = std::vector<int>();
+    for(int i = 0; i < N; i++){
+        std::string a;
+        std::cin >> a;
+        n.push_back(a);
+    }
+    for(int i = 0; i < M; i++){
+        std::string a;
+        std::cin >> a;
+        m.push_back(a);
+    }
+    std::cin >> D;
+    for(int i = 0; i < M; i++){
+        int a;
+        std::cin >> a;
+        d.push_back(a);
+    }
+    for(int i = 0; i < N; i++){
+        int a = in(n[i], m);
+        if(a != -1){
+            ans += d[a];
+        }
+        else{
+            ans += D;
+        }
+    }
+
+    std::cout << ans << std::endl;
+
+    return 0;
+}
+n = int(input())
+
+for y in range(0, n):
+    for x in range(0, n):
+        if(x < n - 1 - y):
+            print(0,end='')
+        elif(x == n - 1 - y):
+            print(1,end='')
+        else:
+            print(2,end='')
+    print()
+#include <iostream>
+#include <vector>
+
+int main(){
+    int n;
+    std::cin >> n;
+    std::vector<int>arr = std::vector<int>();
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        arr.push_back(a);
+    }
+    int max = 0;
+    for(int i = 0; i < arr.size(); i++){
+        if(arr[i] > arr[max])
+            max = i;
+    }
+    int a = arr[0];
+    arr[0] = arr[max];
+    arr[max] = a;
+    for(int i = 0; i < arr.size(); i++)
+        std::cout << arr[i] << " ";
+
+    return 0;
+}
+a = input()
+n = list(map(int, input().split()))
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <deque>
+#define ll long long
+using namespace std;
+
+int main() {
+    ll a, b, x, y;
+    cin >> a >> b >> x >> y;
+    ll min_k = 0;
+    ll min_r = 1e18 + 10;
+    for (int i = 0; i <= a + b; i++) {
+        ll suma;
+        if (i <= a) {
+            suma = x * i;
+        } else {
+            suma = x * a + y * (i - a);
+        }
+        ll sumb;
+        if (a + b - i <= b) {
+            sumb = y * (a + b - i);
+        } else {
+            sumb = y * b + x * ((a + b - i) - b);
+        }
+        if (abs(suma - sumb) < min_r) {
+            min_r = abs(suma - sumb);
+            min_k = i;
+        }
+        //cout << suma << " " << sumb << endl;
+    }
+    cout << min_k << "\n";
+    return 0;
+}
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <deque>
+#define ll long long
+using namespace std;
+
+int main() {
+    ll a, b, x, y;
+    cin >> a >> b >> x >> y;
+    ll l = 0;
+    ll r = a + b;
+    ll min_k = 0;
+    ll min_r = 1e18 + 10;
+    while (l < r) {
+        ll i = (l + r) / 2;
+        ll suma;
+        if (i <= a) {
+            suma = x * i;
+        } else {
+            suma = x * a + y * (i - a);
+        }
+        ll sumb;
+        if (a + b - i <= b) {
+            sumb = y * (a + b - i);
+        } else {
+            sumb = y * b + x * ((a + b - i) - b);
+        }
+        if (abs(suma - sumb) < min_r) {
+            min_r = abs(suma - sumb);
+            min_k = i;
+        }
+        if (suma - sumb < 0) {
+            l = i + 1;
+        } else {
+            r = i;
+        }
+    }
+    cout << min_k << endl;
+    return 0;
+}
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <deque>
+#define ll long long
+using namespace std;
+
+ll n, x, y;
+vector<ll>days;
+
+bool f(ll day) {
+    for (int i = 0; i < n; i++) {
+        //cout << days[i] << " " << fase(days[i], day) << endl;
+        if ((days[i] - day + 1) % (x + y) > x || (days[i] - day + 1) % (x + y) == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    cin >> n >> x >> y;
+    days = vector<ll>(n);
+    for (auto &x : days)
+        cin >> x;
+    for (int i = 1; i <= x + y; i++) {
+        //bool ans = f(i);
+        //cout << i << " " << ans << endl << endl;
+        if (f(i) == 1) {
+            cout << i << endl;
+            return 0;
+        }
+    }
+    cout << -1 << endl;
+    return 0;
+}
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <set>
+#include <unordered_set>
+#define ll long long
+using namespace std;
+
+int n, x, y;
+vector<ll>a;
+
+bool f(ll day) {
+    for (int i = 0; i < n; i++) {
+        if (a[i] - day >= x) {
+            return false;
+        } else if(a[i] - day < 0 && a[i] + x + y - day >= x) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    cin >> n >> x >> y;
+    a = vector<ll>(n);
+    for (int i = 0; i < n; i++) {
+        int z;
+        cin >> z;
+        a[i] = (z - 1) % (x + y);
+    }
+    unordered_set<ll>st;
+    for (auto z : a)
+        st.insert(z);
+    for (auto i : st) {
+        if (f(i) == 1) {
+            cout << i + 1 << endl;
+            return 0;
+        }
+    }
+    cout << -1 << endl;
+    return 0;
+}
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <deque>
+#define ll long long
+using namespace std;
+
+int n, k;
+
+int main() {
+    cin >> n >> k;
+    vector<int>a = vector<int>(n);
+    for (auto &x : a)
+        cin >> x;
+    vector<int>b = vector<int>(n);
+    for (int i = 0; i < n; i++) {
+        if (a[i] < a[n - i - 1]) {
+            b[i] = a[n - i - 1] - a[i];
+        }
+    }
+    int ans = 0;
+    ll sum = 1;
+    while (sum != 0) {
+        sum = 0;
+        for (int i = 0; i < n; i++) {
+            if (b[i] >= k) {
+                b[i] -= k;
+                sum += k;
+            } else if (b[i] == 0 && sum > 0) {
+                ans++;
+                sum = 0;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (b[i] == 2) {
+                b[i] -= 2;
+                sum += 2;
+            } else if (b[i] == 0 && sum > 0) {
+                ans++;
+                sum = 0;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (b[i] == 1) {
+                b[i] -= 1;
+                sum += 1;
+            } else if (b[i] == 0 && sum > 0) {
+                ans++;
+                sum = 0;
+            }
+        }
+        //cout << sum << endl;
+        for (auto x : b)
+            cout << x << " ";
+        cout << endl;
+    }
+    cout << ans - 1 << endl;
+    return 0;
+}
+#include <iostream>
+#define ll long long
+using namespace std;
+
+int main() {
+    ll a, b;
+    cin >> a >> b;
+    cout << a + b << endl;
+    return 0;
+}
+a = int(input())
+b = int(input())
+print(a + b)
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#define ll long long
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<ll>a = vector<ll>(n);
+    for (auto &x : a)
+        cin >> x;
+    reverse(a.begin(), a.end());
+    for (auto x : a)
+        cout << x << " ";
+    cout << endl;
+    return 0;
+}
+n = int(input())
+a = map(int, input())
+#include <iostream>
+#define ll long long
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n;
+    cin >> n;
+    ll sum = 0;
+    for (int i = 0; i < n; i++) {
+        ll x;
+        cin >> x;
+        sum += x;
+    }
+    cout << sum << endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#define ll long long
+using namespace std;
+
+int n;
+vector<vector<int>>w;
+
+ll min_sum = 1e18 + 10;
+
+vector<int>l;
+
+void rec(int index, int cindex, ll sum) {
+    if (index == cindex) {
+        min_sum = min(sum, min_sum);
+        return;
+    }
+    for (int i = 0; i < n; i++) {
+        if (l[i] == 0) {
+            l[i] = 1;
+            rec(i, cindex, sum + w[index][i]);
+            l[i] = 0;
+        }
+    }
+}
+
+int main() {
+    cin >> n;
+    w = vector<vector<int>>(n, vector<int>(n));
+    for (auto &x : w)
+        for (auto &y : x)
+            cin >> y;
+    //clock_t start = clock();
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i != j) {
+                min_sum = 1e18 + 10;
+                l = vector<int>(n, 0);
+                l[i] = 1;
+                rec(i, j, 0);
+                cout << min_sum << " ";
+            } else {
+                cout << 0 << " ";
+            }
+        }
+        cout << "\n";
+    }
+    //cout << (double)(clock() - start)/CLOCKS_PER_SEC << endl;
+    return 0;
+}
+#include <iostream>
+#define ll long long
+using namespace std;
+
+int x, y, w, s;
+ll min_sum = 1e18 + 10;
+
+void rec(int myx, int myy, ll sum) {
+    if (myx == x && myy == y) {
+        min_sum = min(sum, min_sum);
+        //cout << sum << endl;
+        return;
+    } else if (myx != x && myy == y) {
+        sum += (x - myx) * w;
+        min_sum = min(sum, min_sum);
+        return;
+    } else if (myx == x && myy != y) {
+        sum += (y - myy) * w;
+        min_sum = min(sum, min_sum);
+        return;
+    }
+    rec(myx + 1, myy, sum + w);
+    rec(myx, myy + 1, sum + w);
+    rec(myx + 1, myy + 1, sum + s);
+}
+
+int main() {
+    cin >> x >> y >> w >> s;
+    rec(0, 0, 0);
+    cout << min_sum << endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+int p(int k){
+    int ans = 1 << k;
+    return ans;
+}
+
+int div_up(int a, int b){
+    return (a + b - 1) / b;
+}
+
+int main(){
+    int k[100000];
+    int N, K, Q;
+    std::cin >> N >> K >> Q;
+    for(int i = 0; i < K; i++){
+        int a;
+        std::cin >> a;
+        k[i] = p(a);
+    }
+    for(int i = 0; i < Q; i++){
+        int index;
+        std::cin >> index;
+        for(int j = 0; j < K; j++){
+            int a = div_up(index, k[j]);
+            if((a & 1) == 0){
+                index -= k[j];
+            }
+            else{
+                index += k[j];
+            }
+        }
+        std::cout << index << " ";
+    }
+    return 0;
+}
+import math
+
+N, K, Q = map(int, input().split())
+k = []
+
+for i in range(K):
+    k.append(int(input()))
+for i in range(Q):
+    index = int(input())
+    for j in range(len(k)):
+        a = math.ceil(index / (2 ** k[j]))
+        if(a % 2 == 0):
+            index -= 2 ** k[j]
+        else:
+            index += 2 ** k[j]
+    print(index)
+h, m = map(int, input().split())
+
+if(h == 0):
+    print(h, end=' ')
+else:
+    print(12 - h, end=' ')
+
+if(m == 0):
+    print(m)
+else:
+    print(60 - m)
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main(){
+    int speedX = 0, speedY = 0, X = 0, Y = 0;
+    int n;
+    std::cin >> n;
+    for(int i = 0; i < n; i++){
+        std::string c;
+        std::cin >> c;
+        if(c == "Fwrd"){
+
+        }
+    }
+    return 0;
+}
+n = int(input())
+direct = 0
+speed = 0
+speedX = 0
+speedY = 0
+X = 0
+Y = 0
+
+for i in range(n):
+    c = input()
+    if(c == 'Rght' and speedX == 0 and speedY == 0):
+        direct += 1
+    elif(c == 'Left' and speedY == 0 and speedX == 0):
+        direct -= 1
+    elif(c == 'Fwrd' and speedX == 0 and speedY == 0):
+        speed = 100
+    elif(c == 'Back' and speedX == 0 and speedY == 0):
+        speed = -100
+    elif(c == 'More' and speed > 0):
+        speed = min(500, speed + 100)
+    elif(c == 'Less' and speed > 0):
+        speed = min(500, speed - 100)
+    elif(c == 'Stop'):
+        speed = 0
+
+    direct = direct % 4
+    if(direct == 0):
+        speedX = 0
+        speedY = speed
+    elif(direct == 1):
+        speedX = speed
+        speedY = 0
+    elif(direct == 2):
+        speedX = 0
+        speedY = -speed
+    elif(direct == 3):
+        speedX = -speed
+        speedY = 0
+    X += speedX
+    Y += speedY
+    #print(direct, speedX, speedY, X, Y)
+print(X, Y)
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+int main() {
+    std::vector<long long>plot = std::vector<long long>();
+    long long N, M;
+    std::cin >> N >> M;
+    for(long long i = 0; i < N * M; i++){
+        long long a;
+        std::cin >> a;
+        plot.push_back(a);
+    }
+    std::vector<long long>mesk = std::vector<long long>();
+    long long n;
+    std::cin >> n;
+    for(long long i = 0; i < n; i++){
+        long long a;
+        std::cin >> a;
+        mesk.push_back(a);
+    }
+    std::sort(mesk.begin(), mesk.end());
+    std::sort(plot.begin(), plot.end());
+    long long j = 0;
+    for(long long i = 0; i < plot.size(); i++){
+        if(j >= mesk.size())break;
+        if(plot[i] >= mesk[j]){
+            j++;
+        }
+    }
+    std::cout << j << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a = 0;
+    std::cout << a % 2 << " " << (a & 1) << std::endl; 
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a[100];
+    int N;
+    std::cin >> N;
+    int min = 1e9, max = -1e9;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+        if(a[i] > max){
+            max = a[i];
+        }
+        if(a[i] < min){
+            min = a[i];
+        }
+    }
+    for(int i = 0; i < N; i++){
+        if(a[i] == max){
+            a[i] = min;
+        }
+        std::cout << a[i] << " ";
+    }
+
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+int p(int k){
+    int ans = 1 << k;
+    return ans;
+}
+
+int div_up(int a, int b){
+    return (a + b - 1) / b;
+}
+
+int main(){
+    int k[100000];
+    int N, K, Q;
+    std::cin >> N >> K >> Q;
+    for(int i = 0; i < K; i++){
+        int a;
+        std::cin >> a;
+        k[i] = p(a);
+    }
+    for(int i = 0; i < Q; i++){
+        int index;
+        std::cin >> index;
+        for(int j = 0; j < K; j++){
+            if(div_up(index, k[j]) % 2 == 0){
+                index -= k[j];
+            }
+            else{
+                index += k[j];
+            }
+        }
+        std::cout << index << " ";
+    }
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a[100000];
+    int N, K;
+    std::cin >> N >> K;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+    }
+    int l = 0, r = N;
+    for(int i = 0; i < K; i++){
+        int x = 0;
+        std::cin >> x;
+        if(x >= a[0] && x <= a[N - 1]){
+            l = 0;
+            r = N;
+            while(l < r){
+                int m = (l + r) / 2;
+                if(x > a[m])l=m+1;
+                else r=m;
+            }
+            //std::cout << a[l] << std::endl;
+            if(a[r] == x){
+                std::cout << r + 1 << " ";
+                int j = r;
+                while(a[j] == a[r]){
+                    j++;
+                }
+                std::cout << j << std::endl;
+            }
+            else{
+                std::cout << 0 << std::endl;
+            }
+        }
+        else{
+            std::cout << 0 << std::endl;
+        }
+    }
+    return 0;
+}
+#include <iostream>
+#include <vector>
+
+int main(){
+    std::vector<int>indexes = std::vector<int>();
+    int a[1000];
+    int N, x;
+    std::cin >> N;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+    }
+    std::cin >> x;
+    for(int i = 0; i < N; i++){
+        if(a[i] == x){
+            indexes.push_back(i);
+        }
+    }
+    for(int i = 0; i < indexes.size(); i++){
+        std::cout << indexes[i] + 1 << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int N, x, max = -5000, maxIn = 0;
+    std::cin >> N;
+    for(int i = 0; i < N; i++){
+        std::cin >> x;
+        if(x > max){
+            max = x;
+            maxIn = i;
+        }
+    }
+    std::cout << maxIn + 1 << std::endl;
+    return 0;
+}
+n = int(input())
+
+print(-n)
+res = ""
+v = int(input())
+
+while True:
+    r = v % -2
+    v = v // -2
+    if r < 0:
+        r = r + 2
+        v = v + 1
+    if r == 1:
+        res = "1" + res
+    if r == 0:
+        res = "0" + res
+
+    if v == 0:
+        break
+
+print(res)
+#include <iostream>
+
+int main(){
+    int a[1000];
+    int N, x;
+    std::cin >> N;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+    }
+    std::cin >> x;
+    int ans = -5000;
+    for(int i = 0; i < N; i++){
+        if(abs(x - a[i]) < abs(x - ans)){
+            ans = a[i];
+        }
+    }
+    std::cout << ans << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <string>
+
+std::vector<std::string>matrix = std::vector<std::string>();
+std::vector<std::pair<int, int>>l = std::vector<std::pair<int, int>>();
+
+int size(int x, int y){
+    //std::cout << x << " " << y << " " << matrix[y][x] << std::endl;
+    if(matrix[y][x] == '|'){
+        l.push_back({x, y});
+        if(matrix[y + 1][x] == '|'){
+            return size(x, y + 1) + 1;
+        }
+        else{
+            return 1;
+        }
+    }
+    if(matrix[y][x] == '-'){
+        l.push_back({x, y});
+        if(matrix[y][x + 1] == '-'){
+            return size(x + 1, y) + 1;
+        }
+        else{
+            return 1;
+        }
+    }
+    if(matrix[y][x] == '/'){
+        l.push_back({x, y});
+        if(matrix[y + 1][x - 1] == '/'){
+            return size(x - 1, y + 1) + 1;
+        }
+        else{
+            return 1;
+        }
+    }
+    if(matrix[y][x] == '\\'){
+        l.push_back({x, y});
+        if(matrix[y + 1][x + 1] == '\\'){
+            return size(x + 1, y + 1) + 1;
+        }
+        else{
+            return 1;
+        }
+    }
+    return 0;
+}
+
+int main(){
+    int n, m;
+    std::cin >> n >> m;
+    for(int i = 0; i < n; i++){
+        std::string ma;
+        std::cin >> ma;
+        ma = '.' + ma + '.';
+        matrix.push_back(ma);
+    }
+    std::string ma = "";
+    for(int i = 0; i < m + 2; i++){
+        ma += '.';
+    }
+    matrix.push_back(ma);
+
+    /*for(int i = 0; i < matrix.size(); i++){
+        std::cout << matrix[i] << std::endl;
+    }*/
+
+    int ans = 0;
+    for(int y = 0; y < n; y++){
+        for(int x = 1; x < m + 1; x++){
+            bool b = false;
+            for(int i = 0; i < l.size(); i++){
+                if(x == l[i].first && y == l[i].second){
+                    b = true;
+                    break;
+                }
+            }
+            if(b == false && size(x, y) > 0){
+                ans++;
+            }
+        }
+    }
+
+    std::cout << ans << std::endl;
+
+    return 0;
+}
+
+n, m = map(int, input().split())
+
+matrix = []
+
+for i in range(n):
+    ma = '.' + input() + '.'
+    matrix.append(ma)
+ma = '.' * (m + 2)
+matrix.append(ma)
+
+l = []
+
+def size(x, y):
+    #print(x, y, matrix[y][x])
+    if (matrix[y][x] == '|'):
+        l.append((x, y))
+        if(matrix[y + 1][x] == '|'):
+            return size(x, y + 1) + 1
+        else:
+            return 1
+    if (matrix[y][x] == '-'):
+        l.append((x, y))
+        if(matrix[y][x + 1] == '-'):
+            return size(x + 1, y) + 1
+        else:
+            return 1
+    if (matrix[y][x] == '/'):
+        l.append((x, y))
+        if(matrix[y + 1][x - 1] == '/'):
+            return size(x - 1, y + 1) + 1
+        else:
+            return 1
+    if (matrix[y][x] == '\\'):
+        l.append((x, y))
+        if(matrix[y + 1][x + 1] == '\\'):
+            return size(x + 1, y + 1) + 1
+        else:
+            return 1
+    return 0
+
+ans = 0
+
+for y in range(n):
+    for x in range(1, m+1):
+        b = False
+        for i in range(len(l)):
+            if((x, y) == l[i]):
+                b = True
+                break
+        if(b == False):
+            #print('-----')
+            if(size(x, y) > 0):ans+=1
+
+            
+
+print(ans)
+
+s = input()
+strs = []
+
+def isP(s):
+    if(s[::-1] == s):
+        return True
+    return False
+
+for l in range(2, 4):
+    for x in range(len(s) - l + 1):
+        st = s[x:x+l]
+        #print(st)
+        if(isP(st)):
+            strs.append(st)
+
+#for i in range(len(strs)):
+    #print(strs[i])
+
+if(len(strs) == 0):
+    print(-1)
+else:
+    minsize = len(strs[0])
+    m = strs[0]
+    for i in range(len(strs)):
+        if(len(strs[i]) > minsize):
+            break
+        if(strs[i] < m):
+            m = strs[i]
+    print(m)
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cmath>
+
+bool isPalindrome(std::string str){
+    int l = 0;
+    int r = str.size()-1;
+    while(l < r){
+        if(str[l] != str[r])return false;
+        l++;
+        r--;
+    }
+    return true;
+}
+
+bool f(std::string a, std::string b){
+    if(a.size() >= b.size())return false;
+    for(int i = 0; i < a.size(); i++){
+        if(a[i] != b[i])return false;
+    }
+    return true;
+}
+
+bool s(std::string a, std::string b){
+    int i = 0;
+    while(i < std::min(a.size(), b.size())){
+        if(a[i] != b[i]){
+            break;
+        }
+        i++;
+    }
+    if(a[i] < b[i])
+        return true;
+    return false;
+}
+
+int main(){
+    std::vector<std::string>v = std::vector<std::string>();
+    std::string str;
+    std::string ans;
+    std::cin >> str;
+    for(int l = 2; l <= str.size(); l++){
+        for(int x = 0; x < str.size() - l + 1; x++){
+            std::string s = str.substr(x, l);
+            if(isPalindrome(s)){
+                v.push_back(s);
+                std::cout << s << std::endl;
+            }
+        }
+    }
+    std::cout << "--------" << std::endl;
+    if(v.size() == 0){
+        std::cout << -1 << std::endl;
+        return 0;
+    }
+    if(v.size() == 1){
+        ans = v[0];
+    }
+    else{
+        ans = v[0];
+        for(int i = 1; i < v.size(); i++){
+            std::cout << ans << " " << v[i] << " " << f(ans, v[i]) << " " << s(v[i], ans) << std::endl;
+            if(f(v[i], ans) || s(v[i], ans))
+                ans = v[i];
+        }
+    }
+    std::cout << ans << std::endl;
+
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <string>
+
+std::vector<int>h = std::vector<int>();
+int yearSize;
+
+int per(int n, std::vector<int> d){
+    std::cout << n << std::endl;
+    for(int i = 0; i < d.size(); i++){
+        std::cout << d[i] << " ";
+    }
+    std::cout << std::endl;
+    if(n > yearSize)
+        return 0;
+    d.push_back(0);
+    per(n + 1, d);
+    d[n + 1] = 1;
+    per(n + 1, d); 
+    return 0;
+}
+
+int main(){
+    std::vector<int>d = std::vector<int>();
+    int year, startDay, N;
+    std::cin >> year >> startDay;
+    if(year % 4 != 0)
+        yearSize = 365;
+    else
+        yearSize = 366;
+    std::cin >> N;
+
+    for(int i = 0; i < N; i++){
+        int dd, mm, day = 0;
+        std::string str;
+        std::cin >> str;
+        dd = std::stoi(str.substr(0, 2));
+        mm = std::stoi(str.substr(3, 2));
+        for(int j = 1; j < mm; j++){
+            if(year % 4 == 0 && j == 2)
+                day += 29;
+            else if(j == 2)
+                day += 28;
+            else if(j < 8 && j % 2 == 1)
+                day += 31;
+            else if(j < 8 && j % 2 == 0)
+                day += 30;
+            else if(j % 2 == 0)
+                day += 31;
+            else if(j % 2 == 1)
+                day += 30;
+        }
+        h.push_back(day + dd);
+    }
+    d.push_back(0);
+    per(0, d);
+    d[0] = 1;
+    per(0, d);
+
+    return 0;
+}
+y, w = map(int, input().split())
+
+n = int(input())
+dd = []
+
+for i in range(n):
+    d, m = map(int, input().split('.'))
+    dd.append((d, m))
+
+
+n = int(input())
+r = list('RGB')
+
+n -= (n // 6) * 6
+
+for i in range(n):
+    if(i % 2 == 0):
+        a = r[0]
+        r[0] = r[1]
+        r[1] = a
+    else:
+        a = r[1]
+        r[1] = r[2]
+        r[2] = a
+
+print("".join(r))
+#include <iostream>
+#include <cmath>
+
+int main(){
+    long long ans = 0;
+    int P, Q;
+    std::cin >> P >> Q;
+
+    int l = 1;
+    while(l <= Q){
+        l = l << 1;
+        ans += round((float)Q / (float)l) * (l - 1);
+        //std::cout << l-1 << " " << round((float)Q / (float)l) << " " << round((float)Q / (float)l) * (l - 1) << std::endl;
+    }
+    //std::cout << ans << std::endl;
+
+    Q = P - 1;
+    int ans2 = 0;
+    l = 1;
+    while(l <= Q){
+        l = l << 1;
+        ans2 += round((float)Q / (float)l) * (l - 1);
+        //std::cout << l-1 << " " << round((float)Q / (float)l) << " " << round((float)Q / (float)l) * (l - 1) << std::endl;
+    }
+
+    std::cout << ans - ans2 << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a[750][750];
+    int n, m, ans = 0;
+    std::cin >> n >> m;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            std::cin >> a[i][j];
+        }
+    }
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            int min = 0;
+            for(int k = 0; k < n; k++){
+                if(a[j][k] < a[j][min]){
+                    min = k;
+                }
+            }
+            bool x = false;
+            for(int k = 0; k < n; k++){
+                if(a[j][k] == a[j][min] && k == i){
+                    x = true;
+                    break;
+                }
+            }
+            if(!x)break;
+            int max = 0;
+            for(int k = 0; k < m; k++){
+                if(a[k][i] > a[max][i]){
+                    max = k;
+                }
+            }
+            bool y = false;
+            for(int k = 0; k < m; k++){
+                if(a[k][i] == a[max][i] && k == j){
+                    y = true;
+                    break;
+                }
+            }
+            if(x && y)ans++;
+        }
+    }
+    std::cout << ans << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    int a[1000];
+    int N;
+    std::cin >> N;
+    for(int i = 0; i < N; i++){
+        std::cin >> a[i];
+    }
+    int max = 0;
+    for(int i = 0; i < N; i++){
+        if(a[i] > a[max]){
+            max = i;
+        }
+    }
+    long long lmax = -1e10;
+    for(int i = 0; i < N; i++){
+        if(a[i] < a[max] && a[i] > lmax){
+            lmax = a[i];
+        }
+    }
+    std::cout << lmax << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main(){
+    long long ans = 0;
+    int P, Q;
+    std::cin >> P >> Q;
+
+    for(int x = P; x <= Q; x++){
+        ans += x ^ (x - 1);
+        //std::cout << (x ^ (x - 1)) << std::endl;
+    }
+
+    std::cout << ans << std::endl;
+    return 0;
+}
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+int main(){
+    int n;
+    std::cin >> n;
+    std::vector<int>arr = std::vector<int>();
+    for(int i = 0; i < n; i++){
+        int a;
+        std::cin >> a;
+        arr.push_back(a);
+    }
+    std::sort(arr.begin(), arr.end());
+    for(int i = 0; i < arr.size(); i++){
+        std::cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+N, x, y = map(int, input().split())
+l = min(x, y)
+r = N * x * y
+while(l < r):
+    m = (l + r) // 2
+    if((1 + (m - min(x, y)) // x + (m - min(x, y)) // y) < N):
+        l = m + 1
+    else:
+        r = m
+print(r)
+x, l = map(int, input().split())

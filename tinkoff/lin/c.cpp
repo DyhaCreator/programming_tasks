@@ -46,6 +46,8 @@ vector<int> left(vector<int>a) {
 }
 
 int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
     cin >> n >> m;
     vector<vector<int >> a = vector<vector<int >> (n, vector<int>(m));
     for (int i = 0; i < n; i++) {
@@ -53,7 +55,6 @@ int main() {
             cin >> a[i][j];
         }
     }
-    clock_t tStart = clock();
     ll max_ans = 0;
     vector<int>b = vector<int>(m);
     vector<int>ansR = vector<int>(m, -1);
@@ -88,13 +89,10 @@ int main() {
             if (L * b[i] > max) {
                 max = L * b[i];
             }
-            //cout << L * b[i] << " ";
         }
-        //cout << endl;
         max_ans = std::max(max, max_ans);
     }
     cout << max_ans << endl;
-    printf("Time taken: %.6fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
     return 0;
 }
 /*
