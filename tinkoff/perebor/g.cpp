@@ -22,9 +22,10 @@ void rec(int n, vector<int>ans) {
 
 int main() {
     cin >> nut;
+    cout << nut << endl;
     vector<int>ans = vector<int>();
     ans.push_back(0);
-    for (int i = nut; i >= 1; i = i >> 1) {
+    for (int i = nut / 2; i >= 1; i--) {
         ans[ans.size() - 1] = i;
         rec(nut - i, ans);
     }
