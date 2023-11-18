@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="description" content="Hexadecimal Regular Expression" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="KEYWORDS" content="hexadecimal, regex, pattern" />
+		<title>Scripts</title>
+		<link rel="stylesheet" type="text/css" media="screen,print" href="../shared/styles/style.css" />
+	</head>
+	<body>
+
+<script type="text/javascript">
+if (document.getElementById("tuto_tab") == null) {
+    window.location = "./Hopper.html#search_expr";
+}
+</script>
+
+<a name="search_expr"></a>
+<h1>Hexadecimal Regular Expressions</h1>
+<p>
+Hopper can search for a given pattern in the bytes of a disassembled file.
+In order to proceed, Hopper uses a small language, very similar to regular expressions seen in tools like <i>grep</i>.
+</p>
+<p>
+    Regular expressions are made of words, using letters from the alphabet <b>0123456789abcdef</b>, and special characters like <b>*</b>, <b>+</b>, <b>?</b>, <b>.</b>, <b>|</b>, and parenthesis. From a regular expression, Hopper will build a <i>deterministic finite automaton</i>, and use it to search the pattern in the file. Each byte of the file is split into two 4-bits words, and given to the automaton.
+</p>
+<ul>
+    <li>Letters from the <b>0123456789abcdef</b> alphabet are used <i>as is</i>,</li>
+    <li>The special character <b>.</b> matches any 4-bit word. If you want to match with any byte, you should use the <b>..</b> sequence,</li>
+    <li>The character <b>*</b> is used to indicate that the previous word can be repeated 0, or more times. Please note that this character applies to the whole word, not only the last character, or byte. For instance, the regular expression:
+        <pre>123*abc*123</pre>
+        matches the strings:
+        <ul>
+            <li>123abc123</li>
+            <li>123123123abcabc123</li>
+            <li>abc123</li>
+            <li>&hellip;</li>
+        </ul>
+	</li>
+    <li>You can restrict the effect of the star by using some parenthesis. For instance, in the regular expression:
+        <pre>12345(ab*)678</pre>
+        only the word <b>ab</b> is repeated.</li>
+    <li>You can specify a subset of characters, using the square brackets:
+        <pre>[168ab]</pre>
+        Will match if the word is 1, 6, 8, a, or b.
+        You can also provide ranges:
+        <pre>[2-8cd]</pre>
+        Will match if the word is 2, 3, 4, 5, 6, 7, 8, c, or d.</li>
+    <li>As a shortcut, you can use the character <b>+</b> as a way to represent 1, or more occurences of the pattern.</li>
+    <li>Another shortcut is the character <b>?</b>, which mean 0, or 1 occurrence of the pattern.</li>
+    <li>You can combine two regular expressions using a <i>logical or</i> with the character <b>|</b>. For instance:
+        <pre>AB|CD</pre>
+        Will match words AB, or CD.</li>
+</ul>
+<h2>Some examples</h2>
+<ul>
+    <li>A sequence beginning with <b>12</b>, and ending with <b>ab</b>:
+        <pre>12(..*)ab</pre></li>
+    <li>A NULL-terminated string of decimal characters:
+        <pre>3[0-9]+00</pre></li>
+    <li>Roughly match all the instructions <b>xor al,al</b>, <b>xor ax,ax</b>, <b>xor eax,eax</b>, and <b>xor rax,rax</b></li>
+        <pre>(48|66)?(30|31)C0</pre>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+body {
+    font-family: "Helvetica Neue", "Sans Serif";
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media print {
+    .container {
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 16.1em;
+    overflow: auto;
+    border-style: solid;
+    border-color: #E4E4E4;
+    border-width: 0 2px 0 0;
+}
+
+@media print {
+    .menu {
+        display: none;
+        width: 0;
+    }
+}
+
+pre {
+    font-family: "SF Mono", Monospace;
+    font-weight: bold;
+}
+
+.menu .selected {
+    background-color: #F2F2F2;
+}
+
+.menu ul {
+    padding: 0 0 0 0.8em;
+}
+
+.menu>ul {
+    padding: 0 1em 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.collapsed+ul {
+    display: none;
+}
+
+.menu > ul > li {
+    font-size: 10pt;
+    padding: 8px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu > ul > ul > li {
+    font-size: 10pt;
+    margin: 6px 0 0 16px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu > ul > ul > ul > li {
+    font-size: 9pt;
+    margin: 6px 0 0 14px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu > ul > ul > ul > li:last-child {
+    font-size: 9pt;
+    margin: 6px 0 8px 14px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu a {
+    padding-left: 14px;
+}
+
+.menu .disclosure-icon+a {
+    padding-left: 0;
+}
+
+.menu .disclosure-icon {
+    background-image: url("../arrow.svg");
+    background-size: cover;
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    transform: rotate(90deg);
+    transition: all 0.15s ease;
+}
+
+.menu li.collapsed>.disclosure-icon {
+    transform: rotate(0deg);
+}
+
+.menu a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.menu a:active {
+    color: #0000B8;
+}
+
+.menu a:hover
+{
+    color: #999999;
+    text-decoration: none;
+}
+
+.content {
+    overflow: auto;
+    top: 0;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100vh;
+}
+
+@media print {
+    .content {
+        height: 100%;
+    }
+}
+
+.content .tab {
+    font-size: 10pt;
+    padding: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 18px;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    color: #666;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 18px;
+    margin: 20px 0;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    color: #777777;
+    font-size: 14px;
+}
+
+.content .tab {
+    color: #666666;
+}
+
+.content .tab p {
+    text-align: justify;
+}
+
+.content .tab.visible {
+    display: block;
+}
+
+.content .tab.invisible {
+    display: none;
+}
+
+.vertical-separator {
+    background-color: #555;
+    position: fixed;
+    width: 1px;
+    height: 100vh;
+}
+
+#home_tab {
+    width: 100%;
+    height: 100%;
+}
+
+#home_tab img {
+    display: block;
+    width: 512px;
+    height: 512px;
+    margin: auto;
+    padding-top : 50px;
+}
+
+@media screen and (max-width:780px) {
+    #home_tab img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+#home_tab p {
+    color: #888;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.tutorial {
+    overflow-x: hidden;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.tutorial > *:first-child {
+    margin-top: 0 !important;
+}
+.tutorial > *:last-child {
+    margin-bottom: 0 !important;
+}
+.tutorial a {
+    color: #109EFF;
+    text-decoration: none;
+}
+.tutorial a:hover {
+    border-bottom: 1px dotted #109EFF;
+}
+.tutorial a:visited, .tutorial a:active {
+    color: #109EFF;
+}
+.tutorial a.absent {
+    color: #cc0000;
+}
+.tutorial a.anchor {
+    display: block;
+    padding-left: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.tutorial p a {
+    margin: 0 2px;
+}
+.tutorial li p.first {
+    display: inline-block;
+}
+.tutorial li {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.tutorial ul, .tutorial ol {
+    padding-left: 30px;
+}
+.tutorial ul :first-child, .tutorial ol :first-child {
+    margin-top: 0;
+}
+.tutorial img {
+    border: 1px solid #E1E1E1;
+    margin: 0 auto 10px;
+    display: block;
+    max-width: 512px;
+    padding: 5px;
+}
+@media screen and (max-width:780px) {
+    .tutorial img {
+        max-width: 90%;
+    }
+}
+.tutorial span.frame {
+    display: block;
+    overflow: hidden;
+}
+.tutorial span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto;
+}
+.tutorial span.frame span img {
+    display: block;
+    float: left;
+}
+.tutorial span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0;
+}
+.tutorial span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.tutorial span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center;
+}
+.tutorial span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.tutorial span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.tutorial span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right;
+}
+.tutorial span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+.tutorial span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left;
+}
+.tutorial span.float-left span {
+    margin: 13px 0 0;
+}
+.tutorial span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right;
+}
+.tutorial span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right;
+}
+
+.global_doc {
+    position: relative;
+    font-size: 10pt;
+    text-indent: 2rem;
+    padding: 0 0 1em 0;
+    color: #666666;
+    text-align: justify;
+}
+
+.class_links {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    border-color: #E4E4E4;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+}
+
+.class_links a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.class_links a:hover {
+    color: #999999;
+    text-decoration: none;
+}
+
+.class_links li {
+    list-style: none;
+}
+
+.class_links ul:first-child {
+    margin: 0;
+    padding: 0;
+}
+
+.class_links ul>ul {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.class_links ul:first-child>ul {
+    padding-bottom: 1em;
+}
+
+.documentation {
+    overflow: auto;
+    top: 0;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 0.5em;
+    color: #666666;
+}
+
+.class {
+    padding:0;
+}
+
+.class .name {
+    background-color: #DDDDEE;
+    padding: 5px 5px 5px 20px;
+    font-size: 11pt;
+    margin-bottom: 10px;
+}
+
+.class .desc {
+    font-size: 10pt;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.class .methods {
+    margin-bottom: 60px;
+}
+
+.class .methods .method .name {
+    background-color: #DDDDEE;
+    font-size: 10.5pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.class .methods .method .name .static {
+    font-size: 8pt;
+    font-weight: normal;
+}
+
+.class .methods .method .desc {
+    font-size: 10pt;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}

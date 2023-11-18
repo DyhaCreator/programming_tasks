@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Hopper Disassembler v4
+Comment=Hopper Disassembler v4
+StartupWMClass=Hopper
+Exec=/opt/hopper-v4/bin/Hopper %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=hopper-disassembler-v4.png
+Categories=Application;Development;Utility;
