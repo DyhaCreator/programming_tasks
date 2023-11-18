@@ -3,14 +3,14 @@
 #define ll long long
 using namespace std;
 
-void sort(vector<int> &a) {
+void sort(vector<int>&a) {
     for (int i = 0; i < a.size(); i++) {
-        for (int j = 1; j < a.size(); j++) {
-            if (a[j] < a[j - 1]) {
-                int buffer = a[j];
-                a[j] = a[j - 1];
-                a[j - 1] = buffer;
-            }
+        int index = i;
+        while (index > 0 && a[index] < a[index - 1]) {
+            int buffer = a[index];
+            a[index] = a[index - 1];
+            a[index - 1] = buffer;
+            index--;
         }
     }
 }
