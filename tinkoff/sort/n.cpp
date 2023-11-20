@@ -22,22 +22,15 @@ void sort(vector<skier>&a) {
         for (int j = 0; j < b.size(); j++) {
             b[j].kilo += 1.0/b[j].time;
         }
-        for (int j = 0; j < b.size(); j++) {
-            for (int k = 1; k < b.size(); k++) {
-                if (b[k].kilo <= l && b[k].kilo > b[k - 1].kilo) {
-                    auto buffer = b[k];
-                    b[k] = b[k - 1];
-                    b[k - 1] = buffer;
-                    ans++;
-                }
-            }
-        }
+        int last_ans = ans - 1;
     }
     while (b[b.size() - 1].kilo <= l) {
         for (int j = 0; j < b.size(); j++) {
             b[j].kilo += 1.0/b[j].time;
         }
-        for (int j = 0; j < b.size(); j++) {
+        int last_ans = ans - 1;
+        while ((ans - last_ans) > 0) {
+            last_ans = ans;
             for (int k = 1; k < b.size(); k++) {
                 if (b[k].kilo <= l && b[k].kilo > b[k - 1].kilo) {
                     auto buffer = b[k];
