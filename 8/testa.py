@@ -6,8 +6,8 @@ name = 'a.py'
 
 f = open('testa', 'w')
 
-n = 4
-m = 3
+n = 100
+m = 10
 s = '\n'
 for i in range(n):
     s += str(random.randint(0, m)) + ' '

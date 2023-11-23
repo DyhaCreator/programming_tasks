@@ -6,6 +6,9 @@ using namespace std;
 
 void sort(vector<int>&a) {
     for (int i = 0; i < a.size(); i++) {
+        for (auto x : a)
+            cout << x << " ";
+        cout << endl;
         int max_index = i;
         for (int j = i; j < a.size(); j++) {
             if (a[j] > a[max_index]) {
