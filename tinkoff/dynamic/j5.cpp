@@ -12,6 +12,7 @@ int main() {
             cin >> map[y][x];
         }
     }
+    //cout << "---\n";
     vector<vector<int>>a = vector<vector<int>>(n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
@@ -23,6 +24,7 @@ int main() {
         }
         //cout << endl;
     }
+    //cout << "---\n";
     vector<vector<int>>b = vector<vector<int>>(n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
@@ -34,13 +36,18 @@ int main() {
         }
         //cout << endl;
     }
+    //cout << "---\n";
     vector<vector<int>>c = vector<vector<int>>(n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
-            if (min(a[y][x], b[y][x]) == c[y - 1][x - 1] + 1) {
+            if (min(a[y][x], b[y][x]) <= c[y - 1][x - 1] + 1) {
                 c[y][x] = min(a[y][x], b[y][x]);
             } else {
-                c[y][x] = map[y - 1][x - 1];
+                if (c[y - 1][x - 1] + 1 <= a[y][x] && c[y - 1][x - 1] + 1 <= b[y][x]) {
+                    c[y][x] = c[y - 1][x - 1] + 1;
+                } else {
+                    c[y][x] = map[y - 1][x - 1];
+                }
             }
             //cout << c[y][x] << " ";
         }
@@ -49,13 +56,14 @@ int main() {
     int maxS = 0;
     int lx = 0;
     int ly = 0;
-    for (int y = 0; y <= n; y++) {
-        for (int x = 0; x <= m; x++) {
-            if (a[y][x] > maxS) {
+    for (int y = 1; y <= n; y++) {
+        for (int x = 1; x <= m; x++) {
+            if (c[y][x] > maxS) {
                 maxS = c[y][x];
                 lx = x - c[y][x];
                 ly = y - c[y][x];
             }
+            //cout << c[y][x] << " " << maxS << endl;
         }
     }
     cout << maxS << "\n" << lx + 1 << " " << ly + 1 << "\n";
@@ -67,5 +75,28 @@ int main() {
 1 1 0 0 0
 1 1 1 1 1
 0 0 0 1 1
+
+10 11
+0 0 1 1 0 0 1 1 0 1 0
+0 0 1 1 0 0 1 1 0 1 1
+0 0 1 1 1 1 1 1 0 1 0
+0 0 0 1 1 1 1 1 0 1 1
+0 0 1 1 1 1 1 1 0 1 0
+0 0 0 1 1 1 1 1 0 1 1
+0 0 1 1 1 1 1 1 0 1 0
+0 0 1 1 0 0 1 1 0 1 0
+0 0 1 1 0 0 1 1 0 1 1
+0 0 1 1 0 0 1 1 0 1 1 
+
+0 0 1 1 0 0 1 1 0 1 0 
+0 0 1 2 0 0 1 2 0 1 1 
+0 0 1 2 1 1 1 2 0 1 0 
+0 0 0 1 2 2 2 2 0 1 1 
+0 0 1 1 2 3 3 3 0 1 0 
+0 0 0 1 2 3 4 4 0 1 1 
+0 0 1 1 2 3 4 5 0 1 0 
+0 0 1 2 0 0 1 2 0 1 0 
+0 0 1 2 0 0 1 2 0 1 1 
+0 0 1 2 0 0 1 2 0 1 2 
 
 */
