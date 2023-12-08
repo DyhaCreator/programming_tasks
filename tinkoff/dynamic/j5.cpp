@@ -6,38 +6,31 @@ using namespace std;
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<vector<int>>map = vector<vector<int>>(n, vector<int>(m));
+    vector<vector<int >> map = vector<vector<int >> (n, vector<int>(m));
     for (int y = 0; y < n; y++) {
         for (int x = 0; x < m; x++) {
             cin >> map[y][x];
         }
     }
-    //cout << "---\n";
-    vector<vector<int>>a = vector<vector<int>>(n + 1, vector<int>(m + 1));
+    vector<vector<int >> a = vector<vector<int >> (n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
             a[y][x] = a[y - 1][x] + map[y - 1][x - 1];
             if (map[y - 1][x - 1] == 0) {
                 a[y][x] = 0;
             }
-            //cout << a[y][x] << " ";
         }
-        //cout << endl;
     }
-    //cout << "---\n";
-    vector<vector<int>>b = vector<vector<int>>(n + 1, vector<int>(m + 1));
+    vector<vector<int >> b = vector<vector<int >> (n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
             b[y][x] = b[y][x - 1] + map[y - 1][x - 1];
             if (map[y - 1][x - 1] == 0) {
                 b[y][x] = 0;
             }
-            //cout << b[y][x] << " ";
         }
-        //cout << endl;
     }
-    //cout << "---\n";
-    vector<vector<int>>c = vector<vector<int>>(n + 1, vector<int>(m + 1));
+    vector<vector<int >> c = vector<vector<int >> (n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
             if (min(a[y][x], b[y][x]) <= c[y - 1][x - 1] + 1) {
@@ -49,24 +42,21 @@ int main() {
                     c[y][x] = map[y - 1][x - 1];
                 }
             }
-            //cout << c[y][x] << " ";
         }
-        //cout << endl;
     }
     int maxS = 0;
     int lx = 0;
     int ly = 0;
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
-            if (c[y][x] > maxS) {
+            if (c[y][x] >= maxS) {
                 maxS = c[y][x];
                 lx = x - c[y][x];
                 ly = y - c[y][x];
             }
-            //cout << c[y][x] << " " << maxS << endl;
         }
     }
-    cout << maxS << "\n" << lx + 1 << " " << ly + 1 << "\n";
+    cout << maxS << "\n" << ly + 1 << " " << lx + 1 << "\n";
     return 0;
 }
 /*
