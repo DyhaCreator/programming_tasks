@@ -14,7 +14,7 @@ int main() {
     vector<int>p2 = vector<int>(m);
     for (auto &x : p2)
         cin >> x;
-    vector<vector<int>>a = vector<vector<int>>(n + 1, vector<int>(m + 1));
+    vector<vector<int >> a = vector<vector<int >> (n + 1, vector<int>(m + 1));
     for (int y = 1; y <= n; y++) {
         for (int x = 1; x <= m; x++) {
             if (p1[y - 1] == p2[x - 1]) {
