@@ -26,7 +26,7 @@ int main() {
                 }
             } else {
                 a[y][x] = a[y][x - 1];
-                b[y][x] = -1;
+                b[y][x] = 0;
             }
             //cout << b[y][x] << " ";
         }
@@ -35,13 +35,11 @@ int main() {
     int y = w;
     int x = n;
     while (y > 0 && x > 0) {
-        if (b[y][x] == -1) {
-            x--;
-        } else {
-            cout << b[y][x] << " ";
+        if (b[y][x] != 0) {
+            cout << b[y][x] << endl;
             y -= m[b[y][x] - 1];
-            x--;
         }
+        x--;
     }
     //cout << a[w][n] << endl;
     return 0;
