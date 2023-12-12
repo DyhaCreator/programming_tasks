@@ -1,10 +1,10 @@
 # Details
 
-Date : 2023-12-01 23:09:28
+Date : 2023-12-12 21:14:22
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 300 files,  8384 codes, 434 comments, 809 blanks, all 9627 lines
+Total : 320 files,  9057 codes, 508 comments, 835 blanks, all 10400 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -18,6 +18,9 @@ Total : 300 files,  8384 codes, 434 comments, 809 blanks, all 9627 lines
 | [ariphmetic/evklid.py](/ariphmetic/evklid.py) | Python | 10 | 0 | 2 | 12 |
 | [ariphmetic/rasloj_na_prime.py](/ariphmetic/rasloj_na_prime.py) | Python | 18 | 0 | 1 | 19 |
 | [ariphmetic/sum_drob.py](/ariphmetic/sum_drob.py) | Python | 8 | 0 | 4 | 12 |
+| [belchonok/a.cpp](/belchonok/a.cpp) | C++ | 23 | 1 | 2 | 26 |
+| [belchonok/a.py](/belchonok/a.py) | Python | 16 | 0 | 1 | 17 |
+| [belchonok/b.cpp](/belchonok/b.cpp) | C++ | 41 | 1 | 3 | 45 |
 | [cappa/min.py](/cappa/min.py) | Python | 92 | 3 | 5 | 100 |
 | [cappa/min2.py](/cappa/min2.py) | Python | 9 | 0 | 2 | 11 |
 | [dynamic/banck.py](/dynamic/banck.py) | Python | 18 | 0 | 2 | 20 |
@@ -147,14 +150,31 @@ Total : 300 files,  8384 codes, 434 comments, 809 blanks, all 9627 lines
 | [tinkoff/dynamic/i2.cpp](/tinkoff/dynamic/i2.cpp) | C++ | 17 | 0 | 1 | 18 |
 | [tinkoff/dynamic/j.cpp](/tinkoff/dynamic/j.cpp) | C++ | 24 | 0 | 1 | 25 |
 | [tinkoff/dynamic/j2.cpp](/tinkoff/dynamic/j2.cpp) | C++ | 22 | 0 | 1 | 23 |
-| [tinkoff/dynamic/j3.cpp](/tinkoff/dynamic/j3.cpp) | C++ | 39 | 8 | 3 | 50 |
+| [tinkoff/dynamic/j3.cpp](/tinkoff/dynamic/j3.cpp) | C++ | 70 | 18 | 3 | 91 |
+| [tinkoff/dynamic/j4.cpp](/tinkoff/dynamic/j4.cpp) | C++ | 43 | 17 | 1 | 61 |
+| [tinkoff/dynamic/j5.cpp](/tinkoff/dynamic/j5.cpp) | C++ | 60 | 31 | 1 | 92 |
+| [tinkoff/dynamic/j6.cpp](/tinkoff/dynamic/j6.cpp) | C++ | 2 | 0 | 1 | 3 |
 | [tinkoff/dynamic/k.cpp](/tinkoff/dynamic/k.cpp) | C++ | 33 | 3 | 1 | 37 |
 | [tinkoff/dynamic/k2.cpp](/tinkoff/dynamic/k2.cpp) | C++ | 21 | 0 | 1 | 22 |
 | [tinkoff/dynamic/l.cpp](/tinkoff/dynamic/l.cpp) | C++ | 26 | 0 | 1 | 27 |
 | [tinkoff/dynamic/m.cpp](/tinkoff/dynamic/m.cpp) | C++ | 33 | 0 | 1 | 34 |
 | [tinkoff/dynamic/n.cpp](/tinkoff/dynamic/n.cpp) | C++ | 25 | 0 | 1 | 26 |
 | [tinkoff/dynamic/o.cpp](/tinkoff/dynamic/o.cpp) | C++ | 26 | 0 | 1 | 27 |
+| [tinkoff/dynamic/p.cpp](/tinkoff/dynamic/p.cpp) | C++ | 42 | 0 | 1 | 43 |
 | [tinkoff/dynamic/q.cpp](/tinkoff/dynamic/q.cpp) | C++ | 20 | 0 | 1 | 21 |
+| [tinkoff/dynamic2/a.cpp](/tinkoff/dynamic2/a.cpp) | C++ | 27 | 0 | 1 | 28 |
+| [tinkoff/dynamic2/a.py](/tinkoff/dynamic2/a.py) | Python | 9 | 0 | 3 | 12 |
+| [tinkoff/dynamic2/b.cpp](/tinkoff/dynamic2/b.cpp) | C++ | 35 | 0 | 1 | 36 |
+| [tinkoff/dynamic2/c.cpp](/tinkoff/dynamic2/c.cpp) | C++ | 28 | 0 | 1 | 29 |
+| [tinkoff/dynamic2/d.cpp](/tinkoff/dynamic2/d.cpp) | C++ | 41 | 5 | 2 | 48 |
+| [tinkoff/dynamic2/e.cpp](/tinkoff/dynamic2/e.cpp) | C++ | 41 | 6 | 1 | 48 |
+| [tinkoff/dynamic2/e2.cpp](/tinkoff/dynamic2/e2.cpp) | C++ | 44 | 0 | 1 | 45 |
+| [tinkoff/dynamic2/f.cpp](/tinkoff/dynamic2/f.cpp) | C++ | 42 | 3 | 1 | 46 |
+| [tinkoff/dynamic2/f2.cpp](/tinkoff/dynamic2/f2.cpp) | C++ | 37 | 0 | 1 | 38 |
+| [tinkoff/dynamic2/h.cpp](/tinkoff/dynamic2/h.cpp) | C++ | 26 | 0 | 1 | 27 |
+| [tinkoff/dynamic2/i.cpp](/tinkoff/dynamic2/i.cpp) | C++ | 22 | 0 | 1 | 23 |
+| [tinkoff/dynamic2/k.cpp](/tinkoff/dynamic2/k.cpp) | C++ | 36 | 0 | 1 | 37 |
+| [tinkoff/dynamic2/m.cpp](/tinkoff/dynamic2/m.cpp) | C++ | 27 | 0 | 1 | 28 |
 | [tinkoff/lin/a.cpp](/tinkoff/lin/a.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/lin/b.cpp](/tinkoff/lin/b.cpp) | C++ | 73 | 0 | 4 | 77 |
 | [tinkoff/lin/c.cpp](/tinkoff/lin/c.cpp) | C++ | 93 | 16 | 4 | 113 |
