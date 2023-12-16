@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 #define ll long long
 using namespace std;
 
@@ -17,15 +18,15 @@ bool isPrime(int n) {
 int main() {
     int n;
     cin >> n;
-    for (int i = 2; i <= n; i++) {
+    for (int i = 2; i <= sqrt(n); i++) {
         if (isPrime(i)) {
             prime.push_back(i);
         }
     }
-    if (prime.back() == n) {
-        cout << "YES" << endl;
+    if (isPrime(n)) {
+        cout << "prime" << endl;
     } else {
-        cout << "NO" << endl;
+        cout << "composite" << endl;
     }
     return 0;
 }
