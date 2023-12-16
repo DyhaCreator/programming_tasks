@@ -1,23 +1,23 @@
 # Summary
 
-Date : 2023-12-10 17:46:49
+Date : 2023-12-16 16:52:17
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 312 files,  8814 codes, 505 comments, 825 blanks, all 10144 lines
+Total : 324 files,  9192 codes, 509 comments, 841 blanks, all 10542 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 239 | 7,810 | 473 | 632 | 8,915 |
-| Python | 73 | 1,004 | 32 | 193 | 1,229 |
+| C++ | 250 | 8,179 | 477 | 645 | 9,301 |
+| Python | 74 | 1,013 | 32 | 196 | 1,241 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 312 | 8,814 | 505 | 825 | 10,144 |
+| . | 324 | 9,192 | 509 | 841 | 10,542 |
 | 8 | 2 | 27 | 0 | 8 | 35 |
 | DANO | 2 | 0 | 0 | 2 | 2 |
 | ariphmetic | 3 | 36 | 0 | 7 | 43 |
@@ -30,11 +30,11 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | innopolisOpen/test_tour | 7 | 119 | 3 | 12 | 134 |
 | lomonosov | 5 | 258 | 22 | 20 | 300 |
 | otbor_tinkof080923 | 30 | 751 | 24 | 86 | 861 |
-| tinkoff | 128 | 4,371 | 279 | 314 | 4,964 |
+| tinkoff | 140 | 4,749 | 283 | 330 | 5,362 |
 | tinkoff/STL | 5 | 165 | 15 | 7 | 187 |
 | tinkoff/binsearch | 15 | 416 | 18 | 44 | 478 |
 | tinkoff/dynamic | 31 | 899 | 80 | 37 | 1,016 |
-| tinkoff/dynamic2 | 5 | 172 | 11 | 6 | 189 |
+| tinkoff/dynamic2 | 17 | 550 | 15 | 22 | 587 |
 | tinkoff/lin | 14 | 639 | 84 | 54 | 777 |
 | tinkoff/perebor | 18 | 664 | 32 | 62 | 758 |
 | tinkoff/pref_twopointers | 11 | 267 | 16 | 32 | 315 |

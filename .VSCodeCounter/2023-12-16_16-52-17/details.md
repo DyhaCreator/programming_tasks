@@ -1,10 +1,10 @@
 # Details
 
-Date : 2023-12-10 17:46:49
+Date : 2023-12-16 16:52:17
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 312 files,  8814 codes, 505 comments, 825 blanks, all 10144 lines
+Total : 324 files,  9192 codes, 509 comments, 841 blanks, all 10542 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -163,10 +163,22 @@ Total : 312 files,  8814 codes, 505 comments, 825 blanks, all 10144 lines
 | [tinkoff/dynamic/p.cpp](/tinkoff/dynamic/p.cpp) | C++ | 42 | 0 | 1 | 43 |
 | [tinkoff/dynamic/q.cpp](/tinkoff/dynamic/q.cpp) | C++ | 20 | 0 | 1 | 21 |
 | [tinkoff/dynamic2/a.cpp](/tinkoff/dynamic2/a.cpp) | C++ | 27 | 0 | 1 | 28 |
+| [tinkoff/dynamic2/a.py](/tinkoff/dynamic2/a.py) | Python | 9 | 0 | 3 | 12 |
 | [tinkoff/dynamic2/b.cpp](/tinkoff/dynamic2/b.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/dynamic2/c.cpp](/tinkoff/dynamic2/c.cpp) | C++ | 28 | 0 | 1 | 29 |
 | [tinkoff/dynamic2/d.cpp](/tinkoff/dynamic2/d.cpp) | C++ | 41 | 5 | 2 | 48 |
 | [tinkoff/dynamic2/e.cpp](/tinkoff/dynamic2/e.cpp) | C++ | 41 | 6 | 1 | 48 |
+| [tinkoff/dynamic2/e2.cpp](/tinkoff/dynamic2/e2.cpp) | C++ | 44 | 0 | 1 | 45 |
+| [tinkoff/dynamic2/f.cpp](/tinkoff/dynamic2/f.cpp) | C++ | 42 | 3 | 1 | 46 |
+| [tinkoff/dynamic2/f2.cpp](/tinkoff/dynamic2/f2.cpp) | C++ | 37 | 0 | 1 | 38 |
+| [tinkoff/dynamic2/h.cpp](/tinkoff/dynamic2/h.cpp) | C++ | 26 | 0 | 1 | 27 |
+| [tinkoff/dynamic2/i.cpp](/tinkoff/dynamic2/i.cpp) | C++ | 22 | 0 | 1 | 23 |
+| [tinkoff/dynamic2/k.cpp](/tinkoff/dynamic2/k.cpp) | C++ | 36 | 0 | 1 | 37 |
+| [tinkoff/dynamic2/m.cpp](/tinkoff/dynamic2/m.cpp) | C++ | 27 | 0 | 1 | 28 |
+| [tinkoff/dynamic2/n.cpp](/tinkoff/dynamic2/n.cpp) | C++ | 35 | 0 | 2 | 37 |
+| [tinkoff/dynamic2/n2.cpp](/tinkoff/dynamic2/n2.cpp) | C++ | 40 | 1 | 2 | 43 |
+| [tinkoff/dynamic2/q.cpp](/tinkoff/dynamic2/q.cpp) | C++ | 29 | 0 | 1 | 30 |
+| [tinkoff/dynamic2/q2.cpp](/tinkoff/dynamic2/q2.cpp) | C++ | 31 | 0 | 1 | 32 |
 | [tinkoff/lin/a.cpp](/tinkoff/lin/a.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/lin/b.cpp](/tinkoff/lin/b.cpp) | C++ | 73 | 0 | 4 | 77 |
 | [tinkoff/lin/c.cpp](/tinkoff/lin/c.cpp) | C++ | 93 | 16 | 4 | 113 |

@@ -151,10 +151,22 @@
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic/p.cpp", "C++", 0, 42, 0, 1, 43
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic/q.cpp", "C++", 0, 20, 0, 1, 21
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/a.cpp", "C++", 0, 27, 0, 1, 28
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/a.py", "Python", 9, 0, 0, 3, 12
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/b.cpp", "C++", 0, 35, 0, 1, 36
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/c.cpp", "C++", 0, 28, 0, 1, 29
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/d.cpp", "C++", 0, 41, 5, 2, 48
 "/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/e.cpp", "C++", 0, 41, 6, 1, 48
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/e2.cpp", "C++", 0, 44, 0, 1, 45
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/f.cpp", "C++", 0, 42, 3, 1, 46
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/f2.cpp", "C++", 0, 37, 0, 1, 38
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/h.cpp", "C++", 0, 26, 0, 1, 27
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/i.cpp", "C++", 0, 22, 0, 1, 23
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/k.cpp", "C++", 0, 36, 0, 1, 37
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/m.cpp", "C++", 0, 27, 0, 1, 28
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/n.cpp", "C++", 0, 35, 0, 2, 37
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/n2.cpp", "C++", 0, 40, 1, 2, 43
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/q.cpp", "C++", 0, 29, 0, 1, 30
+"/home/kapusta/Документы/programming_tasks/tinkoff/dynamic2/q2.cpp", "C++", 0, 31, 0, 1, 32
 "/home/kapusta/Документы/programming_tasks/tinkoff/lin/a.cpp", "C++", 0, 35, 0, 1, 36
 "/home/kapusta/Документы/programming_tasks/tinkoff/lin/b.cpp", "C++", 0, 73, 0, 4, 77
 "/home/kapusta/Документы/programming_tasks/tinkoff/lin/c.cpp", "C++", 0, 93, 16, 4, 113
@@ -311,4 +323,4 @@
 "/home/kapusta/Документы/programming_tasks/смена/личная олимпиада/b.cpp", "C++", 0, 26, 1, 1, 28
 "/home/kapusta/Документы/programming_tasks/смена/личная олимпиада/c.cpp", "C++", 0, 19, 0, 4, 23
 "/home/kapusta/Документы/programming_tasks/смена/личная олимпиада/e.cpp", "C++", 0, 29, 1, 2, 32
-"Total", "-", 1004, 7810, 505, 825, 10144
+"Total", "-", 1013, 8179, 509, 841, 10542

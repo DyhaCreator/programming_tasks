@@ -1,26 +1,23 @@
 # Diff Summary
 
-Date : 2023-12-10 17:46:49
+Date : 2023-12-16 16:52:17
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 10 files,  258 codes, 30 comments, 13 blanks, all 301 lines
+Total : 4 files,  103 codes, 1 comments, 4 blanks, all 108 lines
 
 [Summary](results.md) / [Details](details.md) / Diff Summary / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 9 | 242 | 30 | 12 | 284 |
-| Python | 1 | 16 | 0 | 1 | 17 |
+| C++ | 4 | 103 | 1 | 4 | 108 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 10 | 258 | 30 | 13 | 301 |
-| belchonok | 3 | 80 | 2 | 6 | 88 |
-| tinkoff | 7 | 178 | 28 | 7 | 213 |
-| tinkoff/dynamic | 2 | 6 | 17 | 1 | 24 |
-| tinkoff/dynamic2 | 5 | 172 | 11 | 6 | 189 |
+| . | 4 | 103 | 1 | 4 | 108 |
+| tinkoff | 4 | 103 | 1 | 4 | 108 |
+| tinkoff/dynamic2 | 4 | 103 | 1 | 4 | 108 |
 
 [Summary](results.md) / [Details](details.md) / Diff Summary / [Diff Details](diff-details.md)
