@@ -1,26 +1,27 @@
 # Summary
 
-Date : 2023-12-07 21:16:43
+Date : 2023-12-12 21:45:08
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 303 files,  8556 codes, 475 comments, 812 blanks, all 9843 lines
+Total : 321 files,  9089 codes, 508 comments, 837 blanks, all 10434 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 231 | 7,568 | 443 | 620 | 8,631 |
-| Python | 72 | 988 | 32 | 192 | 1,212 |
+| C++ | 247 | 8,076 | 476 | 641 | 9,193 |
+| Python | 74 | 1,013 | 32 | 196 | 1,241 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 303 | 8,556 | 475 | 812 | 9,843 |
+| . | 321 | 9,089 | 508 | 837 | 10,434 |
 | 8 | 2 | 27 | 0 | 8 | 35 |
 | DANO | 2 | 0 | 0 | 2 | 2 |
 | ariphmetic | 3 | 36 | 0 | 7 | 43 |
+| belchonok | 3 | 80 | 2 | 6 | 88 |
 | cappa | 2 | 101 | 3 | 7 | 111 |
 | dynamic | 25 | 309 | 11 | 58 | 378 |
 | informatics | 13 | 271 | 2 | 24 | 297 |
@@ -29,10 +30,11 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | innopolisOpen/test_tour | 7 | 119 | 3 | 12 | 134 |
 | lomonosov | 5 | 258 | 22 | 20 | 300 |
 | otbor_tinkof080923 | 30 | 751 | 24 | 86 | 861 |
-| tinkoff | 122 | 4,193 | 251 | 307 | 4,751 |
+| tinkoff | 137 | 4,646 | 282 | 326 | 5,254 |
 | tinkoff/STL | 5 | 165 | 15 | 7 | 187 |
 | tinkoff/binsearch | 15 | 416 | 18 | 44 | 478 |
-| tinkoff/dynamic | 30 | 893 | 63 | 36 | 992 |
+| tinkoff/dynamic | 31 | 899 | 80 | 37 | 1,016 |
+| tinkoff/dynamic2 | 14 | 447 | 14 | 18 | 479 |
 | tinkoff/lin | 14 | 639 | 84 | 54 | 777 |
 | tinkoff/perebor | 18 | 664 | 32 | 62 | 758 |
 | tinkoff/pref_twopointers | 11 | 267 | 16 | 32 | 315 |
