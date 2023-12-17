@@ -1,20 +1,28 @@
 #include <iostream>
+#include <cmath>
 #define ll long long
 using namespace std;
 
 int main() {
     int k, m, t, x;
     cin >> k >> m >> t >> x;
-    clock_t tStart = clock();
-    int day = 1;
+    if (t >= k * 7) {
+        cout << -1 << endl;
+        return 0;
+    }
+    k = k * 7;
+    int day = 0;
     while (x < m) {
         x += k;
-        if (day % 7 == 0) {
-            x -= t;
+        if (x >= m) {
+            x -= k;
+            break;
         }
-        day++;
+        x -= t;
+        day += 7;
     }
-    printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
-    cout << day - 1 << endl;
+    k = k / 7;
+    day += ceil((float)(m - x) / (float)k);
+    cout << day << endl;
     return 0;
 }
