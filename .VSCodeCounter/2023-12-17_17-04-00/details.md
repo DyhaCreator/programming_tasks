@@ -1,10 +1,10 @@
 # Details
 
-Date : 2023-12-11 21:08:16
+Date : 2023-12-17 17:04:00
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 314 files,  8840 codes, 505 comments, 827 blanks, all 10172 lines
+Total : 336 files,  9604 codes, 542 comments, 872 blanks, all 11018 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -15,6 +15,12 @@ Total : 314 files,  8840 codes, 505 comments, 827 blanks, all 10172 lines
 | [8/testa.py](/8/testa.py) | Python | 18 | 0 | 6 | 24 |
 | [DANO/a.cpp](/DANO/a.cpp) | C++ | 0 | 0 | 1 | 1 |
 | [DANO/a.py](/DANO/a.py) | Python | 0 | 0 | 1 | 1 |
+| [SF/a.cpp](/SF/a.cpp) | C++ | 27 | 0 | 1 | 28 |
+| [SF/b.cpp](/SF/b.cpp) | C++ | 50 | 0 | 6 | 56 |
+| [SF/c.cpp](/SF/c.cpp) | C++ | 124 | 21 | 5 | 150 |
+| [SF/d.cpp](/SF/d.cpp) | C++ | 37 | 0 | 3 | 40 |
+| [SF/e.cpp](/SF/e.cpp) | C++ | 25 | 0 | 2 | 27 |
+| [SF/f.cpp](/SF/f.cpp) | C++ | 50 | 12 | 2 | 64 |
 | [ariphmetic/evklid.py](/ariphmetic/evklid.py) | Python | 10 | 0 | 2 | 12 |
 | [ariphmetic/rasloj_na_prime.py](/ariphmetic/rasloj_na_prime.py) | Python | 18 | 0 | 1 | 19 |
 | [ariphmetic/sum_drob.py](/ariphmetic/sum_drob.py) | Python | 8 | 0 | 4 | 12 |
@@ -111,6 +117,9 @@ Total : 314 files,  8840 codes, 505 comments, 827 blanks, all 10172 lines
 | [otbor_tinkof080923/very_lite_qwestion.cpp](/otbor_tinkof080923/very_lite_qwestion.cpp) | C++ | 4 | 0 | 2 | 6 |
 | [otbor_tinkof080923/very_lite_qwestion.py](/otbor_tinkof080923/very_lite_qwestion.py) | Python | 10 | 0 | 0 | 10 |
 | [otbor_tinkof080923/ybiley.py](/otbor_tinkof080923/ybiley.py) | Python | 1 | 0 | 2 | 3 |
+| [technoCup/a.cpp](/technoCup/a.cpp) | C++ | 18 | 0 | 2 | 20 |
+| [technoCup/b.cpp](/technoCup/b.cpp) | C++ | 22 | 0 | 2 | 24 |
+| [technoCup/test.py](/technoCup/test.py) | Python | 5 | 0 | 2 | 7 |
 | [tinkoff/STL/a.cpp](/tinkoff/STL/a.cpp) | C++ | 27 | 0 | 1 | 28 |
 | [tinkoff/STL/bl.cpp](/tinkoff/STL/bl.cpp) | C++ | 36 | 0 | 1 | 37 |
 | [tinkoff/STL/c.cpp](/tinkoff/STL/c.cpp) | C++ | 19 | 0 | 1 | 20 |
@@ -163,12 +172,22 @@ Total : 314 files,  8840 codes, 505 comments, 827 blanks, all 10172 lines
 | [tinkoff/dynamic/p.cpp](/tinkoff/dynamic/p.cpp) | C++ | 42 | 0 | 1 | 43 |
 | [tinkoff/dynamic/q.cpp](/tinkoff/dynamic/q.cpp) | C++ | 20 | 0 | 1 | 21 |
 | [tinkoff/dynamic2/a.cpp](/tinkoff/dynamic2/a.cpp) | C++ | 27 | 0 | 1 | 28 |
+| [tinkoff/dynamic2/a.py](/tinkoff/dynamic2/a.py) | Python | 9 | 0 | 3 | 12 |
 | [tinkoff/dynamic2/b.cpp](/tinkoff/dynamic2/b.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/dynamic2/c.cpp](/tinkoff/dynamic2/c.cpp) | C++ | 28 | 0 | 1 | 29 |
 | [tinkoff/dynamic2/d.cpp](/tinkoff/dynamic2/d.cpp) | C++ | 41 | 5 | 2 | 48 |
 | [tinkoff/dynamic2/e.cpp](/tinkoff/dynamic2/e.cpp) | C++ | 41 | 6 | 1 | 48 |
-| [tinkoff/dynamic2/e2.cpp](/tinkoff/dynamic2/e2.cpp) | C++ | 0 | 0 | 1 | 1 |
+| [tinkoff/dynamic2/e2.cpp](/tinkoff/dynamic2/e2.cpp) | C++ | 44 | 0 | 1 | 45 |
+| [tinkoff/dynamic2/f.cpp](/tinkoff/dynamic2/f.cpp) | C++ | 42 | 3 | 1 | 46 |
+| [tinkoff/dynamic2/f2.cpp](/tinkoff/dynamic2/f2.cpp) | C++ | 37 | 0 | 1 | 38 |
 | [tinkoff/dynamic2/h.cpp](/tinkoff/dynamic2/h.cpp) | C++ | 26 | 0 | 1 | 27 |
+| [tinkoff/dynamic2/i.cpp](/tinkoff/dynamic2/i.cpp) | C++ | 22 | 0 | 1 | 23 |
+| [tinkoff/dynamic2/k.cpp](/tinkoff/dynamic2/k.cpp) | C++ | 36 | 0 | 1 | 37 |
+| [tinkoff/dynamic2/m.cpp](/tinkoff/dynamic2/m.cpp) | C++ | 27 | 0 | 1 | 28 |
+| [tinkoff/dynamic2/n.cpp](/tinkoff/dynamic2/n.cpp) | C++ | 35 | 0 | 2 | 37 |
+| [tinkoff/dynamic2/n2.cpp](/tinkoff/dynamic2/n2.cpp) | C++ | 40 | 1 | 2 | 43 |
+| [tinkoff/dynamic2/q.cpp](/tinkoff/dynamic2/q.cpp) | C++ | 29 | 0 | 1 | 30 |
+| [tinkoff/dynamic2/q2.cpp](/tinkoff/dynamic2/q2.cpp) | C++ | 31 | 0 | 1 | 32 |
 | [tinkoff/lin/a.cpp](/tinkoff/lin/a.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/lin/b.cpp](/tinkoff/lin/b.cpp) | C++ | 73 | 0 | 4 | 77 |
 | [tinkoff/lin/c.cpp](/tinkoff/lin/c.cpp) | C++ | 93 | 16 | 4 | 113 |
@@ -183,6 +202,9 @@ Total : 314 files,  8840 codes, 505 comments, 827 blanks, all 10172 lines
 | [tinkoff/lin/g3.cpp](/tinkoff/lin/g3.cpp) | C++ | 87 | 0 | 4 | 91 |
 | [tinkoff/lin/p.py](/tinkoff/lin/p.py) | Python | 8 | 0 | 2 | 10 |
 | [tinkoff/lin/testc.py](/tinkoff/lin/testc.py) | Python | 10 | 0 | 4 | 14 |
+| [tinkoff/nums/a.cpp](/tinkoff/nums/a.cpp) | C++ | 29 | 0 | 3 | 32 |
+| [tinkoff/nums/a2.cpp](/tinkoff/nums/a2.cpp) | C++ | 14 | 0 | 1 | 15 |
+| [tinkoff/nums/b.cpp](/tinkoff/nums/b.cpp) | C++ | 11 | 0 | 2 | 13 |
 | [tinkoff/perebor/a.cpp](/tinkoff/perebor/a.cpp) | C++ | 22 | 0 | 2 | 24 |
 | [tinkoff/perebor/b.cpp](/tinkoff/perebor/b.cpp) | C++ | 26 | 0 | 3 | 29 |
 | [tinkoff/perebor/c.cpp](/tinkoff/perebor/c.cpp) | C++ | 37 | 4 | 4 | 45 |

@@ -79,7 +79,7 @@ int main() {
     ll ANS = 0;
     d = 0;
     x = 0, y = 0;
-    for (int i = 0; i < cmds.size(); i++) {
+    for (int i = 0; i < cmds.size(); i++) { 
         if (cmds[i].r == "Left") {
             d--;
             if (d < 0) {
