@@ -17,7 +17,6 @@ int main() {
     cin >> n;
     vector<ll>a = vector<ll>(n + 1, 0);
     vector<vector<ll>>dp = vector<vector<ll>>(n + 2, vector<ll>(n + 3, 0));
-    cout << 
     for (ll i = 0; i < n + 1; i++) {
         a[i] = f(i);
         for (ll x = 1; x <= i; x++) {
