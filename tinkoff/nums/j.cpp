@@ -23,10 +23,10 @@ int main() {
     }
     int maxGcd = gcd((n + 1) / 2, n / 2);
     int a = n / 2;
-    for (int i = n / 2; i > n / 4; i--) {
-        cout << i << " " << n - i << "  " << gcd(i, n - i) << endl;
+    for (int i = n / 2; i > maxGcd; i--) {
+        //cout << i << " " << n - i << "  " << gcd(i, n - i) << endl;
         int g = gcd(i, n - i);
-        if (g >= maxGcd) {
+        if (g > maxGcd) {
             maxGcd = g;
             a = i;
         }
