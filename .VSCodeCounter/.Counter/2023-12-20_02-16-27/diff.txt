@@ -1,0 +1,87 @@
+Date : 2023-12-20 02:16:27
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 50 files,  0 codes, 0 comments, 0 blanks, all 0 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Markdown |         40 |          0 |          0 |          0 |          0 |
+| JSON     |         10 |          0 |          0 |          0 |          0 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                   | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                      |         50 |          0 |          0 |          0 |          0 |
+| .Counter                                                                               |         25 |      2,167 |          0 |        130 |      2,297 |
+| .Counter/2023-12-12_21-45-08                                                           |          5 |        409 |          0 |         26 |        435 |
+| .Counter/2023-12-16_16-52-17                                                           |          5 |        415 |          0 |         26 |        441 |
+| .Counter/2023-12-17_17-04-00                                                           |          5 |        441 |          0 |         26 |        467 |
+| .Counter/2023-12-18_21-50-19                                                           |          5 |        447 |          0 |         26 |        473 |
+| .Counter/2023-12-19_22-20-58                                                           |          5 |        455 |          0 |         26 |        481 |
+| _Counter                                                                               |         25 |     -2,167 |          0 |       -130 |     -2,297 |
+| _Counter/2023-12-12_21-45-08                                                           |          5 |       -409 |          0 |        -26 |       -435 |
+| _Counter/2023-12-16_16-52-17                                                           |          5 |       -415 |          0 |        -26 |       -441 |
+| _Counter/2023-12-17_17-04-00                                                           |          5 |       -441 |          0 |        -26 |       -467 |
+| _Counter/2023-12-18_21-50-19                                                           |          5 |       -447 |          0 |        -26 |       -473 |
+| _Counter/2023-12-19_22-20-58                                                           |          5 |       -455 |          0 |        -26 |       -481 |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                               | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-12_21-45-08/details.md      | Markdown |        330 |          0 |          6 |        336 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-12_21-45-08/diff-details.md | Markdown |         10 |          0 |          6 |         16 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-12_21-45-08/diff.md         | Markdown |         16 |          0 |          7 |         23 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-12_21-45-08/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-12_21-45-08/results.md      | Markdown |         52 |          0 |          7 |         59 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-16_16-52-17/details.md      | Markdown |        333 |          0 |          6 |        339 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-16_16-52-17/diff-details.md | Markdown |         13 |          0 |          6 |         19 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-16_16-52-17/diff.md         | Markdown |         16 |          0 |          7 |         23 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-16_16-52-17/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-16_16-52-17/results.md      | Markdown |         52 |          0 |          7 |         59 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-17_17-04-00/details.md      | Markdown |        345 |          0 |          6 |        351 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-17_17-04-00/diff-details.md | Markdown |         21 |          0 |          6 |         27 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-17_17-04-00/diff.md         | Markdown |         19 |          0 |          7 |         26 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-17_17-04-00/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-17_17-04-00/results.md      | Markdown |         55 |          0 |          7 |         62 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-18_21-50-19/details.md      | Markdown |        353 |          0 |          6 |        359 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-18_21-50-19/diff-details.md | Markdown |         18 |          0 |          6 |         24 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-18_21-50-19/diff.md         | Markdown |         18 |          0 |          7 |         25 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-18_21-50-19/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-18_21-50-19/results.md      | Markdown |         57 |          0 |          7 |         64 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-19_22-20-58/details.md      | Markdown |        361 |          0 |          6 |        367 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-19_22-20-58/diff-details.md | Markdown |         17 |          0 |          6 |         23 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-19_22-20-58/diff.md         | Markdown |         18 |          0 |          7 |         25 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-19_22-20-58/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/kapusta/Документы/programming_tasks/.Counter/2023-12-19_22-20-58/results.md      | Markdown |         58 |          0 |          7 |         65 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-12_21-45-08/details.md      | Markdown |       -330 |          0 |         -6 |       -336 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-12_21-45-08/diff-details.md | Markdown |        -10 |          0 |         -6 |        -16 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-12_21-45-08/diff.md         | Markdown |        -16 |          0 |         -7 |        -23 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-12_21-45-08/results.json    | JSON     |         -1 |          0 |          0 |         -1 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-12_21-45-08/results.md      | Markdown |        -52 |          0 |         -7 |        -59 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-16_16-52-17/details.md      | Markdown |       -333 |          0 |         -6 |       -339 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-16_16-52-17/diff-details.md | Markdown |        -13 |          0 |         -6 |        -19 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-16_16-52-17/diff.md         | Markdown |        -16 |          0 |         -7 |        -23 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-16_16-52-17/results.json    | JSON     |         -1 |          0 |          0 |         -1 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-16_16-52-17/results.md      | Markdown |        -52 |          0 |         -7 |        -59 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-17_17-04-00/details.md      | Markdown |       -345 |          0 |         -6 |       -351 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-17_17-04-00/diff-details.md | Markdown |        -21 |          0 |         -6 |        -27 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-17_17-04-00/diff.md         | Markdown |        -19 |          0 |         -7 |        -26 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-17_17-04-00/results.json    | JSON     |         -1 |          0 |          0 |         -1 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-17_17-04-00/results.md      | Markdown |        -55 |          0 |         -7 |        -62 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-18_21-50-19/details.md      | Markdown |       -353 |          0 |         -6 |       -359 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-18_21-50-19/diff-details.md | Markdown |        -18 |          0 |         -6 |        -24 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-18_21-50-19/diff.md         | Markdown |        -18 |          0 |         -7 |        -25 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-18_21-50-19/results.json    | JSON     |         -1 |          0 |          0 |         -1 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-18_21-50-19/results.md      | Markdown |        -57 |          0 |         -7 |        -64 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-19_22-20-58/details.md      | Markdown |       -361 |          0 |         -6 |       -367 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-19_22-20-58/diff-details.md | Markdown |        -17 |          0 |         -6 |        -23 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-19_22-20-58/diff.md         | Markdown |        -18 |          0 |         -7 |        -25 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-19_22-20-58/results.json    | JSON     |         -1 |          0 |          0 |         -1 |
+| /home/kapusta/Документы/programming_tasks/_Counter/2023-12-19_22-20-58/results.md      | Markdown |        -58 |          0 |         -7 |        -65 |
+| Total                                                                                  |          |          0 |          0 |          0 |          0 |
++----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
