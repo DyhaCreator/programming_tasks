@@ -17,10 +17,9 @@ ll gcd(int a, int b) {
 int main() {
     ll a, b, c, i, j;
     cin >> a >> b >> c >> i >> j;
-    ll g1 = gcd(a, b);
-    ll g2 = gcd(a, c);
-    ll g3 = gcd(b, c);
-    ll nok = (a * b * c) / (g1 * g2 * g3);
-    cout << j / nok - i / nok << endl;
+    ll l_ab = a * b / gcd(a, b);
+    ll l_lc = l_ab * c / gcd(l_ab, c);
+    //cout << l_lc << endl;
+    cout << j / l_lc - i / l_lc << endl;
     return 0;
 }
