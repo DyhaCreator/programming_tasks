@@ -29,19 +29,9 @@ bool f(vector<int>names) {
 }
 
 bool f2(vector<string>names) {
-    for (int i = 0; i < 8; i++) {
-        for (auto r : rules) {
+    for (auto r : rules) {
+        for (int i = 0; i < 8; i++) {
             if (r.n1 == names[i]) {
-                if (!r.ab) {
-                    if (find(names.begin(), names.begin() + i, r.n2) == names.begin() + i) {
-                        return false;
-                    }
-                } else {
-                    if (find(names.begin() + i, names.end(), r.n2) == names.end()) {
-                        return false;
-                    }
-                }
-            } else if (r.n2 == names[i]) {
                 if (r.ab) {
                     if (find(names.begin(), names.begin() + i, r.n2) == names.begin() + i) {
                         return false;
@@ -51,6 +41,7 @@ bool f2(vector<string>names) {
                         return false;
                     }
                 }
+                break;
             }
         }
     }
@@ -58,7 +49,7 @@ bool f2(vector<string>names) {
 }
 
 void rec(vector<string>namesStrings, vector<int>names) {
-    if (f(names)) {
+    if (namesStrings.size() == 8) {
         if (f2(namesStrings)) {
             string str = "";
             for (auto x : namesStrings) {
@@ -70,6 +61,7 @@ void rec(vector<string>namesStrings, vector<int>names) {
                 minStr = str;
             }
         }
+        return;
     }
     namesStrings.push_back("");
     for (int i = 0; i < 8; i++) {
@@ -88,10 +80,21 @@ int main() {
     for (int i = 0; i < n; i++) {
         string n1, ab, n2;
         cin >> n1 >> ab >> n2;
-        rule r = rule(n1, ab == "before", n2);
+        rule r = rule(n1, ab == "after", n2);
         rules.push_back(r);
     }
     rec(vector<string>(), vector<int>(8, 0));
     cout << minStr << endl;
     return 0;
 }
+
+/*
+
+1
+Ilia before Danya
+
+1
+Danya after Ilia
+
+
+*/
