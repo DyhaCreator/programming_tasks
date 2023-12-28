@@ -25,7 +25,9 @@ int main() {
     vector<vector<vector<int>>>dp = vector<vector<vector<int>>>(n, vector<vector<int>>(b + 1, vector<int>(maxK + 1)));
     for (int y = 1; y <= b; y++) {
         for (int x = 1; x <= maxK; x++) {
-            for (int z = 0; z < )
+            for (int z = 0; z < n; z++) {
+                
+            }
         }
     }
     return 0;
