@@ -1,7 +1,13 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 #define ll long long
 using namespace std;
+
+bool comp(vector<int>a, vector<int>b) {
+    vector<int>dp1 = vector<int>(a.size() + 1);
+    return true;
+}
 
 int main() {
     int n;
@@ -26,6 +32,24 @@ int main() {
         }
         //cout << endl;
     }
-    cout << dp[n][m] << endl;
+    vector<int>ans = vector<int>();
+    int y = n, x = m;
+    while (y > 0 && x > 0) {
+        if (a[y - 1] == b[x - 1]) {
+            ans.push_back(a[y - 1]);
+            y--;
+            x--;
+        } else {
+            if (dp[y - 1][x] > dp[y][x - 1]) {
+                y--;
+            } else {
+                x--;
+            }
+        }
+    }
+    reverse(ans.begin(), ans.end());
+    for (auto x : ans)
+        cout << x << " ";
+    cout << endl;
     return 0;
 }
