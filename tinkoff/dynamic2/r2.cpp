@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 #define ll long long
@@ -10,25 +11,32 @@ int main() {
     a[0] = a1;
     for (int i = 1; i < n; i++) {
         a[i] = (k * a[i - 1] + b) % m;
-        //cout << a[i] << " ";
     }
-    //cout << endl;
     vector<int>dp = vector<int>(n + 1, m + 1);
+    vector<int>pos = vector<int>(n + 1, 0);
+    vector<int>prev = vector<int>(n + 1, 0);
+    pos[0] = -1;
+    int length = 0;
     dp[0] = -(m + 1);
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n + 1; j++) {
-            if (dp[j - 1] < a[i] && dp[j] > a[i]) {
-                dp[j] = a[i];
-            }
+        int j = int(upper_bound(dp.begin(), dp.end(), a[i]) - dp.begin());
+        if (dp[j - 1] < a[i] && dp[j] > a[i]) {
+            dp[j] = a[i];
+            pos[j] = i;
+            prev[i] = pos[j - 1];
+            length = std::max(length, j);
         }
     }
-    /*for (auto x : dp) 
-        cout << x << " ";
-    cout << endl;*/
-    int i = 1;
-    while (dp[i] != m + 1) {
-        i++;
+    vector<int> ans = vector<int>();
+    int p = pos[length];
+    while (p != -1) {
+        ans.push_back(a[p]);
+        p = prev[p];
     }
-    cout << i - 1 << endl;
+    reverse(ans.begin(), ans.end());
+    cout << ans.size() << endl;
+    for (auto x : ans)
+        cout << x << " ";
+    cout << endl;
     return 0;
 }
