@@ -13,9 +13,9 @@ int f(int n) {
 
 int main() {
     cout << f(179) << endl;
-    int i = 100;
-    while (f(i) != 126) {
-        i++;
+    int i = 999;
+    while (f(i) != 146) {
+        i--;
     }
     cout << i << " " << f(i) << endl;
     return 0;
