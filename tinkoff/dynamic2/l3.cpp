@@ -6,8 +6,8 @@ using namespace std;
 int main() {
     int n, k;
     cin >> n >> k;
-    vector<vector<ll >> dp1 = vector<vector<ll >> (k, vector<ll>(2, 1));
-    vector<vector<ll >> dp2 = vector<vector<ll >> (k, vector<ll>(2, 0));
+    vector<vector<int>>dp1 = vector<vector<int>>(k, vector<ll>(2, 1));
+    vector<vector<int>>dp2 = vector<vector<int>>(k, vector<ll>(2, 0));
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < k; j++) {
             for (int l = 0; l < j; l++) {
