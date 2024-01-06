@@ -1,22 +1,26 @@
 #include <iostream>
+#include <vector>
 #define ll long long
 using namespace std;
 
-int f(int n) {
-    int ans = 1;
-    for (int i = 0; i < n - 1; i++) {
-        ans *= 2;
+struct int2 {
+    int x = 0, y = 0;
+    int2() {}
+    int2(int x, int y) {
+        this->x = x;
+        this->y = y;
     }
-    return ans;
-}
+};
 
 int main() {
     int n;
     cin >> n;
-    if (n < 6) {
-        cout << f(n) << endl;
-    } else {
-        cout << 31 << endl;
+    vector<int2>v = vector<int2>(n);
+    for (int i = 0; i < n; i++) {
+        int x, y;
+        cin >> x >> y;
+        v[i] = int2(x, y);
     }
+    
     return 0;
 }
