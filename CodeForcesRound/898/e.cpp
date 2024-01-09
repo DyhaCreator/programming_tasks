@@ -14,7 +14,7 @@ int main() {
             cin >> x;
         int ans = 0;
         int w = 0;
-        while (w < k) {
+        while (w <= k) {
             for (int j = 0; j < n; j++) {
                 //cout << a[j] << " ";
                 if (a[j] < ans) {
