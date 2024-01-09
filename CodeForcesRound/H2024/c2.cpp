@@ -11,7 +11,7 @@ int main() {
         vector<int>a = vector<int>(n);
         for (auto &x : a)
             cin >> x;
-        for (int i = 0; i < )
+        for (int j = 0; j < )
     }
     return 0;
 }
