@@ -21,9 +21,7 @@ int main() {
     for (int r = 1; r <= n; r++) {
         for (int l = 0; l < r; l++) {
             //cout << l << ' ' << r << " " << pref[r] - pref[l] - (f(r - l, k) * x) << endl;
-            if (pref[r] - pref[l] - (f(r - l, k) * x) > ans) {
-                ans = pref[r] - pref[l] - (f(r - l, k) * x);
-            }
+            ans = std::max(pref[r] - pref[l] - (f(r - l, k) * x), ans);
         }
     }
     cout << ans << endl;
