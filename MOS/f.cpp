@@ -25,13 +25,6 @@ int main() {
         }
     }
     cout << ans << endl;
-    /*int l = 0;
-    for (int r = 1; r < n; r++) {
-        while (pref[r] - pref[l] - (l / k * x)) {
-            l++;
-        }
-        if (pref[r] - pref[l] - (l / k * x))
-    }*/
     return 0;
 }
 /*
