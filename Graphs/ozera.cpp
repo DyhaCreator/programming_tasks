@@ -59,14 +59,6 @@ int main() {
                 //}
             }
         }
-        //cout << 0 << endl;
-        /*for (int i = 0; i < n * m; i++) {
-            cout << i << endl;
-            for (int j = 0; j < matrix[i].size(); j++) {
-                cout << matrix[i][j].first << " " << matrix[i][j].second << "  ";
-            }
-            cout << endl;
-        }*/
         vector<int>visited(n * m, 0);
         int ans = 0;
         for (int y = 0; y < n; y++) {
