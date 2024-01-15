@@ -39,7 +39,7 @@ bool comp2(const point &a, const point &b) {
         } else if (b.type == 0 && a.type != 0) {
             return true;
         } else if (a.type == 0 && b.type == 0) {
-            return true;
+            return false;
         }
     }
     return a.x < b.x;
@@ -49,15 +49,21 @@ int main() {
     int n, m;
     cin >> n >> m;
     vector<line>lines(n);
-    for (auto &[a, b] : lines)
-        cin >> a >> b;
+    for (auto &[a, b] : lines) {
+        int x, y;
+        cin >> x >> y;
+        a = std::min(x, y);
+        b = std::max(x, y);
+        //cin >> a >> b;
+    }
     sort(lines.begin(), lines.end(), comp);
-    lines.push_back(line(1000000000, 1000000007));
+    lines.push_back(line(1000000001, 1000000007));
     vector<point>points(m);
     for (auto &x : points) {
         cin >> x.x;
         x.type = 0;
     }
+    vector<point>enterPoints = points;
 
     int indexStart = 0;
     int indexEnd = 0;
@@ -74,9 +80,11 @@ int main() {
 
     sort(points.begin(), points.end(), comp2);
 
+    /*
     for (auto &x : points) {
         cout << x.x << " " << x.type << endl;
     }
+    */
 
     int h = 0;
     map<int, int>mp;
@@ -84,9 +92,14 @@ int main() {
     for (auto &x : points) {
         h += x.type;
         if (x.type == 0) {
-            cout << h << " ";
+            mp[x.x] = h;
         }
     }
+
+    for (auto &x : enterPoints) {
+        cout << mp[x.x] << " ";
+    }
+
     cout << endl;
     return 0;
 }
