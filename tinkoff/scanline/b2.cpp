@@ -69,7 +69,7 @@ int main() {
     int indexEnd = 0;
 
     while (indexEnd < n) {
-        if (lines[indexStart].start < lines[indexEnd].end) {
+        if (indexStart < n && lines[indexStart].start < lines[indexEnd].end) {
             points.push_back(point(lines[indexStart].start, 1));
             indexStart++;
         } else {
