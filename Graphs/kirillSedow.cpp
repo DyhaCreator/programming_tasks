@@ -33,7 +33,7 @@ int main() {
         //cout << endl;
     }
     if (dp[k][n] != k) {
-        cout << "NO" << endl;
+        cout << "No" << endl;
         return 0;
     }
     vector<int>ans = {};
@@ -47,6 +47,8 @@ int main() {
             x--;
         }
     }
+    cout << "Yes" << endl;
+    cout << ans.size() << endl;
     for (auto x : ans)
         cout << x << " ";
     cout << endl;
