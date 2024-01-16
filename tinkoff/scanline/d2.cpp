@@ -13,15 +13,14 @@ struct line{
 };
 
 int main() {
-    int n;
+    ll n;
     cin >> n;
     vector<line>lines = vector<line>(n);
     for (auto &x : lines)
         cin >> x.l >> x.r;
-    vector<int>ans = vector<int>(n);
-    for (int i = 0; i < n; i++) {
-        bool b = true;
-        for (int j = 0; j < n; j++) {
+    vector<ll>ans = vector<ll>(n);
+    for (ll i = 0; i < n; i++) {
+        for (ll j = 0; j < n; j++) {
             if (i != j) {
                 if (lines[i].l >= lines[j].l && lines[i].r <= lines[j].r) {
                     ans[i] = j + 1;
