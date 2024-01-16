@@ -28,6 +28,7 @@ int main() {
         cin >> lines[i].l >> lines[i].r;
         lines[i].index = i;
     }
+    clock_t tStart = clock();
     sort(lines.begin(), lines.end(), comp);
     vector<int>ans(n);
     for (int i = 1; i < n; i++) {
@@ -43,4 +44,5 @@ int main() {
         cout << x << " ";
     }
     cout << endl;
+    printf("Time taken: %.6fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 }
