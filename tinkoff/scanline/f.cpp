@@ -5,9 +5,9 @@
 using namespace std;
 
 struct qw{
-    int time, deadline;
+    ll time, deadline;
     qw() {}
-    qw(int time, int deadline) {
+    qw(ll time, ll deadline) {
         this->time = time;
         this->deadline = deadline;
     }
@@ -25,7 +25,7 @@ int main() {
     cin >> n;
     vector<qw>a = vector<qw>();
     for (int i = 0; i < n; i++) {
-        int t, d;
+        ll t, d;
         cin >> t >> d;
         a.push_back(qw(t, d));
     }
