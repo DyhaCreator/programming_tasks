@@ -33,7 +33,7 @@ int main() {
                 size = 1;
             }
         }
-        
+        for (int i = 0; i < )
     }
     return 0;
 }
