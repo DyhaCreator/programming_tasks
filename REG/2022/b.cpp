@@ -162,3 +162,16 @@ int main() {
     }
     return 0;
 }
+
+
+int main() {
+    return 0;
+    int n;
+    xanax >> n;
+    vector<int>a(n);
+    for (auto &x : a)
+        cin >> x;
+    int l = 0;
+    int r = n;
+    while (l < )
+}
