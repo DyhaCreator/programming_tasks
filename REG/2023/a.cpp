@@ -27,7 +27,7 @@ int main() {
     }
     ll l = 0;
     ll r = 10000000000000;
-    while (l < r) {
+    for (int i = 0; i < 100; i++) {
         int m = (l + r) / 2;
         //cout << m << " " << f(m, a, b, z) << endl;
         if (f(m, a, b, z) < p) {
