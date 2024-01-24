@@ -32,7 +32,6 @@ int main() {
         cin >> h >> m >> s;
         int time2 = h * 3600 + m * 60 + s;
         if (time1 == time2) {
-            //all++;
             points.push_back(point(0, +1));
             points.push_back(point(3600 * 24, -1));
             continue;
@@ -50,8 +49,7 @@ int main() {
     sort(points.begin(), points.end(), comp);
     int h = 0;
     int ans = 0;
-    for (int i = 0; i < points.size(); i++) {
-        //cout << points[i].x << " " << h << endl;
+    for (int i = 0; i < int(points.size()); i++) {
         if (h == n && points[i].type == -1) {
             ans += points[i].x - points[i - 1].x;
         }
