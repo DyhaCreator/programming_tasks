@@ -1,0 +1,42 @@
+Date : 2024-01-26 17:47:07
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 16 files,  519 codes, 31 comments, 29 blanks, all 579 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         16 |        519 |         31 |         29 |        579 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         16 |        519 |         31 |         29 |        579 |
+| CodeForcesRound                                                              |         16 |        519 |         31 |         29 |        579 |
+| CodeForcesRound/nar                                                          |         16 |        519 |         31 |         29 |        579 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                     | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1907A.cpp      | C++      |         19 |          0 |          1 |         20 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1909A.cpp      | C++      |         41 |          0 |          2 |         43 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1909A2.cpp     | C++      |         37 |          0 |          1 |         38 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1913A.cpp      | C++      |         16 |          0 |          2 |         18 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/31B.cpp        | C++      |         12 |          0 |          2 |         14 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/48D.cpp        | C++      |         51 |          6 |          5 |         62 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/74B.cpp        | C++      |         22 |          1 |          2 |         25 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/91A.cpp        | C++      |         38 |          0 |          2 |         40 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/91A2.cpp       | C++      |         30 |          0 |          1 |         31 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/91A3_vlad.cpp  | C++      |         16 |          0 |          1 |         17 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/VDA3.cpp       | C++      |         43 |          7 |          1 |         51 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/fructs.cpp     | C++      |         41 |          7 |          1 |         49 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/gameOfSumm.cpp | C++      |         37 |          0 |          1 |         38 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/vp.cpp         | C++      |         35 |          2 |          2 |         39 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/vp2.cpp        | C++      |         41 |          1 |          2 |         44 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/vp3.cpp        | C++      |         40 |          7 |          3 |         50 |
+| Total                                                                        |          |        519 |         31 |         29 |        579 |
++------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
