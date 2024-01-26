@@ -24,7 +24,7 @@ int main() {
             if (str2[1] != str[1]) {
                 cout << str2 << endl;
             }
-            str2[1]++;
+            str2[1]
         }
     }
     return 0;
