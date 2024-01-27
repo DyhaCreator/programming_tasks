@@ -3,12 +3,9 @@
 #define ll long long
 using namespace std;
 
-vector<int>prime = {2};
-
 bool isPrime(int n) {
-    for (int i = 0; i < prime.size() && prime[i] * prime[i] <= n; i++) {
-    //for (auto &x : prime) {
-        if (n % prime[i] == 0) {
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
             return false;
         }
     }
@@ -18,12 +15,13 @@ bool isPrime(int n) {
 int main() {
     ll n;
     cin >> n;
-    for (int i = 3; i < n; i++) {
-        if (isPrime(i)) {
-            prime.push_back(i);
-            //cout << i << " ";
+    while (n > 0) {
+        int a = n;
+        while (!isPrime(a)) {
+            a--;
         }
+        n -= a;
+        cout << a << endl;
     }
-    cout << endl;
     return 0;
 }
