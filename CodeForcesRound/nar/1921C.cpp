@@ -4,22 +4,22 @@
 using namespace std;
 
 int main() {
-    int t;
+    ll t;
     cin >> t;
     for (int i = 0; i < t; i++) {
-        int n, f, a, b;
+        ll n, f, a, b;
         cin >> n >> f >> a >> b;
-        vector<int>v(n + 1);
-        for (int i = 1; i <= n; i++) {
+        vector<ll>v(n + 1);
+        for (ll i = 1; i <= n; i++) {
             cin >> v[i];
         }
         /*for (auto &x : v)
             cout << x << " ";
         cout << endl;*/
-        vector<int>dp(n + 2);
+        vector<ll>dp(n + 10);
         dp[0] = v[1];
         dp[1] = v[2];
-        for (int i = 2; i < n; i++) {
+        for (ll i = 2; i < n; i++) {
             // dp[i] = min(dp[i - 1] + (v[i] - v[i - 1]), dp[i - 2] + (v[i] - v[i - 1]));
             dp[i] = std::min(dp[i - 1] + (v[i + 1] - v[i]) * a, dp[i - 2] + b);
             //cout << dp[i] << endl;
