@@ -16,7 +16,7 @@ int main() {
         /*for (auto &x : v)
             cout << x << " ";
         cout << endl;*/
-        vector<int>dp(n + 1);
+        vector<int>dp(n + 2);
         dp[0] = v[1];
         dp[1] = v[2];
         for (int i = 2; i < n; i++) {
