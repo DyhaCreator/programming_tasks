@@ -18,7 +18,7 @@ void dfs(int t, vector<int> &visited, int color) {
     }
 }
 
-int main() {
+int main() { 
     int n, m;
     cin >> n >> m;
     g =  vector<vector<int>> (n, vector<int>(n));
