@@ -19,7 +19,14 @@ int main() {
                     mycash = mycash | cash;
                     ans = abs((a ^ (cash | mycash)) - (b ^ (cash | mycash)));
                 }
-                cout << mycash << endl;
+                cout << mycash << " " << abs((a ^ (cash | mycash)) - (b ^ (cash | mycash))) << endl;
+            }
+            if (cash <= r) {
+                if (abs((a ^ cash) - (b ^ cash)) < ans) {
+                    mycash = cash;
+                    ans = abs((a ^ cash) - (b ^ cash));
+                }
+                cout <<cash << " " << abs((a ^ cash) - (b ^ cash)) << endl;
             }
             cash = cash << 1;
         }
