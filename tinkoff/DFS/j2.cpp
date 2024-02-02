@@ -4,6 +4,7 @@
 using namespace std;
 
 vector<vector<int>> g;
+vector<int>blackList = {};
 int n, m;
 
 void dfs(int num, vector<int> &visited, int step) {
