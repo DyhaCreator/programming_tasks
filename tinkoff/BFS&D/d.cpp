@@ -3,7 +3,7 @@
 #include <vector>
 #include <set>
 #define ll long long
-#define INF 1000000007LL
+#define INF 1000000007
 using namespace std;
 
 struct int2{
@@ -16,29 +16,35 @@ struct int2{
 };
 
 vector<vector<int2>> g;
-int n;
+ll n;
 
 vector<ll> d(int start) {
-    vector<ll> dist(n, INF);
-    vector<ll> visited(n, 0);
+    vector<ll> dist(n + 1, INF);
+    vector<ll> visited(n + 1, 0);
     dist[start] = 0;
 
-    set<pair<ll, ll>> st;
+    /*set<pair<ll, ll>> st;
     for (int i = 0; i < n; i++) {
         st.insert({dist[i], i});
-    }
+    }*/
 
-    for (int i = 0; i < n; i++) {
+    for (ll i = 0; i < n; i++) {
         /*ll near = st.begin()->second;
         st.erase(st.begin());*/
         ll near = -1;
-        for (int v = 0; v < n; v++) {
-            if (visited[v] == 0 && (near == -1 || dist[near] > dist[v])) {
-                dist[near] = dist[v];
+        for (ll v = 0; v < n; v++) {
+            if (!visited[v] && (near == -1 || dist[near] > dist[v])) {
+                // dist[near] = dist[v];
                 near = v;
             }
         }
-        cout << near << endl;
+        /*cout << near << endl;
+        for (auto &x : dist)
+            cout << x << ' ';
+        cout << endl;*/
+        if (dist[near] == INF) {
+            break;
+        }
         visited[near] = 1;
         for (auto &[to, weight] : g[near]) {
             if (dist[to] > dist[near] + weight) {
