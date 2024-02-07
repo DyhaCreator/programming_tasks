@@ -68,5 +68,6 @@ int main() {
     cout << endl;*/
 
     cout << dist[finish - 1] << endl;
+    exit(0);
     return 0;
 }
