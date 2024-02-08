@@ -56,10 +56,6 @@ int main() {
         p = dist[p].second;
     }
     reverse(ans.begin(), ans.end());
-    if (ans.size() == 1) {
-        cout << -1 << endl;
-        return 0;
-    }
 
     for (auto &x : ans)
         cout << x + 1 << " ";
