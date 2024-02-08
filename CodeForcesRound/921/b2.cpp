@@ -13,12 +13,13 @@ int main() {
         int r = x;
         for (int j = 0; j < 10; j++) {
             int m = (l + r) / 2;
-            if (x / m > n) {
+            cout << (float)x / (float)m << " " << n << endl;
+            if ((float)x / (float)m >= n) {
                 l = m;
             } else {
                 r = m;
             }
-            // cout << m << " " << x / m << endl;
+            cout << l << " " << r << endl;
         }
         cout << l << endl;
     }
