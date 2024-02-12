@@ -1,0 +1,63 @@
+Date : 2024-02-12 21:09:31
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 30 files,  712 codes, 15 comments, 86 blanks, all 813 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         30 |        712 |         15 |         86 |        813 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         30 |        712 |         15 |         86 |        813 |
+| CodeForcesRound                                                      |          6 |        116 |          0 |          9 |        125 |
+| CodeForcesRound/920                                                  |          1 |         13 |          0 |          3 |         16 |
+| CodeForcesRound/921                                                  |          5 |        103 |          0 |          6 |        109 |
+| Graphs                                                               |          2 |        101 |          1 |         19 |        121 |
+| Graphs/Deixtra                                                       |          2 |        101 |          1 |         19 |        121 |
+| acmp                                                                 |         19 |        358 |          1 |         28 |        387 |
+| tinkoff                                                              |          3 |        137 |         13 |         30 |        180 |
+| tinkoff/BFS&D                                                        |          2 |        113 |         13 |         26 |        152 |
+| tinkoff/DFS                                                          |          1 |         24 |          0 |          4 |         28 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                             | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/920/c2.cpp | C++      |         13 |          0 |          3 |         16 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/921/a.cpp  | C++      |         22 |          0 |          1 |         23 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/921/b.cpp  | C++      |         23 |          0 |          1 |         24 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/921/b2.cpp | C++      |         26 |          0 |          1 |         27 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/921/b3.cpp | C++      |         23 |          0 |          1 |         24 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/921/c.cpp  | C++      |          9 |          0 |          2 |         11 |
+| /home/kapusta/Документы/programming_tasks/Graphs/Deixtra/a.cpp       | C++      |         47 |          0 |         10 |         57 |
+| /home/kapusta/Документы/programming_tasks/Graphs/Deixtra/b.cpp       | C++      |         54 |          1 |          9 |         64 |
+| /home/kapusta/Документы/programming_tasks/acmp/a+b.cpp               | C++      |          9 |          0 |          1 |         10 |
+| /home/kapusta/Документы/programming_tasks/acmp/id0003.cpp            | C++      |          9 |          0 |          1 |         10 |
+| /home/kapusta/Документы/programming_tasks/acmp/id14.cpp              | C++      |         19 |          0 |          2 |         21 |
+| /home/kapusta/Документы/programming_tasks/acmp/id147.cpp             | C++      |         15 |          0 |          1 |         16 |
+| /home/kapusta/Документы/programming_tasks/acmp/id148.cpp             | C++      |         20 |          0 |          2 |         22 |
+| /home/kapusta/Документы/programming_tasks/acmp/id2.cpp               | C++      |         19 |          0 |          1 |         20 |
+| /home/kapusta/Документы/programming_tasks/acmp/id23.cpp              | C++      |         14 |          0 |          1 |         15 |
+| /home/kapusta/Документы/programming_tasks/acmp/id271.cpp             | C++      |         33 |          1 |          2 |         36 |
+| /home/kapusta/Документы/programming_tasks/acmp/id296.cpp             | C++      |         19 |          0 |          1 |         20 |
+| /home/kapusta/Документы/programming_tasks/acmp/id327.cpp             | C++      |         26 |          0 |          2 |         28 |
+| /home/kapusta/Документы/programming_tasks/acmp/id357.cpp             | C++      |         22 |          0 |          1 |         23 |
+| /home/kapusta/Документы/programming_tasks/acmp/id457.cpp             | C++      |         30 |          0 |          2 |         32 |
+| /home/kapusta/Документы/programming_tasks/acmp/id51.cpp              | C++      |         14 |          0 |          1 |         15 |
+| /home/kapusta/Документы/programming_tasks/acmp/id52.cpp              | C++      |         17 |          0 |          1 |         18 |
+| /home/kapusta/Документы/programming_tasks/acmp/id576.cpp             | C++      |         26 |          0 |          2 |         28 |
+| /home/kapusta/Документы/programming_tasks/acmp/id577.cpp             | C++      |         23 |          0 |          3 |         26 |
+| /home/kapusta/Документы/programming_tasks/acmp/id79.cpp              | C++      |         13 |          0 |          1 |         14 |
+| /home/kapusta/Документы/programming_tasks/acmp/id792.cpp             | C++      |         22 |          0 |          2 |         24 |
+| /home/kapusta/Документы/programming_tasks/acmp/negl.cpp              | C++      |          8 |          0 |          1 |          9 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/d3.cpp       | C++      |         50 |         10 |         13 |         73 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/e.cpp        | C++      |         63 |          3 |         13 |         79 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/DFS/k2.cpp         | C++      |         24 |          0 |          4 |         28 |
+| Total                                                                |          |        712 |         15 |         86 |        813 |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
