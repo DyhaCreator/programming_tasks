@@ -9,6 +9,6 @@ int f(int a, int b) {
 int main() {
     int k, m, n;
     cin >> k >> m >> n;
-    cout << max(f(n, k) * m * 2, 2) << endl;
+    cout << max(f(n * 2, k), 2) * m << endl;
     return 0;
 }
