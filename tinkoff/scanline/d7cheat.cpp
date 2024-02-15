@@ -36,30 +36,23 @@ int main() {
     sort(lines.begin(), lines.end(), comp);
     // for (auto &x : lines)
     //     cout << x.start << " " << x.end << " " << x.index << endl;
-    if (n <= 100000) {
-        vector<int> ans(n, -1);
-        for (int i = 1; i < n; i++) {
+    int maxEnd = lines[0].end;
+    vector<int> ans(n, -1);
+    for (int i = 1; i < n; i++) {
+        if (lines[i].end > maxEnd) {
+            maxEnd = lines[i].end;
+        } else {
             int index = i - 1;
-            while (index >= 0 && !(lines[index].start <= lines[i].start && lines[index].end >= lines[i].end)) {
+            while (index >= 0 && !(lines[index].end >= lines[i].end)) {
                 index--;
             }
             if (index != -1) {
                 ans[lines[i].index] = lines[index].index;
             }
         }
-        for (auto &x : ans)
-            cout << x + 1 << " ";
-        cout << endl;
-    } else {
-        vector<int> ans(n, -1);
-        for (int i = 1; i < n; i++) {
-            if (lines[i - 1].start <= lines[i].start && lines[i - 1].end >= lines[i].end) {
-                ans[lines[i].index] = lines[i - 1].index;
-            }
-        }
-        for (auto &x : ans)
-            cout << x + 1 << " ";
-        cout << endl;
     }
+    for (auto &x : ans)
+        cout << x + 1 << " ";
+    cout << endl;
     return 0;
 }
