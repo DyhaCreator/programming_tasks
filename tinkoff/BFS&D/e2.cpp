@@ -16,6 +16,7 @@ int main() {
         int a, b, c;
         cin >> a >> b >> c;
         g[a - 1].push_back({b - 1, c});
+        g[b - 1].push_back({a - 1, c});
     }
 
     vector<pair<ll, ll>> dist(n, {INF, -1});
@@ -39,12 +40,12 @@ int main() {
         }
     }
 
-    // cout << dist[f - 1].first << endl;
+    cout << dist[f - 1].first << " ";
     if (dist[f - 1].first == INF) {
         cout << -1 << endl;
         return 0;
     }
-    //cout << dist[f - 1].first << " ";
+    // cout << dist[f - 1].first << " ";
 
     vector<int> ans = {};
     int p = f - 1;
