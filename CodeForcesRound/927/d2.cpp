@@ -29,7 +29,7 @@ int main() {
         vector<string> cards(n * 2);
         for (auto &x : cards)
             cin >> x;
-        vector<int> count(26);
+        vector<int> count(27);
         for (auto &x : cards) {
             count[x[1] - 'A']++;
         }
@@ -42,12 +42,33 @@ int main() {
                 ccc++;
             }
         }
-        cout << ccc << endl;
+        //cout << i << " ";
         if (ccc > count[k - 'A']) {
             cout << "IMPOSSIBLE" << endl;
             continue;
+        } else {
+            //cout << endl;
         }
-        
+        vector<int> used(2 * n);
+        for (int y = 0; y < 2 * n; y++) {
+            if (used[y] == 0) {
+                int minIndex = -1;
+                for (int x = 0; x < 2 * n; x++) {
+                    if (x != y && used[x] == 0) {
+                        //cout << y << " " << x << endl;
+                        if (f(cards[y], cards[x], k) && (minIndex == -1 || f(cards[x], cards[minIndex], k))) {
+                            minIndex = x;
+                        }
+                    }
+                }
+                if (minIndex != -1) {
+                    //cout << minIndex << endl;
+                    cout << cards[y] << " " << cards[minIndex] << endl;
+                    used[y] = 1;
+                    used[minIndex] = 1;
+                }
+            }
+        }
     }
     return 0;
 }
