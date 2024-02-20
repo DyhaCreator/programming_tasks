@@ -44,9 +44,6 @@ int main() {
             cout << -1 << endl;
             return 0;
         }
-
-
-
         for (auto &x : a) {
             q.push({num + char(x + '0'), lay + 1});
         }
