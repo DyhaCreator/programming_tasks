@@ -58,6 +58,11 @@ int main() {
         }
     }
 
+    if (used[ost] == INF) {
+        cout << -1 << endl;
+        return 0;
+    }
+
     // cout << used[ost] << endl;
     /*prvec(used);
     prvec(prev);
