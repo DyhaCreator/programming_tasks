@@ -174,6 +174,6 @@ void solveD() {
 }
 
 int main() {
-    solveD();
+    solveC();
     return 0;
 }
