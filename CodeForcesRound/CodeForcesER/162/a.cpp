@@ -1,8 +1,9 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <stack>
 #define ll long long
-#define INF 1000000007
+#define INF 1000000000000007
 #define prvec(vec) for(auto &x:vec)cout<<x<<" ";cout<<endl;
 #define all(vec) vec.begin(),vec.end()
 using namespace std;
@@ -84,7 +85,95 @@ void solveB() {
     }
 }
 
+void solveC() {
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++) {
+        int n, q;
+        cin >> n >> q;
+        vector<int> a(n);
+        for (auto &x : a)
+            cin >> x;
+
+        for (int j = 0; j < q; j++) {
+            int l, r;
+            cin >> l >> r;
+            l--;
+            r--;
+
+        }
+    }
+}
+
+void solveD() {
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++) {
+        int n;
+        cin >> n;
+        vector<ll> a(n);
+        for (auto &x : a)
+            cin >> x;
+        
+
+        vector<ll> left(n);
+        stack<pair<ll, ll>> stl;
+        stl.push({INF, -INF});
+
+        for (int j = 0; j < n; j++) {
+            while (stl.top().first <= a[j]) {
+                stl.pop();
+            }
+
+            left[j] = j - stl.top().second;
+
+            pair<ll, ll> w = stl.top();
+            w.first += a[j];
+            stl.pop();
+            stl.push(w);
+            stl.push({a[j], j});
+        }
+
+        for (auto &x : left)
+            cout << x << " ";
+        cout << endl;
+
+        vector<ll> right(n);
+        stack<pair<ll, ll>> str;
+        str.push({INF, -INF});
+
+        for (int j = n - 1; j >= 0; j--) {
+            while (str.top().first <= a[j]) {
+                str.pop();
+            }
+
+            right[j] = abs(str.top().second - (n - j - 1));
+
+            pair<ll, ll> w = str.top();
+            w.first += a[j];
+            str.pop();
+            str.push(w);
+            str.push({a[j], n - j - 1});
+        }
+
+        for (auto &x : right)
+            cout << x << " ";
+        cout << endl;
+
+        for (int j = 0; j < n; j++) {
+            ll a = std::min(left[j], right[j]);
+            // cout << a << " ";
+            if (a >= INF) {
+                cout << -1 << " ";
+            } else{
+                cout << a << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main() {
-    solveB();
+    solveD();
     return 0;
 }
