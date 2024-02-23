@@ -1,0 +1,46 @@
+Date : 2024-02-23 16:02:18
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 16 files,  789 codes, 132 comments, 100 blanks, all 1021 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         16 |        789 |        132 |        100 |      1,021 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         16 |        789 |        132 |        100 |      1,021 |
+| CodeForcesRound                                                      |          4 |        129 |         69 |         17 |        215 |
+| CodeForcesRound/928                                                  |          4 |        129 |         69 |         17 |        215 |
+| tinkoff                                                              |         12 |        660 |         63 |         83 |        806 |
+| tinkoff/BFS&D                                                        |         10 |        573 |         49 |         69 |        691 |
+| tinkoff/F&FB                                                         |          1 |         43 |          0 |          7 |         50 |
+| tinkoff/scanline                                                     |          1 |         44 |         14 |          7 |         65 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                             | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/928/a.cpp  | C++      |         23 |          0 |          2 |         25 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/928/b.cpp  | C++      |         31 |          1 |          1 |         33 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/928/c.cpp  | C++      |         48 |         68 |         11 |        127 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/928/c2.cpp | C++      |         27 |          0 |          3 |         30 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/j3.cpp       | C++      |         43 |          3 |          6 |         52 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/j4.cpp       | C++      |         58 |          2 |         11 |         71 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/j5.cpp       | C++      |         70 |          6 |          8 |         84 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/j6.cpp       | C++      |         63 |          2 |          7 |         72 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/m.cpp        | C++      |         86 |         19 |          5 |        110 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/m2.cpp       | C++      |         74 |          6 |          7 |         87 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/n.cpp        | C++      |         51 |          5 |          3 |         59 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/n2.cpp       | C++      |         48 |          2 |          7 |         57 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/o.cpp        | C++      |         59 |          4 |         12 |         75 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/BFS&D/o2.cpp       | C++      |         21 |          0 |          3 |         24 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/F&FB/a.cpp         | C++      |         43 |          0 |          7 |         50 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/scanline/e4.cpp    | C++      |         44 |         14 |          7 |         65 |
+| Total                                                                |          |        789 |        132 |        100 |      1,021 |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
