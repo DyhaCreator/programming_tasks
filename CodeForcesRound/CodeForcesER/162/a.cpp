@@ -95,12 +95,37 @@ void solveC() {
         for (auto &x : a)
             cin >> x;
 
+        vector<ll> prefSum(n + 1, 0);
+        for (int j = 1; j <= n; j++) {
+            prefSum[j] = prefSum[j - 1] + a[j - 1] - 1;
+        }
+
+        vector<ll> count(n + 1, 0);
+        for (int j = 1; j <= n; j++) {
+            if (a[j - 1] == 1) {
+                count[j] = count[j - 1] + 1;
+            } else {
+                count[j] = count[j - 1];
+            }
+        }
+
         for (int j = 0; j < q; j++) {
             int l, r;
             cin >> l >> r;
             l--;
-            r--;
+            if (r - l == 1) {
+                cout << "NO" << endl;
+                continue;
+            }
 
+            ll sum = prefSum[r] - prefSum[l];
+            ll cou = count[r] - count[l];
+            if (sum >= cou) {
+                cout << "YES" << endl;
+            } else {
+                cout << "NO" << endl;
+            }
+            // cout << sum << " " << cou << endl;
         }
     }
 }
