@@ -2,8 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <set>
 #define ll long long
-#define INF 1000000000000007
+#define INF 1000000007
 #define prvec(vec) for(auto &x:vec)cout<<x<<" ";cout<<endl;
 #define all(vec) vec.begin(),vec.end()
 using namespace std;
@@ -62,7 +63,46 @@ void solveB() {
     }
 }
 
+void solveC() {
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++) {
+        int n;
+        cin >> n;
+        vector<int> map(n);
+        for (auto &x : map)
+            cin >> x;
+        vector<int> a(n + 1);
+        for(auto &x : map)
+            a[x]++;
+        int ans = INF;
+        bool find = false;
+        for (int j = 0; j <= n; j++) {
+            if (a[j] > 0) {
+                // cout << j << endl;
+                int sindex = 0;
+                while (sindex < n && map[sindex] == j) {
+                    sindex++;
+                }
+                if (sindex == n) {
+                    cout << 0 << endl;
+                    find = true;
+                    break;
+                }
+                int findex = n - 1;
+                while (findex > sindex && map[findex] == j) {
+                    findex--;
+                }
+                // cout << sindex << " " << findex << endl;
+                ans = std::min(ans, findex - sindex + 1);
+            }
+        }
+        if (!find) cout << ans << endl;
+        // cout << endl;
+    }
+}
+
 int main() {
-    solveB();
+    solveC();
     return 0;
 }
