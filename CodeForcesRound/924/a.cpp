@@ -65,7 +65,30 @@ void solveB() {
     }
 }
 
+vector<int> prime = {};
+
+bool isPrime(int n) {
+    for (auto &x : prime) {
+        if (n % x == 0) return false;
+    }
+    return true;
+}
+
+void solveC() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n, k;
+        cin >> n >> k;
+        int a = n - k;
+
+        for (int i = 2; i * i <= n * 2; i++) {
+            
+        }
+    }
+}
+
 int main() {
-    solveB();
+    solveC();
     return 0;
 }
