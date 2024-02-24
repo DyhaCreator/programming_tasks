@@ -32,7 +32,37 @@ void solveA() {
     }
 }
 
+void solveB() {
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        ll sum = 0;
+        for (auto &x : a) {
+            cin >> x;
+            sum += x;
+        }
+        ll av = sum / n;
+        // cout << av << endl;
+        ll ss = 0;
+        bool find = false;
+        for (int j = 0; j < n; j++) {
+            ss += a[j] - av;
+            if (ss < 0) {
+                cout << "NO" << endl;
+                find = true;
+                break;
+            }
+        }
+        if (!find) {
+            cout << "YES" << endl;
+        }
+    }
+}
+
 int main() {
-    solveA();
+    solveB();
     return 0;
 }
