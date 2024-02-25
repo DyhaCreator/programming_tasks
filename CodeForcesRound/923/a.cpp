@@ -160,7 +160,41 @@ void solveD() {
     }
 }
 
+void solveD2() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        envec(a);
+        vector<int> left(n, -1);
+        for (int i = 1; i < n; i++) {
+            if (a[i] == a[i - 1]) {
+                left[i] = left[i - 1];
+            } else {
+                left[i] = i - 1;
+            }
+        }
+        // prvec(left);
+        int q;
+        cin >> q;
+        for (int i = 0; i < q; i++) {
+            int l, r;
+            cin >> l >> r;
+            l--;
+            r--;
+            if (left[r] == -1 || left[r] < l) {
+                cout << "-1 -1" << endl;
+            } else {
+                cout << left[r] + 1 << " " << r + 1 << endl;
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main() {
-    solveD();
+    solveD2();
     return 0;
 }
