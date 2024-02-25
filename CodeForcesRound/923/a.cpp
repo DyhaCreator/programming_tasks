@@ -193,8 +193,44 @@ void solveD2() {
         cout << endl;
     }
 }
+void solveE() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n, k;
+        cin >> n >> k;
+        vector<int> vec(n);
+        int index = 0;
+        int num = 1;
+        int d = 1;
+        while (num <= n) {
+            vec[index] = num;
+            if (d == 1) {
+                if (index + k < n) {
+                    index += k;
+                } else {
+                    d = -1;
+                    if (index + 1 < n) {
+                        index++;
+                    } else {
+                        index = index + 1 - k;
+                    }
+                }
+            } else {
+                if (index - k >= 0) {
+                    index -= k;
+                } else {
+                    d = 1;
+                    index++;
+                }
+            }
+            num++;
+        }
+        prvec(vec);
+    }
+}
 
 int main() {
-    solveD2();
+    solveE();
     return 0;
 }
