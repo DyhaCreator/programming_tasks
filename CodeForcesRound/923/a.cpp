@@ -7,6 +7,7 @@
 #define INF 1000000007
 #define prvec(vec) for(auto &x:vec)cout<<x<<" ";cout<<endl;
 #define all(vec) vec.begin(),vec.end()
+#define envec(vec) for(auto &x:vec)cin>>x;
 using namespace std;
 
 void solveA() {
@@ -128,7 +129,38 @@ void solveC() {
     }
 }
 
+void solveD() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        envec(a);
+        int q;
+        cin >> q;
+        for (int i = 0; i < q; i++) {
+            int l, r;
+            cin >> l >> r;
+            l--;
+            r--;
+            bool find = false;
+            for (int j = l; j <= r; j++) {
+                if (a[j] != a[l]) {
+                    cout << l + 1 << " " << j + 1 << endl;
+                    find = true;
+                    break;
+                }
+            }
+            if (find == false) {
+                cout << "-1 -1" << endl;
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main() {
-    solveC();
+    solveD();
     return 0;
 }
