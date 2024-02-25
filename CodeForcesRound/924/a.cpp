@@ -81,9 +81,10 @@ void solveC() {
         int n, k;
         cin >> n >> k;
         int a = n - k;
+        int b = 
 
         for (int i = 2; i * i <= n * 2; i++) {
-            
+
         }
     }
 }
