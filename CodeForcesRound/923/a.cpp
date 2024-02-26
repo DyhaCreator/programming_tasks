@@ -230,7 +230,49 @@ void solveE() {
     }
 }
 
+int ans = 0;
+
+void rec(int n, int index, vector<int> a, vector<int> draw, int answ) {
+    if (index == n) {
+        // cout << answ << endl;
+        // prvec(draw);
+        int count = 0;
+        for (auto &x : draw)
+            count += 1 - x;
+        if (count == 0) {
+            ans = std::min(answ, ans);
+        }
+        return;
+    }
+    rec(n, index + 1, a, draw, answ);
+    vector<int> newDraw = draw;
+    for (int i = index; i < min(index + a[index], n); i++) {
+        newDraw[i] = 1;
+    }
+    rec(n, index + 1, a, newDraw, answ + 1);
+    newDraw = draw;
+    for (int i = index; i > max(index - a[index], -1); i--) {
+        newDraw[i] = 1;
+    }
+    rec(n, index + 1, a, newDraw, answ + 1);
+}
+
+void solveG() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        envec(a);
+        vector<int> draw(n);
+        ans = INF;
+        rec(n, 0, a, draw, 0);
+        cout << ans << endl;
+    }
+}
+
 int main() {
-    solveE();
+    solveG();
     return 0;
 }
