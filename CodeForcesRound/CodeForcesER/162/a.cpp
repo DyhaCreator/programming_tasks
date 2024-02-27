@@ -3,7 +3,7 @@
 #include <vector>
 #include <stack>
 #define ll long long
-#define INF 1000000000000007
+#define INF 1000000007
 #define prvec(vec) for(auto &x:vec)cout<<x<<" ";cout<<endl;
 #define all(vec) vec.begin(),vec.end()
 using namespace std;
@@ -198,7 +198,146 @@ void solveD() {
     }
 }
 
+
+void solveD2() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n;
+        cin >> n;
+        vector<int> mp(n);
+        for (auto &x : mp)
+            cin >> x;
+        vector<int> left(n, -1);
+        for (int i = 1; i < n; i++) {
+            if (mp[i] == mp[i - 1]) {
+                left[i] = left[i - 1];
+            } else {
+                left[i] = i - 1;
+            }
+        }
+
+        /*for (auto &x : left)
+            cout << x << " ";
+        cout << endl;*/
+
+        vector<ll> prefSum(n + 1);
+        for (int i = 1; i <= n; i++) {
+            prefSum[i] = prefSum[i - 1] + mp[i - 1];
+        }
+        prefSum.push_back(prefSum.back());
+
+        vector<int> ansLeft(n);
+
+        for (int i = 0; i < n; i++) {
+            int l = 0;
+            int r = i;
+            // cout << l << " " << r << endl;
+            while (l < r) {
+                int mid = (l + r) / 2;
+                bool can = false;
+                if (mid == 1) {
+                    can = true;
+                } else if (i > 1 && left[i - 1] >= i - mid) {
+                    can = true;
+                }
+
+                // cout << left[i - 1] << " " << i - mid << endl;
+
+                ll sum = prefSum[i] - prefSum[i - mid];
+
+                // cout << mid << " " << can << " " << sum << endl;
+                if (sum <= mp[i] || can == false) {
+                    l = mid + 1;
+                } else {
+                    r = mid;
+                }
+                // cout << l << " " << r << endl;
+                // cout << endl;
+            }
+            int mid = l;
+            bool can = false;
+            if (mid == 1) {
+                can = true;
+            } else if (i > 1 && left[i - 1] >= i - mid) {
+                can = true;
+            }
+            ll sum = prefSum[i] - prefSum[i - mid];
+            if (sum <= mp[i] || can == false) {
+                ansLeft[i] = INF;
+            } else {
+                ansLeft[i] = l;
+            }
+        }
+
+        /*for (auto &x : ansLeft)
+            cout << x << " ";
+        cout << endl;*/
+
+        vector<int> ansRight(n);
+
+        for (int i = n - 1; i >= 0; i--) {
+            // cout << i << endl;
+            int l = 0;
+            int r = n - i - 1;
+            while (l < r) {
+                int mid = (l + r) / 2;
+                bool can = false;
+                if (mid == 1) {
+                    can = true;
+                } else if (i < n - 1 && left[i + mid] > i) {
+                    can = true;
+                }
+                ll sum = 0;
+                if (i + 1 + mid < n + 2) {
+                    sum = prefSum[i + 1 + mid] - prefSum[i + 1];
+                }
+
+                // cout << mid << " " << sum << " " << can << endl;
+
+                if (sum <= mp[i] || can == false) {
+                    l = mid + 1;
+                } else {
+                    r = mid;
+                }
+                // cout << l << " " << r << endl;
+                // cout << endl;
+            }
+            // cout << l << endl;
+            // cout << endl;
+            int mid = l;
+            bool can = false;
+            if (mid == 1) {
+                can = true;
+            } else if (i < n - 1 && left[i + mid] > i) {
+                can = true;
+            }
+            ll sum = 0;
+            if (i + 1 + mid < n + 2) {
+                sum = prefSum[i + 1 + mid] - prefSum[i + 1];
+            }
+            if (sum <= mp[i] || can == false) {
+                ansRight[i] = INF;
+            } else {
+                ansRight[i] = l;
+            }
+        }
+        /*for (auto &x : ansRight)
+            cout << x << " ";
+        cout << endl;*/
+
+        for (int i = 0; i < n; i++) {
+            if (min(ansLeft[i], ansRight[i]) == INF) {
+                cout << -1 << " ";
+            } else {
+                cout << min(ansLeft[i], ansRight[i]) << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main() {
-    solveC();
+    solveD2();
     return 0;
 }
