@@ -72,42 +72,27 @@ void solveC() {
         ll buffMin = min(a, b);
         a = max(a, b);
         b = buffMin;
+        map<int, int> mp;
         // cout << a << " " << b << endl;
-        if (f(a, b)) {
-            int ans = 0;
-            ll buffB = 1;
-
-            for (int x = 0; buffB <= l; x++) {
-                // cout << buffB << endl;
-                if (buffB <= l) {
-                    if (l % buffB == 0) {
+        int ans = 0;
+        ll buffA = 1;
+        ll buffB = 1;
+        for (int x = 0; buffA <= l; x++) {
+            buffB = 1;
+            for (int y = 0; buffB <= l; y++) {
+                // cout << buffA << " " << buffB << endl;
+                if (buffB * buffA <= l) {
+                    if (l % (buffA * buffB) == 0 && mp[buffA * buffB] == 0) {
+                        mp[buffA * buffB] = 1;
                         ans++;
                     }
                 }
                 buffB *= b;
             }
-            cout << ans << endl;
-            // cout << -1 << endl;
-        } else {
-            int ans = 0;
-            ll buffA = 1;
-            ll buffB = 1;
-            for (int x = 0; buffA <= l; x++) {
-                buffB = 1;
-                for (int y = 0; buffB <= l; y++) {
-                    // cout << buffA << " " << buffB << endl;
-                    if (buffB * buffA <= l) {
-                        if (l % (buffA * buffB) == 0) {
-                            ans++;
-                        }
-                    }
-                    buffB *= b;
-                }
-                buffA *= a;
-                // cout << buffA << " " << buffB << endl;
-            }
-            cout << ans << endl;
+            buffA *= a;
+            // cout << buffA << " " << buffB << endl;
         }
+        cout << ans << endl;
     }
 }
 
@@ -125,10 +110,20 @@ void solveD() {
             continue;
         }
         sort(a.begin(), a.end());
-        if (a[0] == a[1]) {
-            cout << "NO" << endl;
-        } else {
+        if (a[0] != a[1]) {
             cout << "YES" << endl;
+            continue;
+        }
+        bool find = false;
+        for (int i = 0; i < n - 1; i++) {
+            if (a[i + 1] % a[i] < a[0] && a[i + 1] % a[i] != 0) {
+                cout << "YES" << endl;
+                find = true;
+                break;
+            }
+        }
+        if (!find) {
+            cout << "NO" << endl;
         }
     }
 }
@@ -136,6 +131,6 @@ void solveD() {
 int main() {
     std::ios::sync_with_stdio(0);
     cin.tie(NULL);
-    solveC();
+    solveD();
     return 0;
 }
