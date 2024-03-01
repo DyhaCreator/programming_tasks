@@ -105,26 +105,7 @@ void solveD() {
         vector<int> a(n);
         for (auto &x : a)   
             cin >> x;
-        if (n == 1) {
-            cout << "YES" << endl;
-            continue;
-        }
-        sort(a.begin(), a.end());
-        if (a[0] != a[1]) {
-            cout << "YES" << endl;
-            continue;
-        }
-        bool find = false;
-        for (int i = 0; i < n - 1; i++) {
-            if (a[i + 1] % a[i] < a[0] && a[i + 1] % a[i] != 0) {
-                cout << "YES" << endl;
-                find = true;
-                break;
-            }
-        }
-        if (!find) {
-            cout << "NO" << endl;
-        }
+        
     }
 }
 
