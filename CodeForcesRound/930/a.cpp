@@ -59,7 +59,7 @@ void solveB() {
         int ans = 1;
         // cout << minS << endl;
         for (int i = 1; i < n; i++) {
-            th[i] = mp1[i];
+            /*th[i] = mp1[i];
             // cout << minS << " " << th << " " << comp2(th, minS, c) << endl;
             if (comp2(th, minS, c)) {
                 minS = th;
@@ -71,11 +71,22 @@ void solveB() {
             }
             c = i;
             // cout << minS << endl;
-            // cout << ans << endl;
+            // cout << ans << endl;*/
         }
         cout << minS << endl;
         cout << ans << endl;
     }
+}
+
+bool m(string &a, string &b, int start) {
+    for (int i = start; i < a.size(); i++) {
+        if (a[i] < b[i]) {
+            return true;
+        } else if (a[i] > b[i]) {
+            return false;
+        }
+    }
+    return false;
 }
 
 void solveB2() {
@@ -87,7 +98,27 @@ void solveB2() {
         string mp1, mp2;
         cin >> mp1 >> mp2;
         string th = mp1[0] + mp2;
-        
+        // cout << th << endl;
+        string minS = th;
+        int ans = 1;
+        int c = 0;
+        for (int i = 1; i < n; i++) {
+            th[i] = mp1[i];
+            if (m(th, minS, c)) {
+                minS = th;
+                ans = 1;
+            }
+            c = i;
+        }
+        int y = 0;
+        int x = 0;
+        while (y == 0 && x < n - 1) {
+            if (mp1[x + 1] == mp2[x]) ans++;
+            else if (mp2[x] < mp1[x + 1]) y = 1;
+            x++;
+        }
+        cout << minS << endl;
+        cout << ans << endl;
     }
 }
 
