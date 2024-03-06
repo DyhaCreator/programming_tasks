@@ -337,7 +337,87 @@ void solveD2() {
     }
 }
 
+void solveD3() {
+    int t;
+    cin >> t;
+    for (int ii = 0; ii < t; ii++) {
+        int n;
+        cin >> n;
+        vector<int> mp(n);
+        for (auto &x : mp)
+            cin >> x;
+        vector<int> left(n);
+        left[0] = -1;
+        for (int i = 1; i < n; i++) {
+            if (mp[i] == mp[i - 1]) {
+                left[i] = left[i - 1];
+            } else {
+                left[i] = i - 1;
+            }
+        }
+
+        vector<int> right(n);
+        right[n - 1] = -1;
+        for (int i = n - 2; i >= 0; i--) {
+            if (mp[i] == mp[i + 1]) {
+                right[i] = right[i + 1];
+            } else {
+                right[i] = i + 1;
+            }
+        }
+
+        vector<ll> prefSum(n + 1);
+        for (int i = 1; i <= n; i++)
+            prefSum[i] = prefSum[i - 1] + mp[i - 1];
+
+        for (auto &x : left)
+            cout << x << " ";
+        cout << endl;
+        for (auto &x : right)
+            cout << x << " ";
+        cout << endl;
+        
+        vector<int> leftAns(n);
+        for (int i = 0; i < n; i++) {
+            int len = 0;
+            int l = 0;
+            int r = i;
+            while (l < r) {
+                int mid = (l + r) / 2;
+                int sum = prefSum[i] - prefSum[i - mid];
+                if (sum <= mp[i]) {
+                    l = mid + 1;
+                } else {
+                    r = mid;
+                }
+            }
+            cout << l << " ";
+            leftAns[i]
+        }
+        cout << endl;
+
+        vector<int> rightAns(n);
+        for (int i = 0; i < n; i++) {
+            int len = 0;
+            int l = 0;
+            int r = n - i - 1;
+            while (l < r) {
+                int mid = (l + r) / 2;
+                int sum = prefSum[i + mid + 1] - prefSum[i + 1];
+                if (sum <= mp[i]) {
+                    l = mid + 1;
+                } else {
+                    r = mid;
+                }
+            }
+            cout << l << " ";
+        }
+        cout << endl;
+        cout << endl;
+    }
+}
+
 int main() {
-    solveD2();
+    solveD3();
     return 0;
 }
