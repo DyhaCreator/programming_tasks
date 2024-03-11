@@ -83,7 +83,92 @@ void solveC() {
     }
 }
 
+void solveD() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, m, index;
+        cin >> n >> m >> index;
+        index--;
+        vector<int> a(n, 0);
+        a[index] = 1;
+
+        while (m--) {
+            int r;
+            char c;
+            cin >> r >> c;
+            if (c == '0') {
+                vector<int> na(n);
+                for (int i = 0; i < n; i++) {
+                    if (a[i] == 1) {
+                        na[(i + r) % n] = 1;
+                    }
+                }
+                a = na;
+            } else if (c == '1') {
+                vector<int> na(n);
+                for (int i = 0; i < n; i++) {
+                    if (a[i] == 1) {
+                        if (i < r) {
+                            na[i - r + n] = 1;
+                        } else {
+                            na[i - r] = 1;
+                        }
+                    }
+                }
+                a = na;
+            } else if (c == '?') {
+                vector<int> na(n);
+                for (int i = 0; i < n; i++) {
+                    if (a[i] == 1) {
+                        na[(i + r) % n] = 1;
+                    }
+                }
+                for (int i = 0; i < n; i++) {
+                    if (a[i] == 1) {
+                        if (i < r) {
+                            na[i - r + n] = 1;
+                        } else {
+                            na[i - r] = 1;
+                        }
+                    }
+                }
+                a = na;
+            }
+            /*for (auto &x : a)
+                cout << x << " ";
+            cout << endl;*/
+        }
+        int sum = 0;
+        for (auto &x : a)
+            sum += x;
+        cout << sum << endl;
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 1) {
+                cout << i + 1 << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+void solveE() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, m, k, d;
+        cin >> n >> m >> k >> d;
+        vector<vector<int>> mp(n, vector<int> (m));
+        for (int y = 0; y < n; y++) {
+            for (int x = 0; x < m; x++) {
+                cin >> mp[y][x];
+            }
+        }
+        
+    }
+}
+
 int main() {
-    solveC();
+    solveD();
     return 0;
 }
