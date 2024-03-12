@@ -41,17 +41,20 @@ void solveB() {
         vector<int> a(n);
         for (auto &x : a)
             cin >> x;
-        if (a[0] * 2 > a[1] || a[a.size() - 1] * 2 > a[a.size() - 2]) {
+
+        for (int i = 1; i < n - 1; i++) {
+            int m = min(min(a[i] / 2, a[i - 1]), a[i + 1]);
+            a[i] -= m * 2;
+            a[i - 1] -= m;
+            a[i + 1] -= m;
+        }
+        ll sum = 0;
+        for (auto &x : a)
+            sum += x;
+        if (sum == 0) {
+            cout << "YES" << endl;
+        } else {
             cout << "NO" << endl;
-            continue;
-        }
-        int m = 0;
-        for (int i = 0; i < n; i++) {
-            m = max(m, a[i]);
-        }
-        int countMax = 0;
-        for (int i = 1; i < n; i++) {
-            
         }
     }
 }
@@ -164,11 +167,11 @@ void solveE() {
                 cin >> mp[y][x];
             }
         }
-        
+
     }
 }
 
 int main() {
-    solveD();
+    solveB();
     return 0;
 }
