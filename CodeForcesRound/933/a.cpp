@@ -168,10 +168,11 @@ void solveE() {
             }
         }
 
+        
     }
 }
 
 int main() {
-    solveB();
+    solveE();
     return 0;
 }
