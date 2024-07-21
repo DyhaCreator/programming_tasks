@@ -15,7 +15,6 @@ bool isPrime(int n) {
 int main() {
     int k;
     cin >> k;
-    prime = vector<int>(k, INF);
     int i = 2;
     while (prime.size() < k) {
         if (isPrime(i)) {
