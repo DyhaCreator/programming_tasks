@@ -14,7 +14,6 @@ int main() {
         cin >> x;
     vector<ll> dec(n / len + 1, -INF);
     vector<ll> add(n / len + 1, 0);
-    vector<ll> add_one(n, 0);
     for (int i = 0; i < n; i++)
         dec[i / len] = max(a[i], dec[i / len]);
     int m;
