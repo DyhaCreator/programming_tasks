@@ -18,7 +18,7 @@ int main() {
             ans2 = i;
             max_ans = a[i] + a[maxj];
         }
-        if (maxj == -1 || a[i - k] > a[maxj])
+        if (a[i - k] > a[maxj])
             maxj = i - k;
     }
     cout << ans1 + 1 << " " << ans2 + 1 << endl;
