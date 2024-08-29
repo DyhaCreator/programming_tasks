@@ -16,10 +16,10 @@ int main() {
     ll ans1 = -2, ans2 = -2;
     ll maxR = k;
     for (int i = 1; i < n; i++) {
-        if (maxR == -1 || (k / a[minj]) * b[i] > maxR) {
+        if (maxR == -1 || (k / a[minj]) * b[i] + k % a[minj] > maxR) {
             ans1 = minj;
             ans2 = i;
-            maxR = (k / a[minj]) * b[i];
+            maxR = (k / a[minj]) * b[i] + k % a[minj];
         }
         if (a[i] < a[minj])
             minj = i;
