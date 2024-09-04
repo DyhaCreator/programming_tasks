@@ -25,6 +25,16 @@ int main() {
             }
         }
     }
+    if (pred[n] == 0) {
+        // cout << pred[n] << endl;
+        for (int i = 0; i < k; i++) {
+            // cout << i << " " << a[i] << " " << pred[n - as[a[i]]] << endl;
+            if (pred[n - as[a[i]]] != -INF && a[i] != 0) {
+                pred[n] = a[i];
+                break;
+            }
+        }
+    }
     /*for (auto &x : dp)
         cout << x << " ";
     cout << endl;
@@ -39,7 +49,8 @@ int main() {
     }
     sort(ans.begin(), ans.end());
     reverse(ans.begin(), ans.end());
-    /*if (ans[0] == 0) {
+    // if (ans[0] == 0 && ans.size() > 1) cout << "hui" << endl;
+    /*if (ans[0] == 0 && ans.size() > 1) {
         for (int i = 0; i < n / 7; i++)
             cout << 8;
         cout << endl;
