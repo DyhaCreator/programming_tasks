@@ -11,6 +11,7 @@ int main() {
     cout.tie(0);
     int n;
     cin >> n;
+    unsigned int start_time =  clock();
     vector<int> g(2 * n);
     for (int i = 0; i < n; i++) {
         int a, b;
@@ -19,6 +20,12 @@ int main() {
         g[b - 1] = a - 1;
     }
     vector<int> used(2 * n, 0);
+    for (int i = 0; i < 2 * n; i++) {
+        if (abs(i - g[i]) == 1) {
+            used[i] = 1;
+            used[g[i]] = 1;
+        }
+    }
     for (int i = 0; i < 2 * n; i++) {
         if (used[i] == 0) {
             if (g[i] - i < 2 * n - g[i] + i) {
@@ -35,5 +42,7 @@ int main() {
         }
     }
     cout << "NO" << endl;
+    unsigned int end_time = clock();
+    cout << (double)(end_time - start_time) / CLOCKS_PER_SEC * 10 << endl;
     return 0;
 }
