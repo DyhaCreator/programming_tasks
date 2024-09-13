@@ -1,0 +1,65 @@
+Date : 2024-09-12 23:25:07
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 33 files,  1097 codes, 160 comments, 95 blanks, all 1352 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         26 |      1,041 |        160 |         85 |      1,286 |
+| Python   |          7 |         56 |          0 |         10 |         66 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                             | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                |         33 |      1,097 |        160 |         95 |      1,352 |
+| fucking_python_in_minecraft                                                      |          6 |         37 |          0 |          9 |         46 |
+| fucking_python_in_minecraft/otbor                                                |          6 |         37 |          0 |          9 |         46 |
+| inform                                                                           |         13 |        355 |         20 |         27 |        402 |
+| inform/1                                                                         |          6 |        192 |         17 |         12 |        221 |
+| inform/2                                                                         |          7 |        163 |          3 |         15 |        181 |
+| tinkoff                                                                          |         14 |        705 |        140 |         59 |        904 |
+| tinkoff/otbor2024                                                                |         14 |        705 |        140 |         59 |        904 |
++----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                         | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/fucking_python_in_minecraft/otbor/1.py | Python   |          3 |          0 |          1 |          4 |
+| /home/kapusta/Документы/programming_tasks/fucking_python_in_minecraft/otbor/2.py | Python   |          8 |          0 |          1 |          9 |
+| /home/kapusta/Документы/programming_tasks/fucking_python_in_minecraft/otbor/3.py | Python   |          5 |          0 |          2 |          7 |
+| /home/kapusta/Документы/programming_tasks/fucking_python_in_minecraft/otbor/4.py | Python   |          7 |          0 |          1 |          8 |
+| /home/kapusta/Документы/programming_tasks/fucking_python_in_minecraft/otbor/5.py | Python   |          9 |          0 |          2 |         11 |
+| /home/kapusta/Документы/programming_tasks/fucking_python_in_minecraft/otbor/6.py | Python   |          5 |          0 |          2 |          7 |
+| /home/kapusta/Документы/programming_tasks/inform/1/d2.cpp                        | C++      |          2 |          0 |          0 |          2 |
+| /home/kapusta/Документы/programming_tasks/inform/1/d3.cpp                        | C++      |         99 |         15 |          5 |        119 |
+| /home/kapusta/Документы/programming_tasks/inform/1/e.cpp                         | C++      |         16 |          0 |          2 |         18 |
+| /home/kapusta/Документы/programming_tasks/inform/1/f.cpp                         | C++      |         31 |          2 |          2 |         35 |
+| /home/kapusta/Документы/programming_tasks/inform/1/f.py                          | Python   |         19 |          0 |          1 |         20 |
+| /home/kapusta/Документы/programming_tasks/inform/1/g.cpp                         | C++      |         25 |          0 |          2 |         27 |
+| /home/kapusta/Документы/programming_tasks/inform/2/a.cpp                         | C++      |         17 |          0 |          3 |         20 |
+| /home/kapusta/Документы/programming_tasks/inform/2/a_graph.cpp                   | C++      |         14 |          0 |          6 |         20 |
+| /home/kapusta/Документы/programming_tasks/inform/2/d.cpp                         | C++      |         25 |          0 |          1 |         26 |
+| /home/kapusta/Документы/programming_tasks/inform/2/e.cpp                         | C++      |         34 |          2 |          1 |         37 |
+| /home/kapusta/Документы/programming_tasks/inform/2/f.cpp                         | C++      |         11 |          0 |          0 |         11 |
+| /home/kapusta/Документы/programming_tasks/inform/2/g.cpp                         | C++      |         26 |          0 |          2 |         28 |
+| /home/kapusta/Документы/programming_tasks/inform/2/g3.cpp                        | C++      |         36 |          1 |          2 |         39 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/a.cpp                | C++      |          8 |          3 |          0 |         11 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/bb6.cpp              | C++      |         56 |         31 |          3 |         90 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/bb6_2.cpp            | C++      |         74 |          2 |          4 |         80 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/bb6_3.cpp            | C++      |         59 |          9 |          3 |         71 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/cb1.cpp              | C++      |         33 |          3 |          2 |         38 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/cb3.cpp              | C++      |         47 |         10 |          3 |         60 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/cb4.cpp              | C++      |         80 |         43 |         11 |        134 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/cb5.cpp              | C++      |         62 |         11 |         11 |         84 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/cb5_2.cpp            | C++      |         63 |          1 |         13 |         77 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/d.cpp                | C++      |         47 |         12 |          1 |         60 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/e.cpp                | C++      |         43 |         12 |          2 |         57 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/f.cpp                | C++      |         49 |          1 |          2 |         52 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/g.cpp                | C++      |         39 |          1 |          2 |         42 |
+| /home/kapusta/Документы/programming_tasks/tinkoff/otbor2024/g2.cpp               | C++      |         45 |          1 |          2 |         48 |
+| Total                                                                            |          |      1,097 |        160 |         95 |      1,352 |
++----------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

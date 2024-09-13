@@ -17,7 +17,7 @@ int main() {
         id--;
         // cout << id << " " << nnn << endl;
         if (nnn == 8) {
-            if (a[id].size() > 0) a[id].pop();
+            if (a[id].size() > 0 && a[id].top() != "//") a[id].pop();
         } else if (nnn == 13) {
             a[id].push("//");
         } else {
