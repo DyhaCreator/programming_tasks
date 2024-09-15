@@ -39,8 +39,8 @@ int main() {
     for (int i = 0; i < n1; i++) {
         for (int o = 0; o < 5; o++) {
         while (j < n2 && a[i] > b[j]) {
-            ans = max(max(a[ansi], b[ansj]), max(c[ansk], d[ansl])) - min(min(a[ansi], b[ansj]), min(c[ansk], d[ansl]));
-            th = max(max(a[i], b[j]), max(c[k], d[l])) - min(min(a[i], b[j]), min(c[k], d[l]));
+            ans = max(a[ansi], b[ansj]) - min(a[ansi], b[ansj]);
+            th = max(a[i], b[j]) - min(a[i], b[j]);
             /*cout << ansi << " " << ansj << " " << ansk << " " << ansl << " " << ans << endl;
             cout << i << " " << j << " " << k << " " << l << " " << th << endl;
             cout << endl;*/
@@ -50,9 +50,9 @@ int main() {
             }
             j++;
         }
-        ans = max(max(a[ansi], b[ansj]), max(c[ansk], d[ansl]))
-         - min(min(a[ansi], b[ansj]), min(c[ansk], d[ansl]));
-        th = max(max(a[i], b[j]), max(c[k], d[l])) - min(min(a[i], b[j]), min(c[k], d[l]));
+        ans = max(a[ansi], b[ansj])
+         - min(a[ansi], b[ansj]);
+        th = max(a[i], b[j]) - min(a[i], b[j]);
         /*cout << ansi << " " << ansj << " " << ansk << " " << ansl << " " << ans << endl;
         cout << i << " " << j << " " << k << " " << l << " " << th << endl;
         cout << endl;*/
@@ -63,9 +63,9 @@ int main() {
 
 
         while (k < n3 && a[i] > c[k]) {
-            ans = max(max(a[ansi], b[ansj]), max(c[ansk], d[ansl]))
-             - min(min(a[ansi], b[ansj]), min(c[ansk], d[ansl]));
-            th = max(max(a[i], b[j]), max(c[k], d[l])) - min(min(a[i], b[j]), min(c[k], d[l]));
+            ans = max(max(a[ansi], b[ansj]), c[ansk])
+             - min(min(a[ansi], b[ansj]), c[ansk]);
+            th = max(max(a[i], b[j]), c[k]) - min(min(a[i], b[j]), c[k]);
             /*cout << ansi << " " << ansj << " " << ansk << " " << ansl << " " << ans << endl;
             cout << i << " " << j << " " << k << " " << l << " " << th << endl;
             cout << endl;*/
@@ -75,10 +75,10 @@ int main() {
             }
             k++;
         }
-        ans = max(max(a[ansi], b[ansj]), max(c[ansk], d[ansl]))
-         - min(min(a[ansi], b[ansj]), min(c[ansk], d[ansl]));
-        th = max(max(a[i], b[j]), max(c[k], d[l]))
-         - min(min(a[i], b[j]), min(c[k], d[l]));
+        ans = max(max(a[ansi], b[ansj]), c[ansk])
+         - min(min(a[ansi], b[ansj]), c[ansk]);
+        th = max(max(a[i], b[j]), c[k])
+         - min(min(a[i], b[j]), c[k]);
         /*cout << ansi << " " << ansj << " " << ansk << " " << ansl << " " << ans << endl;
         cout << i << " " << j << " " << k << " " << l << " " << th << endl;
         cout << endl;*/
