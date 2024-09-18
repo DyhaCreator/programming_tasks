@@ -36,17 +36,6 @@ int main() {
         for (auto &x : a)
             g[x].push_back(i);
     }
-    /*for (auto &x : gr) {
-        for (auto &y : x)
-            cout << y << " ";
-        cout << endl;
-    }
-    cout << "---\n";*/
-    /*for (auto &x : g) {
-        for (auto &y : x)
-            cout << y << " ";
-        cout << endl;
-    }*/
     vector<int> visited(n, 0);
     int first = 0;
     while (first < n) {
@@ -60,13 +49,6 @@ int main() {
     vector<int> ans(color, 0);
     for (auto &x : visited)
         ans[x - 1]++;
-    /*cout << color << endl;
-    for (auto &x : visited)
-        cout << x << " ";
-    cout << endl;
-    for (auto &x : ans)   
-        cout << x << " ";
-    cout << endl;*/
     for (auto &x : visited)
         cout << ans[x - 1] << " ";
     cout << endl;
