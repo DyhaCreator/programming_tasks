@@ -8,41 +8,36 @@ const int INF = 1e9 + 7;
 int main() {
     int n;
     cin >> n;
-    vector<int> a(n);
     double sum = 0;
-    for (auto &x : a)
-        cin >> x;
+    int first;
     for (int i = 0; i < n; i++) {
         int x;
-        x = a[i];
-        if (i > 0) {
-            if (abs(x - a[0]) > 40) {
-                if (x > a[0]) {
-                    x = x - 360;
-                } else {
-                    x = 360 + x;
-                }
+        cin >> x;
+        if (i == 0) first = x;
+        if (i > 0 && abs(x - first) > 180) {
+            if (x >= first) {
+                x = x - 360;
+            } else {
+                x = 360 + x;
             }
         }
-        a[i] = x;
         sum += x;
     }
-    // cout << sum / n << endl;
-    int s = sum / n;
-    int ans = 0;
-    // cout << sum / n << endl;
-    for (int i = 1; i <= 60; i++) {
-        if (abs(s + ((double)i / 60.0) - sum / n) <= abs(s + ((double)ans / 60.0) - sum / n)) ans = i;
+    int s = sum / n + 360;
+    int l = 0, r = 60;
+    while (l < r) {
+        int m = (l + r) / 2;
+        if (s + ((double)m / 60.0) < sum / n + 360) {
+            l = m + 1;
+        } else {
+            r = m;
+        }
     }
-    /*cout << abs(s + ((double)ans / 60.0) - sum / n) << endl;
-    cout << abs(s - sum / n) << endl;*/
-    if (ans == 60) {
+    if (r == 60) {
+        r = 0;
         s++;
-        ans = 0;
     }
-    if (s >= 360) cout << s - 360 << " ";
-    else if (s < 0) cout << s + 360 << " ";
-    else cout << s << " ";
-    cout << ans << endl;
+    cout << (s + 360) % 360 << " ";
+    cout << r << endl;
     return 0;
 }
