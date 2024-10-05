@@ -21,7 +21,7 @@ void solve() {
     for (int i = 1; i < n; i++) {
         int c = (index - a[i]) / (2*k) * 2*k + a[i];
         if (c != index) {
-            if ((index - a[i]) / k % 2 == 1) {
+            if ((index - a[i]) / k % 2 == 1) { 
                 c += 2 * k;
             }
         }
