@@ -17,21 +17,20 @@ void solve() {
         cout << x << " ";
     cout << endl;*/
     int index = a[0];
-    int indexStart = a[0];
+    int indexEnd = a[0] + k;
     for (int i = 1; i < n; i++) {
-        int c = (index - a[i]) / (2*k) * 2*k + a[i];
-        if (c != index) {
-            if ((index - a[i]) / k % 2 == 1) { 
-                c += 2 * k;
-            }
+        // cout << (index - a[i]) / k << endl;
+        // cout << (index - a[i] + k - 1) / k * k + a[i] << endl;
+        if ((index - a[i]) / k % 2 == 1) {
+            index = (index - a[i] + k) / k * k + a[i];
+            indexEnd = min((index - a[i] + k) / k * k + a[i] + k, indexEnd);
+        } else {
+            indexEnd = min((index - a[i] + k) / k * k + a[i], indexEnd);
         }
-        // cout << c << endl;
-        index = max(index, c);
-        // cout << index << endl;
+        // cout << index << " " << indexEnd << endl;
     }
-    cout << index << " " << indexStart << endl;
-    if (index < indexStart + k) {
-        cout << index << endl;
+    if (indexEnd - index > 0) {
+        cout << index << endl;   
     } else {
         cout << -1 << endl;
     }

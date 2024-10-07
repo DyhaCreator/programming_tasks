@@ -1,0 +1,41 @@
+Date : 2024-10-06 14:05:29
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 14 files,  510 codes, 8 comments, 42 blanks, all 560 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         14 |        510 |          8 |         42 |        560 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                    | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                       |         14 |        510 |          8 |         42 |        560 |
+| CodeForcesRound                                                         |          5 |        114 |          0 |         17 |        131 |
+| CodeForcesRound/nar                                                     |          5 |        114 |          0 |         17 |        131 |
+| ch                                                                      |          9 |        396 |          8 |         25 |        429 |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1421A.cpp | C++      |         16 |          0 |          3 |         19 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1527A.cpp | C++      |         23 |          0 |          3 |         26 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1843C.cpp | C++      |         31 |          0 |          3 |         34 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1993C.cpp | C++      |         20 |          0 |          4 |         24 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1999E.cpp | C++      |         24 |          0 |          4 |         28 |
+| /home/kapusta/Документы/programming_tasks/ch/a.cpp                      | C++      |         22 |          0 |          0 |         22 |
+| /home/kapusta/Документы/programming_tasks/ch/b.cpp                      | C++      |         29 |          0 |          0 |         29 |
+| /home/kapusta/Документы/programming_tasks/ch/c.cpp                      | C++      |         37 |          0 |          2 |         39 |
+| /home/kapusta/Документы/programming_tasks/ch/d.cpp                      | C++      |         32 |          6 |          5 |         43 |
+| /home/kapusta/Документы/programming_tasks/ch/e.cpp                      | C++      |         40 |          0 |          3 |         43 |
+| /home/kapusta/Документы/programming_tasks/ch/f.cpp                      | C++      |         69 |          0 |          6 |         75 |
+| /home/kapusta/Документы/programming_tasks/ch/g.cpp                      | C++      |         80 |          0 |          2 |         82 |
+| /home/kapusta/Документы/programming_tasks/ch/j.cpp                      | C++      |         34 |          2 |          2 |         38 |
+| /home/kapusta/Документы/programming_tasks/ch/l.cpp                      | C++      |         53 |          0 |          5 |         58 |
+| Total                                                                   |          |        510 |          8 |         42 |        560 |
++-------------------------------------------------------------------------+----------+------------+------------+------------+------------+
