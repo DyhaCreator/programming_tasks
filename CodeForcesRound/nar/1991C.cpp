@@ -15,20 +15,18 @@ void solve() {
     vector<int> ans = {};
     int found = 0;
     for (int i = 0; i <= 40; i++) {
-        set<int> st;
+        int mx = -1;
         for (auto &x : a)
-            st.insert(x);
-        ll sum = 0;
-        for (auto &x : st)
-            sum += x;
-        if (st.size() == 1 && *st.begin() == 0) {
+            mx = max(mx, x);
+        if (mx == 0) {
             found = 1;
             break;
         }
-        int m = sum / st.size();
-        ans.push_back(m);
+        mx = (mx + 1) >> 1;
+        ans.push_back(mx);
         for (auto &x : a)
-            x = abs(x - m);
+            x = abs(x - mx);
+
         /*for (auto &x : a)
             cout << x << " ";
         cout << endl;*/
