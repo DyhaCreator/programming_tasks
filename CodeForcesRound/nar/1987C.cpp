@@ -13,23 +13,23 @@ void solve() {
     for (auto &x : a)
         cin >> x;
     reverse(a.begin(), a.end());
+    vector<int> dp(n + 1);
     int last = 0;
-    int ans = 0;
-    int mx = 0;
     for (int i = 1; i <= n; i++) {
-        if (last < a[i - 1]) {
-            mx = max(mx, a[i - 1]);
+        if (a[i - 1] > last) {
+            dp[i] = max(a[i - 1], dp[i - 1]);
         } else {
-            cout << mx << " ";
-            ans += mx - a[i - 1] + 1;
-            mx = a[i - 1];
+            dp[i] = dp[i - 1] + 1;
+        }
+        if (dp[i] <= dp[i - 1]) {
+            dp[i]++;
         }
         last = a[i - 1];
     }
-    ans += mx - a[n - 1] + 1;
-    cout << mx << " ";
-    cout << endl;
-    cout << ans << endl;
+    /*for (auto &x : dp)
+        cout << x << " ";
+    cout << endl;*/
+    cout << dp[n] << endl;
 }
 
 int main() {
