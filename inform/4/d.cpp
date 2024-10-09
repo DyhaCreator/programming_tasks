@@ -22,8 +22,11 @@ int main() {
     for (int i = 0; i < n; i++) {
         int found = 0;
         for (int j = 0; j < n; j++) {
-            // cout << i << " " << j << " " << dist(x[i], y[i], x[j], y[j]) << " " << (r[i] + r[j]) << endl;
-            if (i != j && dist(x[i], y[i], x[j], y[j]) < (r[i] + r[j])) {
+            // cout << i << " " << j << " " << dist(x[i], y[i], x[j], y[j]) << " " << abs(r[i] - r[j]) << endl;
+            if (i != j && 
+                !(dist(x[i], y[i], x[j], y[j]) > (r[i] + r[j]) || 
+                dist(x[i], y[i], x[j], y[j]) < abs(r[i] - r[j]))
+            ) {
                 found = 1;
             }
         }
