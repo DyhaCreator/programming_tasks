@@ -1,5 +1,12 @@
 import sys
-sys.set_int_max_str_digits(2 ** 30)
+sys.set_int_max_str_digits(2**30)
 
 n = int(input())
-print(round(1 / (5 ** 0.5) * (((1 + 5 ** 0.5) / 2) ** n - ((1 - 5 ** 0.5) / 2) ** n)))
+a = 0
+b = 1
+while n > 0:
+    a += b
+    b = a - b
+    n -= 1
+
+print(len(str(a)))
