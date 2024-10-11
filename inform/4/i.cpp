@@ -6,14 +6,10 @@ using ll = long long;
 const int INF = 1e9 + 7;
 
 int main() {
-    int n;
-    cin >> n;
+    int n;cin >> n;
     int ans = 0;
-    for (int i = 0; i < n; i++) {
-        int x;
-        cin >> x;
-        if (x % 3 == 0 && x % 5 != 0) ans++;
-    }
+    while (cin >> n)
+        if (n % 3 == 0 && n % 5 != 0) ans++;
     cout << ans << endl;
     return 0;
 }

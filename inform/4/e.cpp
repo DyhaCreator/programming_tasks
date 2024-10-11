@@ -18,10 +18,7 @@ int main() {
                 if (s[i] == '}' && st.top() == '{') st.pop();
                 else if (s[i] == ']' && st.top() == '[') st.pop();
                 else if (s[i] == ')' && st.top() == '(') st.pop();
-                else {
-                    cout << i + 1 << endl;
-                    return 0;
-                }
+                else {cout << i + 1 << endl;return 0;}
             } else {
                 cout << i + 1 << endl;
                 return 0;

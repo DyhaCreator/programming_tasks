@@ -43,7 +43,7 @@ int main() {
         } else {
             c -= ans;
         }
-        cout << i << " " << c << endl;
+        // cout << i << " " << c << endl;
         // cout << a << " " << ans << " ";
         a = (a + count) % 2;
     }

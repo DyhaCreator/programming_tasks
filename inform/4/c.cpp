@@ -9,11 +9,10 @@ int main() {
     string s;
     getline(cin, s);
     string ans = "";
-    int f = 0;
-    for (int i = 0; i < s.size(); i++) {
-        if (f == 1 && s[i] != ':') ans.push_back(s[i]);
-        if (s[i] == ':')
-            f++;
+    int found = 0;
+    for (auto &x : s) {
+        if (found == 1 && x != ':') ans.push_back(x);
+        if (x == ':') found++;
     }
     cout << ans << endl;
     return 0;

@@ -11,9 +11,9 @@ int main() {
     vector<int> a(n);
     for (auto &x : a)
         cin >> x;
-    int save = a[k];
+    int b = a[k];
     for (auto &x : a)
-        cout << x + save << " ";
+        cout << x + b << " ";
     cout << endl;
     return 0;
 }
