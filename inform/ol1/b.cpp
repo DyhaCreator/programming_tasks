@@ -15,7 +15,7 @@ int main() {
         count[s[0] - 'A']++;
     }
     int ans = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < 26; i++) {
         if (count[i] > 0) {
             ans++;
         } else {
