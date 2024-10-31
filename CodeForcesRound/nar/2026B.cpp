@@ -11,43 +11,25 @@ void solve() {
     vector<ll> a(n);
     for (auto &x : a)
         cin >> x;
-    vector<ll> b(n);
-    vector<ll> c(n);
-    b[0] = INF;
-    c[n - 1] = INF;
-    for (int i = 1; i < n; i++)
-        b[i] = a[i] - a[i - 1];
-    for (int i = 0; i < n - 1; i++)
-        c[i] = a[i + 1] - a[i];
-    int mxi = 0;
-    for (int i = 0; i < n; i++) {
-        if (min(b[i], c[i]) > min(b[mxi], c[mxi])) {
-            mxi = i;
+    if (n % 2 == 0) {
+        ll mx = 0;
+        for (int i = 1; i < n; i += 2) {
+            mx = max(mx, a[i] - a[i - 1]);
         }
+        cout << mx << endl;
+        return;
     }
-    if (b[mxi] != INF) {
-        b[mxi] = 1;
-    } else {
-        c[mxi] = 1;
-    }
-    if (mxi > 0 && mxi < n - 1) {
-        if (b[mxi + 1] > c[mxi - 1]) {
-            b[mxi + 1]--;
-        } else {
-            c[mxi - 1]--;
+    ll ans = INF;
+    for (int i = 0; i < n; i+=2) {
+        ll mx = 0;
+        for (int j = 0; j < n - 1; j += 2) {
+            if (j == i) j++;
+            mx = max(mx, a[j + 1] - a[j]);
         }
-    } else {
-        if (mxi > 0) {
-            c[mxi - 1]--;
-        } else {
-            b[mxi + 1]--;
-        }
+        // cout << mx << endl;
+        ans = min(mx, ans);
     }
-    ll mx = 0;
-    for (int i = 0; i < n; i++) {
-        mx = max(mx, min(b[i], c[i]));
-    }
-    cout << mx << endl;
+    cout << max(ans, 1LL) << endl;
 }
 
 int main() {
