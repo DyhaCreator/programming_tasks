@@ -1,0 +1,47 @@
+Date : 2024-11-10 18:36:42
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 16 files,  505 codes, 8 comments, 38 blanks, all 551 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         16 |        505 |          8 |         38 |        551 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |         16 |        505 |          8 |         38 |        551 |
+| CodeForcesRound                                                            |          6 |        201 |          0 |         14 |        215 |
+| CodeForcesRound/nar                                                        |          6 |        201 |          0 |         14 |        215 |
+| CodeForcesRound/nar/dp                                                     |          6 |        201 |          0 |         14 |        215 |
+| inform                                                                     |          7 |        227 |          2 |         17 |        246 |
+| inform/8                                                                   |          7 |        227 |          2 |         17 |        246 |
+| vprob                                                                      |          3 |         77 |          6 |          7 |         90 |
+| vprob/2024                                                                 |          3 |         77 |          6 |          7 |         90 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                   | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/1470A.cpp | C++      |         12 |          0 |          0 |         12 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/1526B.cpp | C++      |         35 |          0 |          3 |         38 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/1555C.cpp | C++      |         31 |          0 |          3 |         34 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/1703F.cpp | C++      |         39 |          0 |          3 |         42 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/1927D.cpp | C++      |         50 |          0 |          3 |         53 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/489C.cpp  | C++      |         34 |          0 |          2 |         36 |
+| /home/kapusta/Документы/programming_tasks/inform/8/a.cpp                   | C++      |         53 |          0 |          2 |         55 |
+| /home/kapusta/Документы/programming_tasks/inform/8/b.cpp                   | C++      |         40 |          0 |          2 |         42 |
+| /home/kapusta/Документы/programming_tasks/inform/8/c.cpp                   | C++      |         22 |          0 |          2 |         24 |
+| /home/kapusta/Документы/programming_tasks/inform/8/c2.cpp                  | C++      |         18 |          0 |          2 |         20 |
+| /home/kapusta/Документы/programming_tasks/inform/8/d.cpp                   | C++      |         29 |          0 |          2 |         31 |
+| /home/kapusta/Документы/programming_tasks/inform/8/d2.cpp                  | C++      |         41 |          2 |          5 |         48 |
+| /home/kapusta/Документы/programming_tasks/inform/8/e.cpp                   | C++      |         24 |          0 |          2 |         26 |
+| /home/kapusta/Документы/programming_tasks/vprob/2024/a.cpp                 | C++      |         31 |          5 |          2 |         38 |
+| /home/kapusta/Документы/programming_tasks/vprob/2024/b.cpp                 | C++      |         38 |          1 |          2 |         41 |
+| /home/kapusta/Документы/programming_tasks/vprob/2024/main.cpp              | C++      |          8 |          0 |          3 |         11 |
+| Total                                                                      |          |        505 |          8 |         38 |        551 |
++----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
