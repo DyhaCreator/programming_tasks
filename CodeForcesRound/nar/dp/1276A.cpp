@@ -34,7 +34,7 @@ void solve() {
             }
         }
     }
-    cout << dp[n - 1] << endl;
+      cout << dp[n - 1] << endl;
     int index = dplast[n - 1];
     while (index > 0) {
         cout << index + 1 << " ";
