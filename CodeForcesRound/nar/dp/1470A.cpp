@@ -3,55 +3,66 @@
 using namespace std;
 using ll = long long;
 
-const int INF = 1e9 + 7;
+const ll INF = 1e9 + 7;
 
 void solve() {
     int n, m;
     cin >> n >> m;
     vector<ll> a(n);
-    vector<ll> b(m);
     for (auto &x : a)
         cin >> x;
+    vector<ll> b(m);
     for (auto &x : b)
         cin >> x;
-    a.push_back(m + 1);
-    b.push_back(0);
-    vector<ll> dp(n + 1);
-    dp[0] = 0;
-    dp[1] = b[0];
-    cout << b[0] << endl;
-    vector<ll> dpIndex(n + 1);
-    vector<ll> dpBin(n + 1);
-    dpIndex[0] = 0;
-    dpIndex[1] = 1;
-    int last = 0;
-    for (int i = 2; i <= n + 1; i++) {
-        ll c1 = dp[i - 1] + b[dpIndex[i - 1]];
-        ll c2 = dp[i - 1] - b[dpIndex[i - 2]] + b[a[i - 2] - 1] + b[dpIndex[i - 1] - 1];
-        if (last) {
-            c2 += b[dpIndex[i - 2]];
-            c2 -= b[dpIndex[i - 1] - 1];;
-        }
-        cout << c1 << " " << c2 << "  " << dp[i - 1] << " " << -b[dpIndex[i - 2]] << " " << b[a[i - 2] - 1] << " " << b[dpIndex[i - 1] - 1] << endl;
-        if (c1 < c2 && i <= m + 1) {
-            dp[i] = c1;
-            dpIndex[i] = dpIndex[i - 1] + 1;
-            last = 0;
+    vector<vector<ll>> dp(n, vector<ll>(2));
+    vector<vector<ll>> count(n, vector<ll>(2));
+
+    dp[0][0] = b[0];
+    dp[0][1] = b[a[0] - 1];
+    count[0][0] = 1;
+    count[0][1] = 0;
+
+    for (int i = 1; i < n; i++) {
+        if (count[i - 1][0] == m) {
+            if (count[i - 1][1] == m) {
+                dp[i][0] = INF;
+            } else {
+                dp[i][0] = dp[i - 1][1] + b[count[i - 1][1]];
+                count[i][0] = count[i - 1][1] + 1;
+            }
+        } else if (count[i - 1][1] == m) {
+            dp[i][0] = dp[i - 1][0] + b[count[i - 1][0]];
+            count[i][0] = count[i - 1][0] + 1;
         } else {
-            dp[i] = c2;
-            dpIndex[i] = dpIndex[i - 1];
-            last = 1;
+            if (dp[i - 1][0] + b[count[i - 1][0]] < dp[i - 1][1] + b[count[i - 1][1]]) {
+                dp[i][0] = dp[i - 1][0] + b[count[i - 1][0]];
+                count[i][0] = count[i - 1][0] + 1;
+            } else if (dp[i - 1][0] + b[count[i - 1][0]] > dp[i - 1][1] + b[count[i - 1][1]]) {
+                dp[i][0] = dp[i - 1][1] + b[count[i - 1][1]];
+                count[i][0] = count[i - 1][1] + 1;
+            } else {
+                if (count[i - 1][0] < count[i - 1][1]) {
+                    dp[i][0] = dp[i - 1][0] + b[count[i - 1][0]];
+                    count[i][0] = count[i - 1][0] + 1;
+                } else {
+                    dp[i][0] = dp[i - 1][1] + b[count[i - 1][1]];
+                    count[i][0] = count[i - 1][1] + 1;
+                }
+            }
+        }
+        if (dp[i - 1][0] < dp[i - 1][1]) {
+            dp[i][1] = dp[i - 1][0] + b[a[i] - 1];
+            count[i][1] = count[i - 1][0];
+        } else if (dp[i - 1][0] > dp[i - 1][1]) {
+            dp[i][1] = dp[i - 1][1] + b[a[i] - 1];
+            count[i][1] = count[i - 1][1];
+        } else {
+            dp[i][1] = dp[i - 1][1] + b[a[i] - 1];
+            count[i][1] = min(count[i - 1][0], count[i - 1][1]);
         }
     }
-    for (auto &x : dp)
-        cout << x << " ";
-    cout << endl;
-    for (auto &x : dpIndex)
-        cout << x << " ";
-    cout << endl;
-    for (auto &x : dpBin)
-        cout << x << " ";
-    cout << endl;
+
+    cout << min(dp[n - 1][0], dp[n - 1][1]) << endl;
 }
 
 int main() {
