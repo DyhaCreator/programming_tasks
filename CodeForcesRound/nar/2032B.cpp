@@ -23,7 +23,7 @@ void solve() {
         cout << 1 << " " << 2 << " " << k * 2 - 1 << endl;
     } else {
         cout << 3 << endl;
-        cout << 1 << " " << (n - k) * 2 << " " << n << endl;
+        cout << 1 << " " << n - (n - k - 1) * 2 - 1 << " " << n << endl;
     }
 }
 
