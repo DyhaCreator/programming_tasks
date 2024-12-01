@@ -1,18 +1,28 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#define F first
+#define S second
 using namespace std;
 using ll = long long;
 
 const int INF = 1e9 + 7;
 
-void dfs(vector<vector<int>> &g, vector<int> &ln, int index, int len) {
-    ln[index] = len;
+int dfs(vector<vector<int>> &g, vector<ll> &ln, vector<ll> &ln2, int index, int len) {
+    ln[index] = 1;
+    ln2[index] = len;
+    int sum = 0;
     for (auto &x : g[index]) {
         if (ln[x] == 0) {
-            dfs(g, ln, x, len + 1);
+            sum += dfs(g, ln, ln2, x, len + 1);
         }
     }
+    ln[index] = sum;
+    return sum + 1;
+}
+
+bool comp(pair<ll, ll> &a, pair<ll, ll> &b) {
+    return a.F - a.S > b.F - b.S;
 }
 
 int main() {
@@ -26,15 +36,17 @@ int main() {
         g[a].push_back(b);
         g[b].push_back(a);
     }
-    vector<int> ln(n);
-    dfs(g, ln, 0, 1);
-    for (auto &x : ln) x--;
-    for (auto &x : ln)
-        cout << x << " ";
-    cout << endl;
-    int sum = 0;
-    for (int i = 0; i < k; i++) {
-        
-    }
+    vector<ll> ln(n);
+    vector<ll> ln2(n);
+    dfs(g, ln, ln2, 0, 0);
+    vector<pair<ll, ll>> arr(n);
+    for (int i = 0; i < n; i++)
+        arr[i] = {ln2[i], ln[i]};
+    sort(arr.begin(), arr.end(), comp);
+    
+    ll ans = 0;
+    for (int i = 0; i < k; i++)
+        ans += arr[i].F - arr[i].S;
+    cout << ans << endl;
     return 0;
 }
