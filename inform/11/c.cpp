@@ -21,7 +21,7 @@ string f(string a) {
             while (used[rindex] == 1)
                 rindex = rand() % n;
             used[rindex] = 1;
-            b += a[rindex + 1];
+            b += {a[rindex + 1]};
         }
         cout << b << endl;
         int sum = 0;
