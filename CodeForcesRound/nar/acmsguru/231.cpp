@@ -18,11 +18,15 @@ int main() {
         }
     }
     int ans = 0;
+    vector<int> b = {};
     for (int i = 3; i <= n; i++) {
         if (primes[i] == 1 && i + 2 <= n && primes[i + 2] == 1) {
             ans++;
+            b.push_back(i);
         }
     }
     cout << ans << endl;
+    for (auto &x : b)
+        cout << 2 << " " << x << endl;
     return 0;
 }
