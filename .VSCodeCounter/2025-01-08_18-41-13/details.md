@@ -1,10 +1,10 @@
 # Details
 
-Date : 2024-12-12 14:05:29
+Date : 2025-01-08 18:41:13
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
+Total : 1269 files,  44393 codes, 2639 comments, 3849 blanks, all 50881 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -227,6 +227,21 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/VDA.cpp](/CodeForcesRound/nar/VDA.cpp) | C++ | 32 | 9 | 1 | 42 |
 | [CodeForcesRound/nar/VDA2.cpp](/CodeForcesRound/nar/VDA2.cpp) | C++ | 42 | 7 | 1 | 50 |
 | [CodeForcesRound/nar/VDA3.cpp](/CodeForcesRound/nar/VDA3.cpp) | C++ | 43 | 7 | 1 | 51 |
+| [CodeForcesRound/nar/acmsguru/100.cpp](/CodeForcesRound/nar/acmsguru/100.cpp) | C++ | 12 | 0 | 2 | 14 |
+| [CodeForcesRound/nar/acmsguru/102.cpp](/CodeForcesRound/nar/acmsguru/102.cpp) | C++ | 25 | 0 | 3 | 28 |
+| [CodeForcesRound/nar/acmsguru/105.cpp](/CodeForcesRound/nar/acmsguru/105.cpp) | C++ | 12 | 0 | 2 | 14 |
+| [CodeForcesRound/nar/acmsguru/112.cpp](/CodeForcesRound/nar/acmsguru/112.cpp) | C++ | 18 | 0 | 3 | 21 |
+| [CodeForcesRound/nar/acmsguru/112.py](/CodeForcesRound/nar/acmsguru/112.py) | Python | 2 | 0 | 0 | 2 |
+| [CodeForcesRound/nar/acmsguru/123.cpp](/CodeForcesRound/nar/acmsguru/123.cpp) | C++ | 23 | 0 | 2 | 25 |
+| [CodeForcesRound/nar/acmsguru/154.cpp](/CodeForcesRound/nar/acmsguru/154.cpp) | C++ | 35 | 0 | 3 | 38 |
+| [CodeForcesRound/nar/acmsguru/180.cpp](/CodeForcesRound/nar/acmsguru/180.cpp) | C++ | 22 | 0 | 3 | 25 |
+| [CodeForcesRound/nar/acmsguru/184.cpp](/CodeForcesRound/nar/acmsguru/184.cpp) | C++ | 14 | 0 | 2 | 16 |
+| [CodeForcesRound/nar/acmsguru/231.cpp](/CodeForcesRound/nar/acmsguru/231.cpp) | C++ | 30 | 0 | 2 | 32 |
+| [CodeForcesRound/nar/acmsguru/358.cpp](/CodeForcesRound/nar/acmsguru/358.cpp) | C++ | 24 | 0 | 2 | 26 |
+| [CodeForcesRound/nar/acmsguru/403.cpp](/CodeForcesRound/nar/acmsguru/403.cpp) | C++ | 22 | 0 | 2 | 24 |
+| [CodeForcesRound/nar/acmsguru/404.cpp](/CodeForcesRound/nar/acmsguru/404.cpp) | C++ | 16 | 0 | 2 | 18 |
+| [CodeForcesRound/nar/acmsguru/460.cpp](/CodeForcesRound/nar/acmsguru/460.cpp) | C++ | 33 | 0 | 3 | 36 |
+| [CodeForcesRound/nar/acmsguru/486.cpp](/CodeForcesRound/nar/acmsguru/486.cpp) | C++ | 28 | 0 | 2 | 30 |
 | [CodeForcesRound/nar/arbus.cpp](/CodeForcesRound/nar/arbus.cpp) | C++ | 13 | 0 | 1 | 14 |
 | [CodeForcesRound/nar/bitmask/1095C.cpp](/CodeForcesRound/nar/bitmask/1095C.cpp) | C++ | 41 | 0 | 2 | 43 |
 | [CodeForcesRound/nar/bitmask/1097B.cpp](/CodeForcesRound/nar/bitmask/1097B.cpp) | C++ | 28 | 0 | 2 | 30 |
@@ -280,9 +295,11 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/bitmask/579A.cpp](/CodeForcesRound/nar/bitmask/579A.cpp) | C++ | 16 | 0 | 2 | 18 |
 | [CodeForcesRound/nar/brcube.cpp](/CodeForcesRound/nar/brcube.cpp) | C++ | 21 | 0 | 1 | 22 |
 | [CodeForcesRound/nar/dp/1005D.cpp](/CodeForcesRound/nar/dp/1005D.cpp) | C++ | 29 | 0 | 2 | 31 |
+| [CodeForcesRound/nar/dp/1033C.cpp](/CodeForcesRound/nar/dp/1033C.cpp) | C++ | 45 | 0 | 2 | 47 |
 | [CodeForcesRound/nar/dp/1037C.cpp](/CodeForcesRound/nar/dp/1037C.cpp) | C++ | 52 | 0 | 2 | 54 |
 | [CodeForcesRound/nar/dp/1105C.cpp](/CodeForcesRound/nar/dp/1105C.cpp) | C++ | 20 | 0 | 2 | 22 |
 | [CodeForcesRound/nar/dp/1108D.cpp](/CodeForcesRound/nar/dp/1108D.cpp) | C++ | 24 | 0 | 2 | 26 |
+| [CodeForcesRound/nar/dp/1151B.cpp](/CodeForcesRound/nar/dp/1151B.cpp) | C++ | 45 | 0 | 2 | 47 |
 | [CodeForcesRound/nar/dp/1178B.cpp](/CodeForcesRound/nar/dp/1178B.cpp) | C++ | 18 | 0 | 2 | 20 |
 | [CodeForcesRound/nar/dp/1182A.cpp](/CodeForcesRound/nar/dp/1182A.cpp) | C++ | 15 | 0 | 2 | 17 |
 | [CodeForcesRound/nar/dp/1189C.cpp](/CodeForcesRound/nar/dp/1189C.cpp) | C++ | 37 | 0 | 2 | 39 |
@@ -303,18 +320,22 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/dp/1360E.cpp](/CodeForcesRound/nar/dp/1360E.cpp) | C++ | 27 | 0 | 3 | 30 |
 | [CodeForcesRound/nar/dp/1373D.cpp](/CodeForcesRound/nar/dp/1373D.cpp) | C++ | 52 | 10 | 3 | 65 |
 | [CodeForcesRound/nar/dp/1380C.cpp](/CodeForcesRound/nar/dp/1380C.cpp) | C++ | 30 | 0 | 3 | 33 |
+| [CodeForcesRound/nar/dp/1395C.cpp](/CodeForcesRound/nar/dp/1395C.cpp) | C++ | 36 | 0 | 2 | 38 |
 | [CodeForcesRound/nar/dp/1398C.cpp](/CodeForcesRound/nar/dp/1398C.cpp) | C++ | 35 | 0 | 3 | 38 |
 | [CodeForcesRound/nar/dp/1415C.cpp](/CodeForcesRound/nar/dp/1415C.cpp) | C++ | 30 | 0 | 3 | 33 |
 | [CodeForcesRound/nar/dp/1418C.cpp](/CodeForcesRound/nar/dp/1418C.cpp) | C++ | 42 | 0 | 3 | 45 |
 | [CodeForcesRound/nar/dp/1420C1.cpp](/CodeForcesRound/nar/dp/1420C1.cpp) | C++ | 39 | 0 | 3 | 42 |
 | [CodeForcesRound/nar/dp/1420C1_stress.cpp](/CodeForcesRound/nar/dp/1420C1_stress.cpp) | C++ | 58 | 2 | 4 | 64 |
 | [CodeForcesRound/nar/dp/1451C.cpp](/CodeForcesRound/nar/dp/1451C.cpp) | C++ | 46 | 0 | 3 | 49 |
+| [CodeForcesRound/nar/dp/1455D.cpp](/CodeForcesRound/nar/dp/1455D.cpp) | C++ | 36 | 0 | 4 | 40 |
+| [CodeForcesRound/nar/dp/1455D_stress.cpp](/CodeForcesRound/nar/dp/1455D_stress.cpp) | C++ | 38 | 0 | 5 | 43 |
 | [CodeForcesRound/nar/dp/1459B.cpp](/CodeForcesRound/nar/dp/1459B.cpp) | C++ | 22 | 0 | 2 | 24 |
 | [CodeForcesRound/nar/dp/1461B.cpp](/CodeForcesRound/nar/dp/1461B.cpp) | C++ | 32 | 0 | 3 | 35 |
 | [CodeForcesRound/nar/dp/1461C.cpp](/CodeForcesRound/nar/dp/1461C.cpp) | C++ | 36 | 0 | 3 | 39 |
 | [CodeForcesRound/nar/dp/1466C.cpp](/CodeForcesRound/nar/dp/1466C.cpp) | C++ | 33 | 0 | 3 | 36 |
 | [CodeForcesRound/nar/dp/1470A.cpp](/CodeForcesRound/nar/dp/1470A.cpp) | C++ | 67 | 0 | 6 | 73 |
 | [CodeForcesRound/nar/dp/1475B.cpp](/CodeForcesRound/nar/dp/1475B.cpp) | C++ | 28 | 0 | 4 | 32 |
+| [CodeForcesRound/nar/dp/1498C.cpp](/CodeForcesRound/nar/dp/1498C.cpp) | C++ | 25 | 5 | 3 | 33 |
 | [CodeForcesRound/nar/dp/1519B.cpp](/CodeForcesRound/nar/dp/1519B.cpp) | C++ | 20 | 1 | 3 | 24 |
 | [CodeForcesRound/nar/dp/1526B.cpp](/CodeForcesRound/nar/dp/1526B.cpp) | C++ | 35 | 0 | 3 | 38 |
 | [CodeForcesRound/nar/dp/1528A.cpp](/CodeForcesRound/nar/dp/1528A.cpp) | C++ | 44 | 0 | 5 | 49 |
@@ -323,9 +344,12 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/dp/1536C.cpp](/CodeForcesRound/nar/dp/1536C.cpp) | C++ | 57 | 2 | 5 | 64 |
 | [CodeForcesRound/nar/dp/1538F.cpp](/CodeForcesRound/nar/dp/1538F.cpp) | C++ | 28 | 0 | 4 | 32 |
 | [CodeForcesRound/nar/dp/1555C.cpp](/CodeForcesRound/nar/dp/1555C.cpp) | C++ | 31 | 0 | 3 | 34 |
+| [CodeForcesRound/nar/dp/1555D.cpp](/CodeForcesRound/nar/dp/1555D.cpp) | C++ | 60 | 0 | 6 | 66 |
+| [CodeForcesRound/nar/dp/1567C.cpp](/CodeForcesRound/nar/dp/1567C.cpp) | C++ | 31 | 0 | 3 | 34 |
 | [CodeForcesRound/nar/dp/1660C.cpp](/CodeForcesRound/nar/dp/1660C.cpp) | C++ | 34 | 0 | 3 | 37 |
 | [CodeForcesRound/nar/dp/166E.cpp](/CodeForcesRound/nar/dp/166E.cpp) | C++ | 20 | 0 | 3 | 23 |
 | [CodeForcesRound/nar/dp/1673C.cpp](/CodeForcesRound/nar/dp/1673C.cpp) | C++ | 78 | 5 | 6 | 89 |
+| [CodeForcesRound/nar/dp/1677A.cpp](/CodeForcesRound/nar/dp/1677A.cpp) | C++ | 34 | 14 | 3 | 51 |
 | [CodeForcesRound/nar/dp/1703F.cpp](/CodeForcesRound/nar/dp/1703F.cpp) | C++ | 39 | 0 | 3 | 42 |
 | [CodeForcesRound/nar/dp/1706C.cpp](/CodeForcesRound/nar/dp/1706C.cpp) | C++ | 37 | 0 | 3 | 40 |
 | [CodeForcesRound/nar/dp/1741E.cpp](/CodeForcesRound/nar/dp/1741E.cpp) | C++ | 33 | 0 | 3 | 36 |
@@ -334,10 +358,12 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/dp/1774C.cpp](/CodeForcesRound/nar/dp/1774C.cpp) | C++ | 29 | 0 | 3 | 32 |
 | [CodeForcesRound/nar/dp/180C.cpp](/CodeForcesRound/nar/dp/180C.cpp) | C++ | 33 | 0 | 2 | 35 |
 | [CodeForcesRound/nar/dp/1811E.cpp](/CodeForcesRound/nar/dp/1811E.cpp) | C++ | 65 | 0 | 3 | 68 |
+| [CodeForcesRound/nar/dp/1829G.cpp](/CodeForcesRound/nar/dp/1829G.cpp) | C++ | 34 | 0 | 3 | 37 |
 | [CodeForcesRound/nar/dp/1842C.cpp](/CodeForcesRound/nar/dp/1842C.cpp) | C++ | 32 | 0 | 3 | 35 |
 | [CodeForcesRound/nar/dp/1847C.cpp](/CodeForcesRound/nar/dp/1847C.cpp) | C++ | 33 | 0 | 3 | 36 |
 | [CodeForcesRound/nar/dp/1858B.cpp](/CodeForcesRound/nar/dp/1858B.cpp) | C++ | 36 | 1 | 3 | 40 |
 | [CodeForcesRound/nar/dp/1860C.cpp](/CodeForcesRound/nar/dp/1860C.cpp) | C++ | 31 | 0 | 3 | 34 |
+| [CodeForcesRound/nar/dp/1875D.cpp](/CodeForcesRound/nar/dp/1875D.cpp) | C++ | 52 | 0 | 6 | 58 |
 | [CodeForcesRound/nar/dp/1879C.cpp](/CodeForcesRound/nar/dp/1879C.cpp) | C++ | 30 | 0 | 3 | 33 |
 | [CodeForcesRound/nar/dp/1881E.cpp](/CodeForcesRound/nar/dp/1881E.cpp) | C++ | 29 | 0 | 3 | 32 |
 | [CodeForcesRound/nar/dp/1883C.cpp](/CodeForcesRound/nar/dp/1883C.cpp) | C++ | 38 | 0 | 3 | 41 |
@@ -346,12 +372,16 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/dp/1927D.cpp](/CodeForcesRound/nar/dp/1927D.cpp) | C++ | 50 | 0 | 3 | 53 |
 | [CodeForcesRound/nar/dp/1941B.cpp](/CodeForcesRound/nar/dp/1941B.cpp) | C++ | 34 | 0 | 3 | 37 |
 | [CodeForcesRound/nar/dp/1945D.cpp](/CodeForcesRound/nar/dp/1945D.cpp) | C++ | 29 | 0 | 3 | 32 |
+| [CodeForcesRound/nar/dp/1994C.cpp](/CodeForcesRound/nar/dp/1994C.cpp) | C++ | 53 | 0 | 4 | 57 |
+| [CodeForcesRound/nar/dp/219C.cpp](/CodeForcesRound/nar/dp/219C.cpp) | C++ | 46 | 0 | 2 | 48 |
 | [CodeForcesRound/nar/dp/264B.cpp](/CodeForcesRound/nar/dp/264B.cpp) | C++ | 52 | 0 | 4 | 56 |
 | [CodeForcesRound/nar/dp/289B.cpp](/CodeForcesRound/nar/dp/289B.cpp) | C++ | 26 | 0 | 2 | 28 |
 | [CodeForcesRound/nar/dp/313B.cpp](/CodeForcesRound/nar/dp/313B.cpp) | C++ | 20 | 0 | 2 | 22 |
 | [CodeForcesRound/nar/dp/327A.cpp](/CodeForcesRound/nar/dp/327A.cpp) | C++ | 26 | 0 | 2 | 28 |
 | [CodeForcesRound/nar/dp/363B.cpp](/CodeForcesRound/nar/dp/363B.cpp) | C++ | 28 | 0 | 2 | 30 |
+| [CodeForcesRound/nar/dp/407B.cpp](/CodeForcesRound/nar/dp/407B.cpp) | C++ | 18 | 0 | 2 | 20 |
 | [CodeForcesRound/nar/dp/414B.cpp](/CodeForcesRound/nar/dp/414B.cpp) | C++ | 29 | 0 | 2 | 31 |
+| [CodeForcesRound/nar/dp/429B.cpp](/CodeForcesRound/nar/dp/429B.cpp) | C++ | 72 | 0 | 7 | 79 |
 | [CodeForcesRound/nar/dp/431C.cpp](/CodeForcesRound/nar/dp/431C.cpp) | C++ | 28 | 0 | 2 | 30 |
 | [CodeForcesRound/nar/dp/433B.cpp](/CodeForcesRound/nar/dp/433B.cpp) | C++ | 32 | 0 | 2 | 34 |
 | [CodeForcesRound/nar/dp/446A.cpp](/CodeForcesRound/nar/dp/446A.cpp) | C++ | 44 | 0 | 4 | 48 |
@@ -365,17 +395,47 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [CodeForcesRound/nar/dp/550A.cpp](/CodeForcesRound/nar/dp/550A.cpp) | C++ | 39 | 0 | 2 | 41 |
 | [CodeForcesRound/nar/dp/550C.cpp](/CodeForcesRound/nar/dp/550C.cpp) | C++ | 49 | 0 | 2 | 51 |
 | [CodeForcesRound/nar/dp/580A.cpp](/CodeForcesRound/nar/dp/580A.cpp) | C++ | 26 | 0 | 2 | 28 |
+| [CodeForcesRound/nar/dp/597B.cpp](/CodeForcesRound/nar/dp/597B.cpp) | C++ | 43 | 0 | 3 | 46 |
+| [CodeForcesRound/nar/dp/603A.cpp](/CodeForcesRound/nar/dp/603A.cpp) | C++ | 31 | 0 | 3 | 34 |
+| [CodeForcesRound/nar/dp/607A.cpp](/CodeForcesRound/nar/dp/607A.cpp) | C++ | 35 | 0 | 3 | 38 |
 | [CodeForcesRound/nar/dp/628B.cpp](/CodeForcesRound/nar/dp/628B.cpp) | C++ | 23 | 0 | 2 | 25 |
 | [CodeForcesRound/nar/dp/665C.cpp](/CodeForcesRound/nar/dp/665C.cpp) | C++ | 18 | 0 | 2 | 20 |
 | [CodeForcesRound/nar/dp/706B.cpp](/CodeForcesRound/nar/dp/706B.cpp) | C++ | 33 | 0 | 2 | 35 |
+| [CodeForcesRound/nar/dp/71C.cpp](/CodeForcesRound/nar/dp/71C.cpp) | C++ | 41 | 0 | 4 | 45 |
+| [CodeForcesRound/nar/dp/788A.cpp](/CodeForcesRound/nar/dp/788A.cpp) | C++ | 27 | 0 | 2 | 29 |
 | [CodeForcesRound/nar/dp/797B.cpp](/CodeForcesRound/nar/dp/797B.cpp) | C++ | 31 | 0 | 2 | 33 |
 | [CodeForcesRound/nar/dp/798B.cpp](/CodeForcesRound/nar/dp/798B.cpp) | C++ | 38 | 1 | 2 | 41 |
+| [CodeForcesRound/nar/dp/814C.cpp](/CodeForcesRound/nar/dp/814C.cpp) | C++ | 62 | 0 | 7 | 69 |
+| [CodeForcesRound/nar/dp/835C.cpp](/CodeForcesRound/nar/dp/835C.cpp) | C++ | 42 | 8 | 5 | 55 |
 | [CodeForcesRound/nar/dp/839C.cpp](/CodeForcesRound/nar/dp/839C.cpp) | C++ | 39 | 0 | 4 | 43 |
 | [CodeForcesRound/nar/dp/877B.cpp](/CodeForcesRound/nar/dp/877B.cpp) | C++ | 38 | 0 | 2 | 40 |
+| [CodeForcesRound/nar/dp/888D.cpp](/CodeForcesRound/nar/dp/888D.cpp) | C++ | 31 | 0 | 2 | 33 |
 | [CodeForcesRound/nar/dp/987C.cpp](/CodeForcesRound/nar/dp/987C.cpp) | C++ | 36 | 0 | 2 | 38 |
 | [CodeForcesRound/nar/eltable.cpp](/CodeForcesRound/nar/eltable.cpp) | C++ | 59 | 2 | 3 | 64 |
 | [CodeForcesRound/nar/fructs.cpp](/CodeForcesRound/nar/fructs.cpp) | C++ | 41 | 7 | 1 | 49 |
 | [CodeForcesRound/nar/gameOfSumm.cpp](/CodeForcesRound/nar/gameOfSumm.cpp) | C++ | 37 | 0 | 1 | 38 |
+| [CodeForcesRound/nar/graph/1037D.cpp](/CodeForcesRound/nar/graph/1037D.cpp) | C++ | 68 | 0 | 4 | 72 |
+| [CodeForcesRound/nar/graph/115A.cpp](/CodeForcesRound/nar/graph/115A.cpp) | C++ | 38 | 0 | 3 | 41 |
+| [CodeForcesRound/nar/graph/1255B.cpp](/CodeForcesRound/nar/graph/1255B.cpp) | C++ | 36 | 0 | 3 | 39 |
+| [CodeForcesRound/nar/graph/1365D.cpp](/CodeForcesRound/nar/graph/1365D.cpp) | C++ | 82 | 0 | 3 | 85 |
+| [CodeForcesRound/nar/graph/1437D.cpp](/CodeForcesRound/nar/graph/1437D.cpp) | C++ | 40 | 0 | 5 | 45 |
+| [CodeForcesRound/nar/graph/1475C.cpp](/CodeForcesRound/nar/graph/1475C.cpp) | C++ | 35 | 0 | 3 | 38 |
+| [CodeForcesRound/nar/graph/1559C.cpp](/CodeForcesRound/nar/graph/1559C.cpp) | C++ | 42 | 0 | 3 | 45 |
+| [CodeForcesRound/nar/graph/1702E.cpp](/CodeForcesRound/nar/graph/1702E.cpp) | C++ | 75 | 0 | 4 | 79 |
+| [CodeForcesRound/nar/graph/1829E.cpp](/CodeForcesRound/nar/graph/1829E.cpp) | C++ | 43 | 1 | 4 | 48 |
+| [CodeForcesRound/nar/graph/1833E.cpp](/CodeForcesRound/nar/graph/1833E.cpp) | C++ | 48 | 0 | 4 | 52 |
+| [CodeForcesRound/nar/graph/217A.cpp](/CodeForcesRound/nar/graph/217A.cpp) | C++ | 33 | 0 | 3 | 36 |
+| [CodeForcesRound/nar/graph/370A.cpp](/CodeForcesRound/nar/graph/370A.cpp) | C++ | 26 | 0 | 2 | 28 |
+| [CodeForcesRound/nar/graph/500A.cpp](/CodeForcesRound/nar/graph/500A.cpp) | C++ | 21 | 0 | 2 | 23 |
+| [CodeForcesRound/nar/graph/510C.cpp](/CodeForcesRound/nar/graph/510C.cpp) | C++ | 76 | 6 | 5 | 87 |
+| [CodeForcesRound/nar/graph/520B.cpp](/CodeForcesRound/nar/graph/520B.cpp) | C++ | 30 | 0 | 2 | 32 |
+| [CodeForcesRound/nar/graph/580C.cpp](/CodeForcesRound/nar/graph/580C.cpp) | C++ | 37 | 0 | 4 | 41 |
+| [CodeForcesRound/nar/graph/601A.cpp](/CodeForcesRound/nar/graph/601A.cpp) | C++ | 109 | 0 | 2 | 111 |
+| [CodeForcesRound/nar/graph/862B.cpp](/CodeForcesRound/nar/graph/862B.cpp) | C++ | 33 | 0 | 3 | 36 |
+| [CodeForcesRound/nar/graph/893C.cpp](/CodeForcesRound/nar/graph/893C.cpp) | C++ | 45 | 0 | 3 | 48 |
+| [CodeForcesRound/nar/graph/939A.cpp](/CodeForcesRound/nar/graph/939A.cpp) | C++ | 21 | 0 | 2 | 23 |
+| [CodeForcesRound/nar/graph/977E.cpp](/CodeForcesRound/nar/graph/977E.cpp) | C++ | 48 | 0 | 3 | 51 |
+| [CodeForcesRound/nar/graph/tren/1A.cpp](/CodeForcesRound/nar/graph/tren/1A.cpp) | C++ | 18 | 33 | 2 | 53 |
 | [CodeForcesRound/nar/gvosdiki.cpp](/CodeForcesRound/nar/gvosdiki.cpp) | C++ | 21 | 6 | 1 | 28 |
 | [CodeForcesRound/nar/king.cpp](/CodeForcesRound/nar/king.cpp) | C++ | 36 | 2 | 1 | 39 |
 | [CodeForcesRound/nar/spell.cpp](/CodeForcesRound/nar/spell.cpp) | C++ | 25 | 0 | 2 | 27 |
@@ -433,6 +493,10 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [SF/e.cpp](/SF/e.cpp) | C++ | 25 | 0 | 2 | 27 |
 | [SF/f.cpp](/SF/f.cpp) | C++ | 50 | 12 | 2 | 64 |
 | [SSY/otbor/a.cpp](/SSY/otbor/a.cpp) | C++ | 31 | 0 | 2 | 33 |
+| [SVB/otb/a.cpp](/SVB/otb/a.cpp) | C++ | 49 | 0 | 2 | 51 |
+| [SVB/otb/b.cpp](/SVB/otb/b.cpp) | C++ | 39 | 0 | 2 | 41 |
+| [SVB/otb/c.cpp](/SVB/otb/c.cpp) | C++ | 79 | 0 | 9 | 88 |
+| [SVB/otb/d.cpp](/SVB/otb/d.cpp) | C++ | 65 | 1 | 5 | 71 |
 | [Verchenko/ol2024/b.cpp](/Verchenko/ol2024/b.cpp) | C++ | 47 | 1 | 5 | 53 |
 | [Verchenko/test/a.cpp](/Verchenko/test/a.cpp) | C++ | 20 | 0 | 3 | 23 |
 | [Verchenko/test/b.cpp](/Verchenko/test/b.cpp) | C++ | 19 | 0 | 1 | 20 |
@@ -447,9 +511,13 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [acmp/1717.cpp](/acmp/1717.cpp) | C++ | 13 | 0 | 2 | 15 |
 | [acmp/1780.cpp](/acmp/1780.cpp) | C++ | 41 | 6 | 4 | 51 |
 | [acmp/1780.py](/acmp/1780.py) | Python | 29 | 5 | 8 | 42 |
+| [acmp/1935.cpp](/acmp/1935.cpp) | C++ | 39 | 0 | 2 | 41 |
+| [acmp/1936.cpp](/acmp/1936.cpp) | C++ | 36 | 0 | 2 | 38 |
+| [acmp/1937.cpp](/acmp/1937.cpp) | C++ | 65 | 0 | 2 | 67 |
 | [acmp/1946.cpp](/acmp/1946.cpp) | C++ | 20 | 0 | 2 | 22 |
 | [acmp/1949.cpp](/acmp/1949.cpp) | C++ | 20 | 1 | 2 | 23 |
 | [acmp/1951.cpp](/acmp/1951.cpp) | C++ | 35 | 2 | 2 | 39 |
+| [acmp/2005.cpp](/acmp/2005.cpp) | C++ | 12 | 0 | 2 | 14 |
 | [acmp/a+b.cpp](/acmp/a+b.cpp) | C++ | 9 | 0 | 1 | 10 |
 | [acmp/id0003.cpp](/acmp/id0003.cpp) | C++ | 9 | 0 | 1 | 10 |
 | [acmp/id121.cpp](/acmp/id121.cpp) | C++ | 20 | 0 | 1 | 21 |
@@ -712,6 +780,7 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [primeTime/n2.cpp](/primeTime/n2.cpp) | C++ | 46 | 4 | 2 | 52 |
 | [primeTime/n5.cpp](/primeTime/n5.cpp) | C++ | 86 | 0 | 7 | 93 |
 | [primeTime/n9.cpp](/primeTime/n9.cpp) | C++ | 38 | 1 | 1 | 40 |
+| [reg/2013/a.cpp](/reg/2013/a.cpp) | C++ | 20 | 0 | 2 | 22 |
 | [sirius/00.cpp](/sirius/00.cpp) | C++ | 38 | 15 | 4 | 57 |
 | [sirius/1/00.cpp](/sirius/1/00.cpp) | C++ | 27 | 3 | 1 | 31 |
 | [sirius/1/01.cpp](/sirius/1/01.cpp) | C++ | 43 | 0 | 2 | 45 |
@@ -965,6 +1034,18 @@ Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
 | [tinkoff/exam/h.cpp](/tinkoff/exam/h.cpp) | C++ | 29 | 4 | 1 | 34 |
 | [tinkoff/exam/i.cpp](/tinkoff/exam/i.cpp) | C++ | 32 | 0 | 2 | 34 |
 | [tinkoff/exam/i2.cpp](/tinkoff/exam/i2.cpp) | C++ | 39 | 12 | 5 | 56 |
+| [tinkoff/graph1/a.cpp](/tinkoff/graph1/a.cpp) | C++ | 43 | 0 | 2 | 45 |
+| [tinkoff/graph1/b.cpp](/tinkoff/graph1/b.cpp) | C++ | 59 | 0 | 2 | 61 |
+| [tinkoff/graph1/c.cpp](/tinkoff/graph1/c.cpp) | C++ | 40 | 0 | 3 | 43 |
+| [tinkoff/graph1/d.cpp](/tinkoff/graph1/d.cpp) | C++ | 47 | 0 | 2 | 49 |
+| [tinkoff/graph1/e.cpp](/tinkoff/graph1/e.cpp) | C++ | 43 | 0 | 2 | 45 |
+| [tinkoff/graph1/f.cpp](/tinkoff/graph1/f.cpp) | C++ | 70 | 11 | 2 | 83 |
+| [tinkoff/graph1/h.cpp](/tinkoff/graph1/h.cpp) | C++ | 48 | 3 | 3 | 54 |
+| [tinkoff/graph1/i.cpp](/tinkoff/graph1/i.cpp) | C++ | 61 | 0 | 2 | 63 |
+| [tinkoff/graph1/j.cpp](/tinkoff/graph1/j.cpp) | C++ | 51 | 0 | 2 | 53 |
+| [tinkoff/graph1/k.cpp](/tinkoff/graph1/k.cpp) | C++ | 49 | 0 | 2 | 51 |
+| [tinkoff/graph1/l.cpp](/tinkoff/graph1/l.cpp) | C++ | 60 | 0 | 2 | 62 |
+| [tinkoff/graph1/m.cpp](/tinkoff/graph1/m.cpp) | C++ | 92 | 0 | 2 | 94 |
 | [tinkoff/lin/a.cpp](/tinkoff/lin/a.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/lin/b.cpp](/tinkoff/lin/b.cpp) | C++ | 73 | 0 | 4 | 77 |
 | [tinkoff/lin/c.cpp](/tinkoff/lin/c.cpp) | C++ | 93 | 16 | 4 | 113 |

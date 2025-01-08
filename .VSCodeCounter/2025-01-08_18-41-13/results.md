@@ -1,26 +1,26 @@
 # Summary
 
-Date : 2024-12-12 14:05:29
+Date : 2025-01-08 18:41:13
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 1188 files,  41069 codes, 2557 comments, 3610 blanks, all 47236 lines
+Total : 1269 files,  44393 codes, 2639 comments, 3849 blanks, all 50881 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 1,091 | 39,797 | 2,515 | 3,363 | 45,675 |
-| Python | 97 | 1,272 | 42 | 247 | 1,561 |
+| C++ | 1,171 | 43,119 | 2,597 | 3,602 | 49,318 |
+| Python | 98 | 1,274 | 42 | 247 | 1,563 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 1,188 | 41,069 | 2,557 | 3,610 | 47,236 |
+| . | 1,269 | 44,393 | 2,639 | 3,849 | 50,881 |
 | . (Files) | 1 | 18 | 0 | 4 | 22 |
 | 8 | 2 | 27 | 0 | 8 | 35 |
-| CodeForcesRound | 370 | 13,873 | 615 | 1,104 | 15,592 |
+| CodeForcesRound | 430 | 16,130 | 682 | 1,289 | 18,101 |
 | CodeForcesRound/898 | 8 | 265 | 10 | 9 | 284 |
 | CodeForcesRound/915 | 1 | 51 | 0 | 5 | 56 |
 | CodeForcesRound/918 | 6 | 193 | 0 | 11 | 204 |
@@ -51,10 +51,14 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | CodeForcesRound/GB2023 | 5 | 205 | 6 | 13 | 224 |
 | CodeForcesRound/H2024 | 5 | 143 | 3 | 7 | 153 |
 | CodeForcesRound/beta1 | 2 | 66 | 2 | 7 | 75 |
-| CodeForcesRound/nar | 271 | 9,523 | 308 | 804 | 10,635 |
+| CodeForcesRound/nar | 331 | 11,780 | 375 | 989 | 13,144 |
 | CodeForcesRound/nar (Files) | 127 | 4,396 | 221 | 379 | 4,996 |
+| CodeForcesRound/nar/acmsguru | 15 | 316 | 0 | 33 | 349 |
 | CodeForcesRound/nar/bitmask | 50 | 1,777 | 41 | 155 | 1,973 |
-| CodeForcesRound/nar/dp | 94 | 3,350 | 46 | 270 | 3,666 |
+| CodeForcesRound/nar/dp | 117 | 4,287 | 73 | 353 | 4,713 |
+| CodeForcesRound/nar/graph | 22 | 1,004 | 40 | 69 | 1,113 |
+| CodeForcesRound/nar/graph (Files) | 21 | 986 | 7 | 67 | 1,060 |
+| CodeForcesRound/nar/graph/tren | 1 | 18 | 33 | 2 | 53 |
 | DANO | 2 | 0 | 0 | 2 | 2 |
 | Graphs | 7 | 277 | 51 | 31 | 359 |
 | Graphs (Files) | 5 | 176 | 50 | 12 | 238 |
@@ -72,11 +76,13 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | SF | 6 | 313 | 33 | 19 | 365 |
 | SSY | 1 | 31 | 0 | 2 | 33 |
 | SSY/otbor | 1 | 31 | 0 | 2 | 33 |
+| SVB | 4 | 232 | 1 | 18 | 251 |
+| SVB/otb | 4 | 232 | 1 | 18 | 251 |
 | Verchenko | 7 | 175 | 1 | 21 | 197 |
 | Verchenko/ol2024 | 1 | 47 | 1 | 5 | 53 |
 | Verchenko/test | 3 | 57 | 0 | 6 | 63 |
 | Verchenko/test2 | 3 | 71 | 0 | 10 | 81 |
-| acmp | 41 | 970 | 29 | 86 | 1,085 |
+| acmp | 45 | 1,122 | 29 | 94 | 1,245 |
 | ariphmetic | 3 | 36 | 0 | 7 | 43 |
 | belchonok | 3 | 80 | 2 | 6 | 88 |
 | cappa | 2 | 101 | 3 | 7 | 111 |
@@ -119,6 +125,8 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | otbor_tinkof080923 | 30 | 751 | 24 | 86 | 861 |
 | otbor_tinkoff02 | 2 | 43 | 0 | 5 | 48 |
 | primeTime | 4 | 196 | 11 | 11 | 218 |
+| reg | 1 | 20 | 0 | 2 | 22 |
+| reg/2013 | 1 | 20 | 0 | 2 | 22 |
 | sirius | 65 | 2,172 | 189 | 187 | 2,548 |
 | sirius (Files) | 18 | 465 | 53 | 34 | 552 |
 | sirius/1 | 4 | 129 | 3 | 7 | 139 |
@@ -134,7 +142,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tecnoCup | 4 | 141 | 0 | 9 | 150 |
 | tecnoCup/otb | 4 | 141 | 0 | 9 | 150 |
 | timus | 1 | 9 | 0 | 1 | 10 |
-| tinkoff | 311 | 12,324 | 1,018 | 1,109 | 14,451 |
+| tinkoff | 323 | 12,987 | 1,032 | 1,135 | 15,154 |
 | tinkoff/BFS&D | 29 | 1,681 | 172 | 240 | 2,093 |
 | tinkoff/DFS | 22 | 829 | 60 | 106 | 995 |
 | tinkoff/DO | 10 | 603 | 60 | 84 | 747 |
@@ -145,6 +153,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tinkoff/dynamic | 31 | 899 | 80 | 37 | 1,016 |
 | tinkoff/dynamic2 | 36 | 1,296 | 66 | 52 | 1,414 |
 | tinkoff/exam | 10 | 356 | 43 | 25 | 424 |
+| tinkoff/graph1 | 12 | 663 | 14 | 26 | 703 |
 | tinkoff/lin | 14 | 639 | 84 | 54 | 777 |
 | tinkoff/nums | 28 | 829 | 32 | 61 | 922 |
 | tinkoff/otbor2024 | 17 | 893 | 167 | 72 | 1,132 |
