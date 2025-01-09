@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-01-03 15:24:17
+Date : 2025-01-09 17:21:15
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 1245 files,  43112 codes, 2592 comments, 3789 blanks, all 49493 lines
+Total : 1271 files,  44511 codes, 2639 comments, 3853 blanks, all 51003 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -414,20 +414,28 @@ Total : 1245 files,  43112 codes, 2592 comments, 3789 blanks, all 49493 lines
 | [CodeForcesRound/nar/eltable.cpp](/CodeForcesRound/nar/eltable.cpp) | C++ | 59 | 2 | 3 | 64 |
 | [CodeForcesRound/nar/fructs.cpp](/CodeForcesRound/nar/fructs.cpp) | C++ | 41 | 7 | 1 | 49 |
 | [CodeForcesRound/nar/gameOfSumm.cpp](/CodeForcesRound/nar/gameOfSumm.cpp) | C++ | 37 | 0 | 1 | 38 |
+| [CodeForcesRound/nar/graph/1037D.cpp](/CodeForcesRound/nar/graph/1037D.cpp) | C++ | 68 | 0 | 4 | 72 |
 | [CodeForcesRound/nar/graph/115A.cpp](/CodeForcesRound/nar/graph/115A.cpp) | C++ | 38 | 0 | 3 | 41 |
 | [CodeForcesRound/nar/graph/1255B.cpp](/CodeForcesRound/nar/graph/1255B.cpp) | C++ | 36 | 0 | 3 | 39 |
+| [CodeForcesRound/nar/graph/1365D.cpp](/CodeForcesRound/nar/graph/1365D.cpp) | C++ | 82 | 0 | 3 | 85 |
+| [CodeForcesRound/nar/graph/1437D.cpp](/CodeForcesRound/nar/graph/1437D.cpp) | C++ | 40 | 0 | 5 | 45 |
 | [CodeForcesRound/nar/graph/1475C.cpp](/CodeForcesRound/nar/graph/1475C.cpp) | C++ | 35 | 0 | 3 | 38 |
 | [CodeForcesRound/nar/graph/1559C.cpp](/CodeForcesRound/nar/graph/1559C.cpp) | C++ | 42 | 0 | 3 | 45 |
+| [CodeForcesRound/nar/graph/1702E.cpp](/CodeForcesRound/nar/graph/1702E.cpp) | C++ | 75 | 0 | 4 | 79 |
 | [CodeForcesRound/nar/graph/1829E.cpp](/CodeForcesRound/nar/graph/1829E.cpp) | C++ | 43 | 1 | 4 | 48 |
+| [CodeForcesRound/nar/graph/1833E.cpp](/CodeForcesRound/nar/graph/1833E.cpp) | C++ | 48 | 0 | 4 | 52 |
 | [CodeForcesRound/nar/graph/217A.cpp](/CodeForcesRound/nar/graph/217A.cpp) | C++ | 33 | 0 | 3 | 36 |
+| [CodeForcesRound/nar/graph/370A.cpp](/CodeForcesRound/nar/graph/370A.cpp) | C++ | 26 | 0 | 2 | 28 |
 | [CodeForcesRound/nar/graph/500A.cpp](/CodeForcesRound/nar/graph/500A.cpp) | C++ | 21 | 0 | 2 | 23 |
 | [CodeForcesRound/nar/graph/510C.cpp](/CodeForcesRound/nar/graph/510C.cpp) | C++ | 76 | 6 | 5 | 87 |
 | [CodeForcesRound/nar/graph/520B.cpp](/CodeForcesRound/nar/graph/520B.cpp) | C++ | 30 | 0 | 2 | 32 |
 | [CodeForcesRound/nar/graph/580C.cpp](/CodeForcesRound/nar/graph/580C.cpp) | C++ | 37 | 0 | 4 | 41 |
+| [CodeForcesRound/nar/graph/601A.cpp](/CodeForcesRound/nar/graph/601A.cpp) | C++ | 109 | 0 | 2 | 111 |
 | [CodeForcesRound/nar/graph/862B.cpp](/CodeForcesRound/nar/graph/862B.cpp) | C++ | 33 | 0 | 3 | 36 |
 | [CodeForcesRound/nar/graph/893C.cpp](/CodeForcesRound/nar/graph/893C.cpp) | C++ | 45 | 0 | 3 | 48 |
 | [CodeForcesRound/nar/graph/939A.cpp](/CodeForcesRound/nar/graph/939A.cpp) | C++ | 21 | 0 | 2 | 23 |
 | [CodeForcesRound/nar/graph/977E.cpp](/CodeForcesRound/nar/graph/977E.cpp) | C++ | 48 | 0 | 3 | 51 |
+| [CodeForcesRound/nar/graph/tren/1A.cpp](/CodeForcesRound/nar/graph/tren/1A.cpp) | C++ | 18 | 33 | 2 | 53 |
 | [CodeForcesRound/nar/gvosdiki.cpp](/CodeForcesRound/nar/gvosdiki.cpp) | C++ | 21 | 6 | 1 | 28 |
 | [CodeForcesRound/nar/king.cpp](/CodeForcesRound/nar/king.cpp) | C++ | 36 | 2 | 1 | 39 |
 | [CodeForcesRound/nar/spell.cpp](/CodeForcesRound/nar/spell.cpp) | C++ | 25 | 0 | 2 | 27 |
@@ -503,9 +511,13 @@ Total : 1245 files,  43112 codes, 2592 comments, 3789 blanks, all 49493 lines
 | [acmp/1717.cpp](/acmp/1717.cpp) | C++ | 13 | 0 | 2 | 15 |
 | [acmp/1780.cpp](/acmp/1780.cpp) | C++ | 41 | 6 | 4 | 51 |
 | [acmp/1780.py](/acmp/1780.py) | Python | 29 | 5 | 8 | 42 |
+| [acmp/1935.cpp](/acmp/1935.cpp) | C++ | 39 | 0 | 2 | 41 |
+| [acmp/1936.cpp](/acmp/1936.cpp) | C++ | 36 | 0 | 2 | 38 |
+| [acmp/1937.cpp](/acmp/1937.cpp) | C++ | 65 | 0 | 2 | 67 |
 | [acmp/1946.cpp](/acmp/1946.cpp) | C++ | 20 | 0 | 2 | 22 |
 | [acmp/1949.cpp](/acmp/1949.cpp) | C++ | 20 | 1 | 2 | 23 |
 | [acmp/1951.cpp](/acmp/1951.cpp) | C++ | 35 | 2 | 2 | 39 |
+| [acmp/2005.cpp](/acmp/2005.cpp) | C++ | 12 | 0 | 2 | 14 |
 | [acmp/a+b.cpp](/acmp/a+b.cpp) | C++ | 9 | 0 | 1 | 10 |
 | [acmp/id0003.cpp](/acmp/id0003.cpp) | C++ | 9 | 0 | 1 | 10 |
 | [acmp/id121.cpp](/acmp/id121.cpp) | C++ | 20 | 0 | 1 | 21 |
@@ -1022,6 +1034,20 @@ Total : 1245 files,  43112 codes, 2592 comments, 3789 blanks, all 49493 lines
 | [tinkoff/exam/h.cpp](/tinkoff/exam/h.cpp) | C++ | 29 | 4 | 1 | 34 |
 | [tinkoff/exam/i.cpp](/tinkoff/exam/i.cpp) | C++ | 32 | 0 | 2 | 34 |
 | [tinkoff/exam/i2.cpp](/tinkoff/exam/i2.cpp) | C++ | 39 | 12 | 5 | 56 |
+| [tinkoff/graph1/a.cpp](/tinkoff/graph1/a.cpp) | C++ | 43 | 0 | 2 | 45 |
+| [tinkoff/graph1/b.cpp](/tinkoff/graph1/b.cpp) | C++ | 59 | 0 | 2 | 61 |
+| [tinkoff/graph1/c.cpp](/tinkoff/graph1/c.cpp) | C++ | 40 | 0 | 3 | 43 |
+| [tinkoff/graph1/d.cpp](/tinkoff/graph1/d.cpp) | C++ | 47 | 0 | 2 | 49 |
+| [tinkoff/graph1/e.cpp](/tinkoff/graph1/e.cpp) | C++ | 43 | 0 | 2 | 45 |
+| [tinkoff/graph1/f.cpp](/tinkoff/graph1/f.cpp) | C++ | 70 | 11 | 2 | 83 |
+| [tinkoff/graph1/h.cpp](/tinkoff/graph1/h.cpp) | C++ | 48 | 3 | 3 | 54 |
+| [tinkoff/graph1/i.cpp](/tinkoff/graph1/i.cpp) | C++ | 61 | 0 | 2 | 63 |
+| [tinkoff/graph1/j.cpp](/tinkoff/graph1/j.cpp) | C++ | 51 | 0 | 2 | 53 |
+| [tinkoff/graph1/k.cpp](/tinkoff/graph1/k.cpp) | C++ | 49 | 0 | 2 | 51 |
+| [tinkoff/graph1/l.cpp](/tinkoff/graph1/l.cpp) | C++ | 60 | 0 | 2 | 62 |
+| [tinkoff/graph1/m.cpp](/tinkoff/graph1/m.cpp) | C++ | 92 | 0 | 2 | 94 |
+| [tinkoff/graph1/n.cpp](/tinkoff/graph1/n.cpp) | C++ | 60 | 0 | 2 | 62 |
+| [tinkoff/graph1/o.cpp](/tinkoff/graph1/o.cpp) | C++ | 58 | 0 | 2 | 60 |
 | [tinkoff/lin/a.cpp](/tinkoff/lin/a.cpp) | C++ | 35 | 0 | 1 | 36 |
 | [tinkoff/lin/b.cpp](/tinkoff/lin/b.cpp) | C++ | 73 | 0 | 4 | 77 |
 | [tinkoff/lin/c.cpp](/tinkoff/lin/c.cpp) | C++ | 93 | 16 | 4 | 113 |
