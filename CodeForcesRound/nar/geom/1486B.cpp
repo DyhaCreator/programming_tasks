@@ -12,16 +12,41 @@ void solve() {
     ll n;
     cin >> n;
     vector<pair<ll, ll>> a(n);
-    double sy = 0;
-    double sx = 0;
+    for (auto &x : a)
+        cin >> x.S >> x.F;
+    ll minY = INF;
+    ll maxY = 0;
+    ll minX = INF;
+    ll maxX = 0;
     for (auto &x : a) {
-        cin >> x.F >> x.S;
-        sy += x.F;
-        sx += x.S;
+        int u = 0;
+        int d = 0;
+        for (auto &y : a) {
+            if (y.F > x.F) {
+                u++;
+            } else if (y.F < x.F) {
+                d++;
+            }
+        }
+        if (abs(u - d) <= 1 || abs(max(u, d) - (n - max(u, d))) <= 1) {
+            minY = min(minY, x.F);
+            maxY = max(maxY, x.F);
+        }
+        u = 0;
+        d = 0;
+        for (auto &y : a) {
+            if (y.S > x.F) {
+                u++;
+            } else {
+                d++;
+            }
+        }
+        if (abs(u - d) <= 1 || abs(max(u, d) - (n - max(u, d))) <= 1) {
+            minX = min(minX, x.S);
+            maxX = max(maxX, x.S);
+        }
     }
-    sy /= n;
-    sx /= n;
-    cout << sy << " " << sx << endl;
+    cout << minY << " " << maxY << "  " << minX << " " << maxX << endl;
 }
 
 int main() {
