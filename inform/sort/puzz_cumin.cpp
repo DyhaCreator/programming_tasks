@@ -14,7 +14,7 @@ int main() {
     for (auto &x : a) cout << x << " ";
     cout << endl;
     for (auto &x : a)
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i < n; i++)`    
             if (a[i - 1] > a[i]) swap(a[i - 1], a[i]);
     for (auto &x : a)
         cout << x << " ";
