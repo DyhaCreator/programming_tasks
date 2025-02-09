@@ -15,7 +15,17 @@ void solve() {
         cin >> x;
     for (auto &x : b)
         cin >> x;
-    
+    reverse(a.begin(), a.end());
+    if (a[0] < b[0] - a[0]) a[0] = b[0] - a[0];
+    for (int i = 1; i < n; i++) {
+        if (a[i] > a[i - 1] || (a[i] < b[0] - a[i] && b[0] - a[i] <= a[i - 1]))
+            a[i] = b[0] - a[i];
+        if (a[i] > a[i - 1]) {
+            cout << "NO" << endl;
+            return;
+        }
+    }
+    cout << "YES" << endl;
 }
 
 int main() {
