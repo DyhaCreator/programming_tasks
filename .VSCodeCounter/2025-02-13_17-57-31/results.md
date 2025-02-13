@@ -1,26 +1,26 @@
 # Summary
 
-Date : 2025-01-05 15:44:00
+Date : 2025-02-13 17:57:31
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 1257 files,  43712 codes, 2592 comments, 3822 blanks, all 50126 lines
+Total : 1340 files,  46834 codes, 2645 comments, 4052 blanks, all 53531 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 1,159 | 42,438 | 2,550 | 3,575 | 48,563 |
+| C++ | 1,242 | 45,560 | 2,603 | 3,805 | 51,968 |
 | Python | 98 | 1,274 | 42 | 247 | 1,563 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 1,257 | 43,712 | 2,592 | 3,822 | 50,126 |
+| . | 1,340 | 46,834 | 2,645 | 4,052 | 53,531 |
 | . (Files) | 1 | 18 | 0 | 4 | 22 |
 | 8 | 2 | 27 | 0 | 8 | 35 |
-| CodeForcesRound | 430 | 16,112 | 649 | 1,288 | 18,049 |
+| CodeForcesRound | 485 | 18,104 | 688 | 1,455 | 20,247 |
 | CodeForcesRound/898 | 8 | 265 | 10 | 9 | 284 |
 | CodeForcesRound/915 | 1 | 51 | 0 | 5 | 56 |
 | CodeForcesRound/918 | 6 | 193 | 0 | 11 | 204 |
@@ -51,14 +51,16 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | CodeForcesRound/GB2023 | 5 | 205 | 6 | 13 | 224 |
 | CodeForcesRound/H2024 | 5 | 143 | 3 | 7 | 153 |
 | CodeForcesRound/beta1 | 2 | 66 | 2 | 7 | 75 |
-| CodeForcesRound/nar | 331 | 11,762 | 342 | 988 | 13,092 |
-| CodeForcesRound/nar (Files) | 127 | 4,396 | 221 | 379 | 4,996 |
+| CodeForcesRound/nar | 386 | 13,754 | 381 | 1,155 | 15,290 |
+| CodeForcesRound/nar (Files) | 140 | 4,827 | 221 | 423 | 5,471 |
 | CodeForcesRound/nar/acmsguru | 15 | 316 | 0 | 33 | 349 |
 | CodeForcesRound/nar/bitmask | 50 | 1,777 | 41 | 155 | 1,973 |
-| CodeForcesRound/nar/dp | 117 | 4,287 | 73 | 353 | 4,713 |
-| CodeForcesRound/nar/graph | 22 | 986 | 7 | 68 | 1,061 |
+| CodeForcesRound/nar/dp | 121 | 4,431 | 73 | 361 | 4,865 |
+| CodeForcesRound/nar/geom | 30 | 1,103 | 6 | 94 | 1,203 |
+| CodeForcesRound/nar/graph | 22 | 1,004 | 40 | 69 | 1,113 |
 | CodeForcesRound/nar/graph (Files) | 21 | 986 | 7 | 67 | 1,060 |
-| CodeForcesRound/nar/graph/tren | 1 | 0 | 0 | 1 | 1 |
+| CodeForcesRound/nar/graph/tren | 1 | 18 | 33 | 2 | 53 |
+| CodeForcesRound/nar/jad | 8 | 296 | 0 | 20 | 316 |
 | DANO | 2 | 0 | 0 | 2 | 2 |
 | Graphs | 7 | 277 | 51 | 31 | 359 |
 | Graphs (Files) | 5 | 176 | 50 | 12 | 238 |
@@ -92,7 +94,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | dynamic | 25 | 309 | 11 | 58 | 378 |
 | fucking_python_in_minecraft | 6 | 37 | 0 | 9 | 46 |
 | fucking_python_in_minecraft/otbor | 6 | 37 | 0 | 9 | 46 |
-| inform | 82 | 2,175 | 48 | 201 | 2,424 |
+| inform | 96 | 2,524 | 48 | 234 | 2,806 |
 | inform/1 | 10 | 350 | 17 | 23 | 390 |
 | inform/10 | 6 | 170 | 4 | 15 | 189 |
 | inform/11 | 3 | 138 | 1 | 8 | 147 |
@@ -105,11 +107,15 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | inform/7 | 3 | 75 | 0 | 8 | 83 |
 | inform/8 | 7 | 227 | 2 | 17 | 246 |
 | inform/9 | 1 | 55 | 0 | 2 | 57 |
+| inform/binsearch | 3 | 75 | 0 | 7 | 82 |
 | inform/dop | 3 | 43 | 2 | 14 | 59 |
 | inform/dop/1 | 2 | 30 | 2 | 9 | 41 |
 | inform/dop/2 | 1 | 13 | 0 | 5 | 18 |
+| inform/matrix | 3 | 89 | 0 | 6 | 95 |
 | inform/ol1 | 4 | 88 | 0 | 12 | 100 |
 | inform/ol2 | 1 | 25 | 0 | 5 | 30 |
+| inform/rec | 2 | 51 | 0 | 6 | 57 |
+| inform/sort | 6 | 134 | 0 | 14 | 148 |
 | informatics | 13 | 271 | 2 | 24 | 297 |
 | innopolisOpen | 15 | 350 | 14 | 29 | 393 |
 | innopolisOpen/first_tour | 8 | 231 | 11 | 17 | 259 |
@@ -142,7 +148,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tecnoCup | 4 | 141 | 0 | 9 | 150 |
 | tecnoCup/otb | 4 | 141 | 0 | 9 | 150 |
 | timus | 1 | 9 | 0 | 1 | 10 |
-| tinkoff | 311 | 12,324 | 1,018 | 1,109 | 14,451 |
+| tinkoff | 325 | 13,105 | 1,032 | 1,139 | 15,276 |
 | tinkoff/BFS&D | 29 | 1,681 | 172 | 240 | 2,093 |
 | tinkoff/DFS | 22 | 829 | 60 | 106 | 995 |
 | tinkoff/DO | 10 | 603 | 60 | 84 | 747 |
@@ -153,6 +159,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tinkoff/dynamic | 31 | 899 | 80 | 37 | 1,016 |
 | tinkoff/dynamic2 | 36 | 1,296 | 66 | 52 | 1,414 |
 | tinkoff/exam | 10 | 356 | 43 | 25 | 424 |
+| tinkoff/graph1 | 14 | 781 | 14 | 30 | 825 |
 | tinkoff/lin | 14 | 639 | 84 | 54 | 777 |
 | tinkoff/nums | 28 | 829 | 32 | 61 | 922 |
 | tinkoff/otbor2024 | 17 | 893 | 167 | 72 | 1,132 |

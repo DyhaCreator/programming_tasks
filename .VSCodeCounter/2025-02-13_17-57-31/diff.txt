@@ -1,0 +1,104 @@
+Date : 2025-02-13 17:57:31
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 69 files,  2323 codes, 6 comments, 199 blanks, all 2528 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         69 |      2,323 |          6 |        199 |      2,528 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                             |         69 |      2,323 |          6 |        199 |      2,528 |
+| CodeForcesRound                                                               |         55 |      1,974 |          6 |        166 |      2,146 |
+| CodeForcesRound/nar                                                           |         55 |      1,974 |          6 |        166 |      2,146 |
+| CodeForcesRound/nar (Files)                                                   |         13 |        431 |          0 |         44 |        475 |
+| CodeForcesRound/nar/dp                                                        |          4 |        144 |          0 |          8 |        152 |
+| CodeForcesRound/nar/geom                                                      |         30 |      1,103 |          6 |         94 |      1,203 |
+| CodeForcesRound/nar/jad                                                       |          8 |        296 |          0 |         20 |        316 |
+| inform                                                                        |         14 |        349 |          0 |         33 |        382 |
+| inform/binsearch                                                              |          3 |         75 |          0 |          7 |         82 |
+| inform/matrix                                                                 |          3 |         89 |          0 |          6 |         95 |
+| inform/rec                                                                    |          2 |         51 |          0 |          6 |         57 |
+| inform/sort                                                                   |          6 |        134 |          0 |         14 |        148 |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                      | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/1658D1.cpp      | C++      |         32 |          0 |          3 |         35 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2059A.cpp       | C++      |         40 |          0 |          3 |         43 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2059B.cpp       | C++      |         19 |          0 |          4 |         23 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2065A.cpp       | C++      |         20 |          0 |          3 |         23 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2065B.cpp       | C++      |         23 |          0 |          3 |         26 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2065C1.cpp      | C++      |         33 |          0 |          3 |         36 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2065C2.cpp      | C++      |         46 |          0 |          3 |         49 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2065D.cpp       | C++      |         54 |          0 |          4 |         58 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2067A.cpp       | C++      |         23 |          0 |          3 |         26 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2067B.cpp       | C++      |         33 |          0 |          3 |         36 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2067C.cpp       | C++      |         47 |          0 |          3 |         50 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2067C2.cpp      | C++      |         42 |          0 |          5 |         47 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2067E.cpp       | C++      |         19 |          0 |          4 |         23 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/126B.cpp     | C++      |         44 |          0 |          2 |         46 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/466C.cpp     | C++      |         37 |          0 |          2 |         39 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/474D.cpp     | C++      |         26 |          0 |          2 |         28 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/dp/977F.cpp     | C++      |         37 |          0 |          2 |         39 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1028C.cpp  | C++      |         53 |          0 |          5 |         58 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1096C.cpp  | C++      |         31 |          0 |          4 |         35 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1216C.cpp  | C++      |         53 |          0 |          5 |         58 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1307B.cpp  | C++      |         23 |          0 |          3 |         26 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1354C1.cpp | C++      |         24 |          0 |          3 |         27 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1451D.cpp  | C++      |         20 |          0 |          3 |         23 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1486B.cpp  | C++      |         60 |          0 |          3 |         63 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1495A.cpp  | C++      |         34 |          0 |          3 |         37 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1550C.cpp  | C++      |         40 |          1 |          3 |         44 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1598D.cpp  | C++      |         36 |          0 |          3 |         39 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1616C.cpp  | C++      |         38 |          0 |          3 |         41 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1791B.cpp  | C++      |         31 |          0 |          3 |         34 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1795B.cpp  | C++      |         29 |          0 |          3 |         32 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1846D.cpp  | C++      |         27 |          0 |          3 |         30 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1850G.cpp  | C++      |         38 |          0 |          3 |         41 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1916D.cpp  | C++      |         43 |          0 |          5 |         48 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1934C.cpp  | C++      |         30 |          0 |          3 |         33 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1942C1.cpp | C++      |         25 |          0 |          3 |         28 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/1971F.cpp  | C++      |         48 |          0 |          3 |         51 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/270A.cpp   | C++      |         24 |          0 |          3 |         27 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/407A.cpp   | C++      |         56 |          0 |          3 |         59 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/507B.cpp   | C++      |         18 |          0 |          2 |         20 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/514B.cpp   | C++      |         34 |          0 |          1 |         35 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/559A.cpp   | C++      |         13 |          0 |          2 |         15 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/618C.cpp   | C++      |         42 |          0 |          3 |         45 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/650A.cpp   | C++      |         30 |          0 |          2 |         32 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/766B.cpp   | C++      |         22 |          0 |          2 |         24 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/908C.cpp   | C++      |         27 |          0 |          3 |         30 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/935C.cpp   | C++      |         64 |          1 |          2 |         67 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/geom/993A.cpp   | C++      |         90 |          4 |          7 |        101 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/1201C.cpp   | C++      |         34 |          0 |          3 |         37 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/1328C.cpp   | C++      |         47 |          0 |          3 |         50 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/1348B.cpp   | C++      |         38 |          0 |          3 |         41 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/1365C.cpp   | C++      |         37 |          0 |          2 |         39 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/1512D.cpp   | C++      |         43 |          0 |          3 |         46 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/479C.cpp    | C++      |         25 |          0 |          2 |         27 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/514A.cpp    | C++      |         16 |          0 |          2 |         18 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/jad/515C.cpp    | C++      |         56 |          0 |          2 |         58 |
+| /home/kapusta/Документы/programming_tasks/inform/binsearch/a.cpp              | C++      |         22 |          0 |          2 |         24 |
+| /home/kapusta/Документы/programming_tasks/inform/binsearch/b.cpp              | C++      |         11 |          0 |          3 |         14 |
+| /home/kapusta/Документы/programming_tasks/inform/binsearch/c.cpp              | C++      |         42 |          0 |          2 |         44 |
+| /home/kapusta/Документы/programming_tasks/inform/matrix/a.cpp                 | C++      |         26 |          0 |          2 |         28 |
+| /home/kapusta/Документы/programming_tasks/inform/matrix/b.cpp                 | C++      |         35 |          0 |          2 |         37 |
+| /home/kapusta/Документы/programming_tasks/inform/matrix/c.cpp                 | C++      |         28 |          0 |          2 |         30 |
+| /home/kapusta/Документы/programming_tasks/inform/rec/a.cpp                    | C++      |         37 |          0 |          3 |         40 |
+| /home/kapusta/Документы/programming_tasks/inform/rec/b.cpp                    | C++      |         14 |          0 |          3 |         17 |
+| /home/kapusta/Документы/programming_tasks/inform/sort/a.cpp                   | C++      |         27 |          0 |          2 |         29 |
+| /home/kapusta/Документы/programming_tasks/inform/sort/b.cpp                   | C++      |         21 |          0 |          3 |         24 |
+| /home/kapusta/Документы/programming_tasks/inform/sort/c.cpp                   | C++      |         26 |          0 |          2 |         28 |
+| /home/kapusta/Документы/programming_tasks/inform/sort/d.cpp                   | C++      |         19 |          0 |          2 |         21 |
+| /home/kapusta/Документы/programming_tasks/inform/sort/e.cpp                   | C++      |         20 |          0 |          3 |         23 |
+| /home/kapusta/Документы/programming_tasks/inform/sort/puzz_cumin.cpp          | C++      |         21 |          0 |          2 |         23 |
+| Total                                                                         |          |      2,323 |          6 |        199 |      2,528 |
++-------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
