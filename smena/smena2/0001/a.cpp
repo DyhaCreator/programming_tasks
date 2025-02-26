@@ -16,7 +16,6 @@ int main() {
     for (auto &x : a)
         cin >> x;
     sort(a.rbegin(), a.rend());
-
     set<pair<int, int>> st;
     st.insert({a[0], 0});
     for (int i = 1; i < n; i++) {
