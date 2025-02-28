@@ -1,10 +1,13 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#define F first
+#define S second
 using namespace std;
 using ll = long long;
 
 const int INF = 1e9 + 7;
+int n;
 
 int nod(int a, int b) {
     while (b > 0) {
@@ -16,39 +19,49 @@ int nod(int a, int b) {
     return a;
 }
 
+bool comp(pair<int, int> &a, pair<int, int> &b) {
+    int q = (a.S - a.F < 0)?(a.S - a.F + n):(a.S - a.F);
+    int w = (b.S - b.F < 0)?(b.S - b.F + n):(b.S - b.F);
+    if (q == w) {
+        return a.F < b.F;
+    }
+    return q < w;
+}
+
 void solve() {
-    int n;
     cin >> n;
     vector<int> a(n);
     for (auto &x : a)
         cin >> x;
-    int last = -1;
-    int cnt = 1;
-    int sec = 0;
-    vector<int> ans = {};
-    while (cnt != 0 || sec < 3) {
-        cnt = 0;
-        int index = 0;
-        for (int i = 0; i < n; i++) {
-            if (a[i] != -1) index++;
-            if (a[i] != -1 && last != -1 && nod(last, a[i]) == 1) {
-                a[i] = -1;
-                last = -1;
-                cnt++;
-                ans.push_back(i);
-                index--;
-            } else if (a[i] != -1) {
-                last = a[i];
-            }
-        }
-        if (cnt == 0) sec++;
-        /*for (auto &x : a)
-            cout << x << " ";
-        cout << endl;*/
+    vector<int> b(n);
+    for (int i = 0; i < n; i++) {
+        int index = i - 1;
+        while (((index < 0)?index+n:index) != i && nod(a[i], a[((index < 0)?index+n:index)]) != 1)
+            index--;
+        b[i] = ((index < 0)?index+n:index);
     }
-    cout << ans.size() << " ";
-    for (auto &x : ans)
-        cout << x + 1 << " ";
+    vector<pair<int, int>> c(n);
+    for (int i = 0; i < n; i++)
+        c[i] = {b[i], i};
+    sort(c.begin(), c.end(), comp);
+    for (auto &x : c)
+        cout << x.F << " " << x.S << endl;
+    vector<int> used(n);
+    vector<int> ans = {};
+    for (auto &x : c) {
+        if (used[x.F] == 0) {
+            x.S = 1;
+        } else {
+            cout << ans.size() << endl;
+            for (auto &x : ans)
+                cout << x << " ";
+            cout << endl;
+            break;
+        }
+    }
+
+    for (auto &x : b)
+        cout << x << " ";
     cout << endl;
 }
 
