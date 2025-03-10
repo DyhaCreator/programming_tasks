@@ -26,3 +26,9 @@ ll all_to_t(string a, ll p) {
 bool sled(bool a, bool b) {
     return a & !b;
 }
+
+bool fnd(string a, char b) {
+    for (auto &x : a)
+        if (x == b) return true;
+    return false;
+}
