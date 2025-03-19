@@ -1,0 +1,51 @@
+Date : 2025-03-18 12:06:13
+Directory : /home/kapusta/Документы/programming_tasks
+Total : 18 files,  603 codes, 51 comments, 45 blanks, all 699 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         17 |        599 |         51 |         44 |        694 |
+| Python   |          1 |          4 |          0 |          1 |          5 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         18 |        603 |         51 |         45 |        699 |
+| CodeForcesRound                                                              |         14 |        368 |         26 |         32 |        426 |
+| CodeForcesRound/ICPC_TC                                                      |          7 |         59 |          0 |         10 |         69 |
+| CodeForcesRound/ICPC_TC/0000                                                 |          3 |        156 |         11 |         10 |        177 |
+| CodeForcesRound/ICPC_TC/0001                                                 |          4 |        -97 |        -11 |          0 |       -108 |
+| CodeForcesRound/nar                                                          |          7 |        309 |         26 |         22 |        357 |
+| uts                                                                          |          4 |        235 |         25 |         13 |        273 |
+| uts/0011                                                                     |          1 |         46 |          7 |          2 |         55 |
+| uts/0100                                                                     |          3 |        189 |         18 |         11 |        218 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                     | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0000/a.cpp | C++      |         10 |          0 |          2 |         12 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0000/b.cpp | C++      |         31 |          0 |          2 |         33 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0000/c.cpp | C++      |        115 |         11 |          6 |        132 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0001/a.cpp | C++      |         11 |          0 |          1 |         12 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0001/b.cpp | C++      |        -12 |          0 |          1 |        -11 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0001/c.cpp | C++      |       -100 |        -11 |         -3 |       -114 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/ICPC_TC/0001/c.py  | Python   |          4 |          0 |          1 |          5 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2074F.cpp      | C++      |          0 |          0 |         -2 |         -2 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2075A.cpp      | C++      |         19 |          0 |          3 |         22 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2075B.cpp      | C++      |         99 |          7 |          4 |        110 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2075C.cpp      | C++      |         41 |          5 |          4 |         50 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2075D.cpp      | C++      |         65 |         14 |          4 |         83 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2082A.cpp      | C++      |         37 |          0 |          4 |         41 |
+| /home/kapusta/Документы/programming_tasks/CodeForcesRound/nar/2082B.cpp      | C++      |         48 |          0 |          5 |         53 |
+| /home/kapusta/Документы/programming_tasks/uts/0011/a.cpp                     | C++      |         46 |          7 |          2 |         55 |
+| /home/kapusta/Документы/programming_tasks/uts/0100/a.cpp                     | C++      |         21 |          0 |          3 |         24 |
+| /home/kapusta/Документы/programming_tasks/uts/0100/b.cpp                     | C++      |        100 |         11 |          5 |        116 |
+| /home/kapusta/Документы/programming_tasks/uts/0100/b2.cpp                    | C++      |         68 |          7 |          3 |         78 |
+| Total                                                                        |          |        603 |         51 |         45 |        699 |
++------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
