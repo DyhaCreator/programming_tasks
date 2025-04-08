@@ -1,22 +1,9 @@
-'''file = open('1.txt', 'r')
-
-s = file.readlines()
-
+n = 2025
 ans = 0
-
-for i in s:
-    a = i.split()
-    if (int(a[2]) < 4):
-        print(a[0], a[1], a[2])
-    ans += int(a[2])
-print(ans / len(s))'''
-
-s       =                  input                     (           )                ;          
-ans               =                           s.count(    'а'           )                           +      s         .               count('А');
-print                     (                            *[                  (                     'б'                     if          
-(                              i                             ==                                            'а'                            )
-else                                  (                               'В'                                if                 (                 i 
-==                    'А'                            )                      else                               i                         )           )
-for                           i          in                     s                        ]                       ,       ' '                     +          
-str(                                                                  ans                                                                 
-)            ,                           sep              =                   ''          )
+while (n != 1):
+    if (n % 2 == 0):
+        n /= 2
+    else:
+        n = n * 3 + 1
+    ans += 1
+print(ans)
