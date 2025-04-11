@@ -1,6 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 #define F first
 #define S second
 using namespace std;
@@ -8,23 +6,21 @@ using ll = long long;
 
 const int INF = 1e9 + 7;
 
-void dfs(vector<pair<ll, ll>> &a, vector<vector<ll>> &g, vector<ll> &used, int last, int index, vector<pair<ll, ll>> &dp) {
-    used[index] = 1;
-    for (auto &x : g[index])
-        if (used[x] == 0) dfs(a, g, used, index, x, dp);
-    for (auto &x : g[index]) {
-        if (x != last) {
-            dp[index].F += max(dp[x].F + abs(a[index].F - a[x].F), dp[x].S + abs(a[index].F - a[x].S));
-            dp[index].S += max(dp[x].F + abs(a[index].S - a[x].F), dp[x].S + abs(a[index].S - a[x].S));
+void dfs(ll v, ll p, vector<pair<ll, ll>> &a, vector<vector<ll>> &g, vector<pair<ll, ll>> &dp) {
+    for (auto &x : g[v]) {
+        if (x != p) {
+            dfs(x, v, a, g, dp);
+            // cout << dp[x].F + abs(a[v].F - a[x].F) << " " << dp[x].S + abs(a[v].F - a[x].S) << endl;
+            dp[v].F += max(dp[x].F + abs(a[v].F - a[x].F), dp[x].S + abs(a[v].F - a[x].S));
+            dp[v].S += max(dp[x].F + abs(a[v].S - a[x].F), dp[x].S + abs(a[v].S - a[x].S));
         }
     }
 }
 
-
 void solve() {
     int n;
     cin >> n;
-    vector<pair<ll, ll>> a(n, {0, 0});
+    vector<pair<ll, ll>> a(n);
     for (auto &x : a)
         cin >> x.F >> x.S;
     vector<vector<ll>> g(n);
@@ -35,13 +31,15 @@ void solve() {
         g[a].push_back(b);
         g[b].push_back(a);
     }
-    vector<ll> used(n);
     vector<pair<ll, ll>> dp(n);
-    dfs(a, g, used, -1, 0, dp);
+    dfs(0, -1, a, g, dp);
     cout << max(dp[0].F, dp[0].S) << endl;
 }
 
 int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
     int t;
     cin >> t;
     while (t--) solve();
