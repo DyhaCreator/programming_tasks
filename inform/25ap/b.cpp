@@ -5,8 +5,9 @@ using ll = long long;
 const int INF = 1e9 + 7;
 
 int main() {
-    ll n;
-    cin >> n;
-    cout << n * (n + 1) / 2 << ".00" << endl;
+    string s;
+    getline(cin, s);
+    reverse(s.begin(), s.end());
+    cout << s << endl;
     return 0;
 }
