@@ -1,24 +1,23 @@
 # Diff Summary
 
-Date : 2025-03-19 09:51:04
+Date : 2025-06-18 10:06:08
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 2 files,  124 codes, 13 comments, 4 blanks, all 141 lines
+Total : 12 files,  431 codes, 6 comments, 45 blanks, all 482 lines
 
 [Summary](results.md) / [Details](details.md) / Diff Summary / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 2 | 124 | 13 | 4 | 141 |
+| C++ | 12 | 431 | 6 | 45 | 482 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 2 | 124 | 13 | 4 | 141 |
-| CodeForcesRound | 2 | 124 | 13 | 4 | 141 |
-| CodeForcesRound/nar | 2 | 124 | 13 | 4 | 141 |
-| CodeForcesRound/nar/jad | 2 | 124 | 13 | 4 | 141 |
+| . | 12 | 431 | 6 | 45 | 482 |
+| CodeForcesRound | 12 | 431 | 6 | 45 | 482 |
+| CodeForcesRound/nar | 12 | 431 | 6 | 45 | 482 |
 
 [Summary](results.md) / [Details](details.md) / Diff Summary / [Diff Details](diff-details.md)

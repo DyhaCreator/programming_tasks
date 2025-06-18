@@ -1,26 +1,26 @@
 # Summary
 
-Date : 2025-03-19 09:51:04
+Date : 2025-06-18 10:06:08
 
 Directory /home/kapusta/Документы/programming_tasks
 
-Total : 1486 files,  52480 codes, 2849 comments, 4456 blanks, all 59785 lines
+Total : 1610 files,  57208 codes, 3062 comments, 4843 blanks, all 65113 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 1,386 | 51,200 | 2,807 | 4,207 | 58,214 |
-| Python | 100 | 1,280 | 42 | 249 | 1,571 |
+| C++ | 1,509 | 55,935 | 3,020 | 4,597 | 63,552 |
+| Python | 101 | 1,273 | 42 | 246 | 1,561 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 1,486 | 52,480 | 2,849 | 4,456 | 59,785 |
-| . (Files) | 1 | 18 | 0 | 4 | 22 |
+| . | 1,610 | 57,208 | 3,062 | 4,843 | 65,113 |
+| . (Files) | 1 | 9 | 0 | 1 | 10 |
 | 8 | 2 | 27 | 0 | 8 | 35 |
-| CodeForcesRound | 599 | 21,789 | 816 | 1,827 | 24,432 |
+| CodeForcesRound | 681 | 24,942 | 946 | 2,100 | 27,988 |
 | CodeForcesRound/898 | 8 | 265 | 10 | 9 | 284 |
 | CodeForcesRound/915 | 1 | 51 | 0 | 5 | 56 |
 | CodeForcesRound/918 | 6 | 193 | 0 | 11 | 204 |
@@ -59,17 +59,24 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | CodeForcesRound/ICPC_TC/0000 | 3 | 156 | 11 | 10 | 177 |
 | CodeForcesRound/ICPC_TC/0001 | 4 | 59 | 0 | 10 | 69 |
 | CodeForcesRound/beta1 | 2 | 66 | 2 | 7 | 75 |
-| CodeForcesRound/nar | 445 | 15,811 | 432 | 1,326 | 17,569 |
-| CodeForcesRound/nar (Files) | 180 | 6,118 | 253 | 537 | 6,908 |
+| CodeForcesRound/nar | 515 | 18,505 | 554 | 1,562 | 20,621 |
+| CodeForcesRound/nar (Files) | 229 | 7,972 | 316 | 713 | 9,001 |
 | CodeForcesRound/nar/acmsguru | 15 | 316 | 0 | 33 | 349 |
 | CodeForcesRound/nar/bitmask | 50 | 1,777 | 41 | 155 | 1,973 |
-| CodeForcesRound/nar/dp | 121 | 4,431 | 73 | 361 | 4,865 |
+| CodeForcesRound/nar/dp | 140 | 5,191 | 125 | 415 | 5,731 |
+| CodeForcesRound/nar/dp (Files) | 136 | 5,045 | 115 | 403 | 5,563 |
+| CodeForcesRound/nar/dp/mesh | 4 | 146 | 10 | 12 | 168 |
+| CodeForcesRound/nar/dp/mesh/1 | 3 | 99 | 3 | 8 | 110 |
+| CodeForcesRound/nar/dp/mesh/2 | 1 | 47 | 7 | 4 | 58 |
 | CodeForcesRound/nar/geom | 30 | 1,103 | 6 | 94 | 1,203 |
 | CodeForcesRound/nar/graph | 22 | 1,004 | 40 | 69 | 1,113 |
 | CodeForcesRound/nar/graph (Files) | 21 | 986 | 7 | 67 | 1,060 |
 | CodeForcesRound/nar/graph/tren | 1 | 18 | 33 | 2 | 53 |
-| CodeForcesRound/nar/jad | 12 | 485 | 13 | 30 | 528 |
+| CodeForcesRound/nar/jad | 14 | 565 | 20 | 36 | 621 |
 | CodeForcesRound/nar/sort | 15 | 577 | 6 | 47 | 630 |
+| CodeForcesRound/tours | 12 | 459 | 8 | 37 | 504 |
+| CodeForcesRound/tours/tr19d2 | 7 | 310 | 5 | 19 | 334 |
+| CodeForcesRound/tours/tr22d1 | 5 | 149 | 3 | 18 | 170 |
 | DANO | 2 | 0 | 0 | 2 | 2 |
 | Graphs | 7 | 277 | 51 | 31 | 359 |
 | Graphs (Files) | 5 | 176 | 50 | 12 | 238 |
@@ -104,11 +111,13 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | dynamic | 25 | 309 | 11 | 58 | 378 |
 | fucking_python_in_minecraft | 6 | 37 | 0 | 9 | 46 |
 | fucking_python_in_minecraft/otbor | 6 | 37 | 0 | 9 | 46 |
-| inform | 106 | 2,815 | 48 | 256 | 3,119 |
+| inform | 128 | 3,308 | 54 | 300 | 3,662 |
 | inform/1 | 10 | 350 | 17 | 23 | 390 |
 | inform/10 | 6 | 170 | 4 | 15 | 189 |
+| inform/101 | 6 | 72 | 0 | 10 | 82 |
 | inform/11 | 3 | 138 | 1 | 8 | 147 |
 | inform/2 | 9 | 228 | 10 | 20 | 258 |
+| inform/25ap | 5 | 97 | 0 | 10 | 107 |
 | inform/3 | 10 | 238 | 0 | 23 | 261 |
 | inform/4 | 13 | 365 | 9 | 35 | 409 |
 | inform/5 | 7 | 70 | 0 | 8 | 78 |
@@ -118,6 +127,8 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | inform/8 | 7 | 227 | 2 | 17 | 246 |
 | inform/9 | 1 | 55 | 0 | 2 | 57 |
 | inform/binsearch | 3 | 75 | 0 | 7 | 82 |
+| inform/dd | 6 | 200 | 0 | 12 | 212 |
+| inform/dd2 | 1 | 7 | 0 | 3 | 10 |
 | inform/dop | 3 | 43 | 2 | 14 | 59 |
 | inform/dop/1 | 2 | 30 | 2 | 9 | 41 |
 | inform/dop/2 | 1 | 13 | 0 | 5 | 18 |
@@ -127,6 +138,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | inform/ol2 | 1 | 25 | 0 | 5 | 30 |
 | inform/rec | 2 | 51 | 0 | 6 | 57 |
 | inform/sort | 6 | 134 | 0 | 14 | 148 |
+| inform/start4 | 4 | 117 | 6 | 9 | 132 |
 | inform/str | 5 | 128 | 0 | 12 | 140 |
 | informatics | 13 | 271 | 2 | 24 | 297 |
 | innopolisOpen | 15 | 350 | 14 | 29 | 393 |
@@ -167,7 +179,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tecnoCup | 4 | 141 | 0 | 9 | 150 |
 | tecnoCup/otb | 4 | 141 | 0 | 9 | 150 |
 | timus | 1 | 9 | 0 | 1 | 10 |
-| tinkoff | 325 | 13,105 | 1,032 | 1,139 | 15,276 |
+| tinkoff | 330 | 13,280 | 1,054 | 1,152 | 15,486 |
 | tinkoff/BFS&D | 29 | 1,681 | 172 | 240 | 2,093 |
 | tinkoff/DFS | 22 | 829 | 60 | 106 | 995 |
 | tinkoff/DO | 10 | 603 | 60 | 84 | 747 |
@@ -180,6 +192,8 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tinkoff/exam | 10 | 356 | 43 | 25 | 424 |
 | tinkoff/graph1 | 14 | 781 | 14 | 30 | 825 |
 | tinkoff/lin | 14 | 639 | 84 | 54 | 777 |
+| tinkoff/muniki | 5 | 175 | 22 | 13 | 210 |
+| tinkoff/muniki/9 | 5 | 175 | 22 | 13 | 210 |
 | tinkoff/nums | 28 | 829 | 32 | 61 | 922 |
 | tinkoff/otbor2024 | 17 | 893 | 167 | 72 | 1,132 |
 | tinkoff/perebor | 18 | 664 | 32 | 62 | 758 |
@@ -189,17 +203,22 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | tinkoff/stack_deck | 9 | 371 | 0 | 16 | 387 |
 | tinkoff_dop | 1 | 8 | 0 | 1 | 9 |
 | tinkoff_trenirovki | 2 | 40 | 0 | 5 | 45 |
-| uts | 23 | 1,213 | 43 | 75 | 1,331 |
+| uts | 31 | 1,853 | 91 | 112 | 2,056 |
 | uts/0000 | 3 | 183 | 6 | 9 | 198 |
 | uts/0001 | 8 | 494 | 0 | 29 | 523 |
 | uts/0010 | 7 | 294 | 12 | 22 | 328 |
 | uts/0011 | 1 | 46 | 7 | 2 | 55 |
 | uts/0100 | 3 | 189 | 18 | 11 | 218 |
+| uts/0101 | 3 | 244 | 46 | 12 | 302 |
+| uts/0110 | 5 | 396 | 2 | 25 | 423 |
 | uts/hld_centroid | 1 | 7 | 0 | 2 | 9 |
 | vprob | 8 | 233 | 33 | 15 | 281 |
 | vprob (Files) | 5 | 156 | 27 | 8 | 191 |
 | vprob/2024 | 3 | 77 | 6 | 7 | 90 |
+| vshe | 3 | 100 | 0 | 10 | 110 |
 | vsosh | 6 | 147 | 11 | 15 | 173 |
+| yandex | 4 | 176 | 7 | 13 | 196 |
+| yandex/prereg1 | 4 | 176 | 7 | 13 | 196 |
 | нарешка | 30 | 683 | 55 | 74 | 812 |
 | нарешка/2004-2005 | 4 | 77 | 12 | 11 | 100 |
 | нарешка/itmo | 3 | 48 | 5 | 7 | 60 |
